@@ -1,0 +1,3 @@
+[submodule "CrockPot"]
+	path = CrockPot
+	url = https://githubfast.com/SihenZhang/CrockPot.git
