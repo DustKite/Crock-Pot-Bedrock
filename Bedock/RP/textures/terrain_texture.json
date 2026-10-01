@@ -1,0 +1,310 @@
+{
+  "texture_data": {
+    "crockpot:asparaguses_stage0": {
+      "textures": "textures/blocks/crockpot/asparaguses_stage0"
+    },
+    "crockpot:asparaguses_stage1": {
+      "textures": "textures/blocks/crockpot/asparaguses_stage1"
+    },
+    "crockpot:asparaguses_stage2": {
+      "textures": "textures/blocks/crockpot/asparaguses_stage2"
+    },
+    "crockpot:asparaguses_stage3": {
+      "textures": "textures/blocks/crockpot/asparaguses_stage3"
+    },
+    "crockpot:birdcage": {
+      "textures": "textures/blocks/crockpot/birdcage"
+    },
+    "crockpot:corns_stage0": {
+      "textures": "textures/blocks/crockpot/corns_stage0"
+    },
+    "crockpot:corns_stage1": {
+      "textures": "textures/blocks/crockpot/corns_stage1"
+    },
+    "crockpot:corns_stage2": {
+      "textures": "textures/blocks/crockpot/corns_stage2"
+    },
+    "crockpot:corns_stage3": {
+      "textures": "textures/blocks/crockpot/corns_stage3"
+    },
+    "crockpot:corns_stage4": {
+      "textures": "textures/blocks/crockpot/corns_stage4"
+    },
+    "crockpot:corns_stage5": {
+      "textures": "textures/blocks/crockpot/corns_stage5"
+    },
+    "crockpot:corns_stage6": {
+      "textures": "textures/blocks/crockpot/corns_stage6"
+    },
+    "crockpot:corns_stage7": {
+      "textures": "textures/blocks/crockpot/corns_stage7"
+    },
+    "crockpot:crock_pot": {
+      "textures": "textures/blocks/crockpot/crock_pot"
+    },
+    "crockpot:crock_pot_particle": {
+      "textures": "textures/blocks/crockpot/crock_pot_particle"
+    },
+    "crockpot:eggplants_stage0": {
+      "textures": "textures/blocks/crockpot/eggplants_stage0"
+    },
+    "crockpot:eggplants_stage1": {
+      "textures": "textures/blocks/crockpot/eggplants_stage1"
+    },
+    "crockpot:eggplants_stage2": {
+      "textures": "textures/blocks/crockpot/eggplants_stage2"
+    },
+    "crockpot:eggplants_stage3": {
+      "textures": "textures/blocks/crockpot/eggplants_stage3"
+    },
+    "crockpot:garlics_stage0": {
+      "textures": "textures/blocks/crockpot/garlics_stage0"
+    },
+    "crockpot:garlics_stage1": {
+      "textures": "textures/blocks/crockpot/garlics_stage1"
+    },
+    "crockpot:garlics_stage2": {
+      "textures": "textures/blocks/crockpot/garlics_stage2"
+    },
+    "crockpot:garlics_stage3": {
+      "textures": "textures/blocks/crockpot/garlics_stage3"
+    },
+    "crockpot:onions_stage0": {
+      "textures": "textures/blocks/crockpot/onions_stage0"
+    },
+    "crockpot:onions_stage1": {
+      "textures": "textures/blocks/crockpot/onions_stage1"
+    },
+    "crockpot:onions_stage2": {
+      "textures": "textures/blocks/crockpot/onions_stage2"
+    },
+    "crockpot:onions_stage3": {
+      "textures": "textures/blocks/crockpot/onions_stage3"
+    },
+    "crockpot:peppers_stage0": {
+      "textures": "textures/blocks/crockpot/peppers_stage0"
+    },
+    "crockpot:peppers_stage1": {
+      "textures": "textures/blocks/crockpot/peppers_stage1"
+    },
+    "crockpot:peppers_stage2": {
+      "textures": "textures/blocks/crockpot/peppers_stage2"
+    },
+    "crockpot:peppers_stage3": {
+      "textures": "textures/blocks/crockpot/peppers_stage3"
+    },
+    "crockpot:portable_crock_pot": {
+      "textures": "textures/blocks/crockpot/portable_crock_pot"
+    },
+    "crockpot:portable_crock_pot_particle": {
+      "textures": "textures/blocks/crockpot/portable_crock_pot_particle"
+    },
+    "crockpot:tomatoes_stage0": {
+      "textures": "textures/blocks/crockpot/tomatoes_stage0"
+    },
+    "crockpot:tomatoes_stage1": {
+      "textures": "textures/blocks/crockpot/tomatoes_stage1"
+    },
+    "crockpot:tomatoes_stage2": {
+      "textures": "textures/blocks/crockpot/tomatoes_stage2"
+    },
+    "crockpot:tomatoes_stage3": {
+      "textures": "textures/blocks/crockpot/tomatoes_stage3"
+    },
+    "crockpot:unknown_crops": {
+      "textures": "textures/blocks/crockpot/unknown_crops"
+    },
+    "crockpot:asparagus_soup": {
+      "textures": "textures/blocks/crockpot/foods/asparagus_soup"
+    },
+    "crockpot:avaj": {
+      "textures": "textures/blocks/crockpot/foods/avaj"
+    },
+    "crockpot:bacon_eggs": {
+      "textures": "textures/blocks/crockpot/foods/bacon_eggs"
+    },
+    "crockpot:bone_soup": {
+      "textures": "textures/blocks/crockpot/foods/bone_soup"
+    },
+    "crockpot:bone_stew": {
+      "textures": "textures/blocks/crockpot/foods/bone_stew"
+    },
+    "crockpot:breakfast_skillet": {
+      "textures": "textures/blocks/crockpot/foods/breakfast_skillet"
+    },
+    "crockpot:bunny_stew": {
+      "textures": "textures/blocks/crockpot/foods/bunny_stew"
+    },
+    "crockpot:california_roll": {
+      "textures": "textures/blocks/crockpot/foods/california_roll"
+    },
+    "crockpot:candy": {
+      "textures": "textures/blocks/crockpot/foods/candy"
+    },
+    "crockpot:ceviche": {
+      "textures": "textures/blocks/crockpot/foods/ceviche"
+    },
+    "crockpot:fish_sticks": {
+      "textures": "textures/blocks/crockpot/foods/fish_sticks"
+    },
+    "crockpot:fish_tacos": {
+      "textures": "textures/blocks/crockpot/foods/fish_tacos"
+    },
+    "crockpot:flower_salad": {
+      "textures": "textures/blocks/crockpot/foods/flower_salad"
+    },
+    "crockpot:froggle_bunwich": {
+      "textures": "textures/blocks/crockpot/foods/froggle_bunwich"
+    },
+    "crockpot:fruit_medley": {
+      "textures": "textures/blocks/crockpot/foods/fruit_medley"
+    },
+    "crockpot:fruit_medley_1": {
+      "textures": "textures/blocks/crockpot/foods/fruit_medley_1"
+    },
+    "crockpot:fruit_medley_2": {
+      "textures": "textures/blocks/crockpot/foods/fruit_medley_2"
+    },
+    "crockpot:gazpacho": {
+      "textures": "textures/blocks/crockpot/foods/gazpacho"
+    },
+    "crockpot:gazpacho_1": {
+      "textures": "textures/blocks/crockpot/foods/gazpacho_1"
+    },
+    "crockpot:gazpacho_2": {
+      "textures": "textures/blocks/crockpot/foods/gazpacho_2"
+    },
+    "crockpot:glow_berry_mousse": {
+      "textures": "textures/blocks/crockpot/foods/glow_berry_mousse"
+    },
+    "crockpot:honey_ham": {
+      "textures": "textures/blocks/crockpot/foods/honey_ham"
+    },
+    "crockpot:honey_nuggets": {
+      "textures": "textures/blocks/crockpot/foods/honey_nuggets"
+    },
+    "crockpot:hot_chili": {
+      "textures": "textures/blocks/crockpot/foods/hot_chili"
+    },
+    "crockpot:hot_cocoa": {
+      "textures": "textures/blocks/crockpot/foods/hot_cocoa"
+    },
+    "crockpot:hot_cocoa_1": {
+      "textures": "textures/blocks/crockpot/foods/hot_cocoa_1"
+    },
+    "crockpot:hot_cocoa_2": {
+      "textures": "textures/blocks/crockpot/foods/hot_cocoa_2"
+    },
+    "crockpot:iced_tea": {
+      "textures": "textures/blocks/crockpot/foods/iced_tea"
+    },
+    "crockpot:iced_tea_1": {
+      "textures": "textures/blocks/crockpot/foods/iced_tea_1"
+    },
+    "crockpot:iced_tea_2": {
+      "textures": "textures/blocks/crockpot/foods/iced_tea_2"
+    },
+    "crockpot:ice_cream": {
+      "textures": "textures/blocks/crockpot/foods/ice_cream"
+    },
+    "crockpot:jammy_preserves": {
+      "textures": "textures/blocks/crockpot/foods/jammy_preserves"
+    },
+    "crockpot:kabobs": {
+      "textures": "textures/blocks/crockpot/foods/kabobs"
+    },
+    "crockpot:mashed_potatoes": {
+      "textures": "textures/blocks/crockpot/foods/mashed_potatoes"
+    },
+    "crockpot:meat_balls": {
+      "textures": "textures/blocks/crockpot/foods/meat_balls"
+    },
+    "crockpot:monster_lasagna": {
+      "textures": "textures/blocks/crockpot/foods/monster_lasagna"
+    },
+    "crockpot:monster_tartare": {
+      "textures": "textures/blocks/crockpot/foods/monster_tartare"
+    },
+    "crockpot:moqueca": {
+      "textures": "textures/blocks/crockpot/foods/moqueca"
+    },
+    "crockpot:mushy_cake": {
+      "textures": "textures/blocks/crockpot/foods/mushy_cake"
+    },
+    "crockpot:pepper_popper": {
+      "textures": "textures/blocks/crockpot/foods/pepper_popper"
+    },
+    "crockpot:perogies": {
+      "textures": "textures/blocks/crockpot/foods/perogies"
+    },
+    "crockpot:plain_omelette": {
+      "textures": "textures/blocks/crockpot/foods/plain_omelette"
+    },
+    "crockpot:potato_souffle": {
+      "textures": "textures/blocks/crockpot/foods/potato_souffle"
+    },
+    "crockpot:potato_tornado": {
+      "textures": "textures/blocks/crockpot/foods/potato_tornado"
+    },
+    "crockpot:pow_cake": {
+      "textures": "textures/blocks/crockpot/foods/pow_cake"
+    },
+    "crockpot:pumpkin_cookie": {
+      "textures": "textures/blocks/crockpot/foods/pumpkin_cookie"
+    },
+    "crockpot:ratatouille": {
+      "textures": "textures/blocks/crockpot/foods/ratatouille"
+    },
+    "crockpot:russian_soup": {
+      "textures": "textures/blocks/crockpot/foods/russian_soup"
+    },
+    "crockpot:salmon_sushi": {
+      "textures": "textures/blocks/crockpot/foods/salmon_sushi"
+    },
+    "crockpot:salsa": {
+      "textures": "textures/blocks/crockpot/foods/salsa"
+    },
+    "crockpot:scotch_egg": {
+      "textures": "textures/blocks/crockpot/foods/scotch_egg"
+    },
+    "crockpot:seafood_gumbo": {
+      "textures": "textures/blocks/crockpot/foods/seafood_gumbo"
+    },
+    "crockpot:stuffed_eggplant": {
+      "textures": "textures/blocks/crockpot/foods/stuffed_eggplant"
+    },
+    "crockpot:surf_n_turf": {
+      "textures": "textures/blocks/crockpot/foods/surf_n_turf"
+    },
+    "crockpot:taffy": {
+      "textures": "textures/blocks/crockpot/foods/taffy"
+    },
+    "crockpot:tea": {
+      "textures": "textures/blocks/crockpot/foods/tea"
+    },
+    "crockpot:tea_2": {
+      "textures": "textures/blocks/crockpot/foods/tea_2"
+    },
+    "crockpot:tropical_bouillabaisse": {
+      "textures": "textures/blocks/crockpot/foods/tropical_bouillabaisse"
+    },
+    "crockpot:turkey_dinner": {
+      "textures": "textures/blocks/crockpot/foods/turkey_dinner"
+    },
+    "crockpot:veg_stinger": {
+      "textures": "textures/blocks/crockpot/foods/veg_stinger"
+    },
+    "crockpot:volt_goat_jelly": {
+      "textures": "textures/blocks/crockpot/foods/volt_goat_jelly"
+    },
+    "crockpot:watermelon_icle": {
+      "textures": "textures/blocks/crockpot/foods/watermelon_icle"
+    },
+    "crockpot:watermelon_icle_2": {
+      "textures": "textures/blocks/crockpot/foods/watermelon_icle_2"
+    },
+    "crockpot:wet_goop": {
+      "textures": "textures/blocks/crockpot/foods/wet_goop"
+    }
+  }
+}

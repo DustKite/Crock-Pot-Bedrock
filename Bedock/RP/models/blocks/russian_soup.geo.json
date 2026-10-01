@@ -1,0 +1,89 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.russian_soup",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-4, 0.5, -4],
+							"size": [8, 4, 8],
+							"uv": {
+								"north": { "uv": [14, 6], "uv_size": [8, 4], "material_instance": "russian_soup" },
+								"east": { "uv": [14, 10], "uv_size": [8, 4], "material_instance": "russian_soup" },
+								"south": { "uv": [14, 14], "uv_size": [8, 4], "material_instance": "russian_soup" },
+								"west": { "uv": [0, 16], "uv_size": [8, 4], "material_instance": "russian_soup" },
+								"up": { "uv": [0, 0], "uv_size": [8, 8], "material_instance": "russian_soup" },
+								"down": { "uv": [0, 16], "uv_size": [8, -8], "material_instance": "russian_soup" }
+							}
+						},
+						{
+							"origin": [-3, 4.5, -3],
+							"size": [6, -3, 6],
+							"uv": {
+								"north": { "uv": [8, 18], "uv_size": [6, 3], "material_instance": "russian_soup" },
+								"east": { "uv": [14, 18], "uv_size": [6, 3], "material_instance": "russian_soup" },
+								"south": { "uv": [0, 20], "uv_size": [6, 3], "material_instance": "russian_soup" },
+								"west": { "uv": [20, 0], "uv_size": [6, 3], "material_instance": "russian_soup" },
+								"up": { "uv": [8, 0], "uv_size": [6, 6], "material_instance": "russian_soup" },
+								"down": { "uv": [8, 12], "uv_size": [6, -6], "material_instance": "russian_soup" }
+							}
+						},
+						{
+							"origin": [-3, 0, -3],
+							"size": [6, 1, 6],
+							"uv": {
+								"north": { "uv": [20, 21], "uv_size": [6, 1], "material_instance": "russian_soup" },
+								"east": { "uv": [22, 6], "uv_size": [6, 1], "material_instance": "russian_soup" },
+								"south": { "uv": [22, 7], "uv_size": [6, 1], "material_instance": "russian_soup" },
+								"west": { "uv": [22, 8], "uv_size": [6, 1], "material_instance": "russian_soup" },
+								"up": { "uv": [8, 21], "uv_size": [6, 6], "material_instance": "russian_soup" },
+								"down": { "uv": [14, 27], "uv_size": [6, -6], "material_instance": "russian_soup" }
+							}
+						},
+						{
+							"origin": [-3, 3.5, -3],
+							"size": [6, 0, 6],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "russian_soup" },
+								"east": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "russian_soup" },
+								"south": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "russian_soup" },
+								"west": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "russian_soup" },
+								"up": { "uv": [8, 12], "uv_size": [6, 6], "material_instance": "russian_soup" },
+								"down": { "uv": [14, 6], "uv_size": [6, -6], "material_instance": "russian_soup" }
+							}
+						},
+						{
+							"origin": [-4.35, 4, 0],
+							"size": [4, 1, 2],
+							"pivot": [-2.35, 4.5, 1],
+							"rotation": [0, 0, 45],
+							"uv": {
+								"north": { "uv": [20, 5], "uv_size": [4, 1], "material_instance": "russian_soup" },
+								"east": { "uv": [6, 20], "uv_size": [2, 1], "material_instance": "russian_soup" },
+								"south": { "uv": [20, 20], "uv_size": [4, 1], "material_instance": "russian_soup" },
+								"west": { "uv": [6, 21], "uv_size": [2, 1], "material_instance": "russian_soup" },
+								"up": { "uv": [20, 3], "uv_size": [4, 2], "material_instance": "russian_soup" },
+								"down": { "uv": [20, 20], "uv_size": [4, -2], "material_instance": "russian_soup" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

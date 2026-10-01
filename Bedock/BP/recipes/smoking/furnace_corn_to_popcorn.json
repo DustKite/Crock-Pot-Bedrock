@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "crockpot:popcorn_furnace_corn"
+    },
+    "tags": [
+      "smoker"
+    ],
+    "input": "crockpot:corn",
+    "output": "crockpot:popcorn"
+  }
+}

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.birdcage_upper",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [14, 9, 0],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"east": { "uv": [12, 0], "uv_size": [12, 9], "material_instance": "birdcage" },
+								"south": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"west": { "uv": [12, 20], "uv_size": [12, 9], "material_instance": "birdcage" },
+								"up": { "uv": [24, 0], "uv_size": [12, 12], "material_instance": "birdcage" },
+								"down": { "uv": [0, 0], "uv_size": [0, 0], "material_instance": "birdcage" }
+							}
+						},
+						{
+							"origin": [-7, 0, 7],
+							"size": [14, 9, 0],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"east": { "uv": [12, 0], "uv_size": [12, 9], "material_instance": "birdcage" },
+								"south": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"west": { "uv": [12, 20], "uv_size": [12, 9], "material_instance": "birdcage" },
+								"up": { "uv": [24, 0], "uv_size": [12, 12], "material_instance": "birdcage" },
+								"down": { "uv": [0, 0], "uv_size": [0, 0], "material_instance": "birdcage" }
+							}
+						},
+						{
+							"origin": [-7, 0, -7],
+							"size": [0, 9, 14],
+							"uv": {
+								"east": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"west": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" }
+							}
+						},
+						{
+							"origin": [7, 0, -7],
+							"size": [0, 9, 14],
+							"uv": {
+								"east": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" },
+								"west": { "uv": [0, 0], "uv_size": [14, 9], "material_instance": "birdcage" }
+							}
+						},
+						{
+							"origin": [-7, 9, -7],
+							"size": [14, 0, 14],
+							"uv": {
+								"up": { "uv": [0, 20], "uv_size": [14, 14], "material_instance": "birdcage" },
+								"down": { "uv": [14, 34], "uv_size": [-14, -14], "material_instance": "birdcage" }
+							}
+						},
+						{
+							"origin": [0, 9, -1.5],
+							"size": [0, 4, 3],
+							"pivot": [0, -8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [0, 4], "material_instance": "birdcage" },
+								"east": { "uv": [14, 23], "uv_size": [3, 4], "material_instance": "birdcage" },
+								"south": { "uv": [0, 0], "uv_size": [0, 4], "material_instance": "birdcage" },
+								"west": { "uv": [14, 23], "uv_size": [3, 4], "material_instance": "birdcage" },
+								"up": { "uv": [0, 0], "uv_size": [0, 4], "material_instance": "birdcage" },
+								"down": { "uv": [0, 4], "uv_size": [0, -4], "material_instance": "birdcage" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

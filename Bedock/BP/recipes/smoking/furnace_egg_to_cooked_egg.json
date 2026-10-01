@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "crockpot:cooked_egg_furnace_egg"
+    },
+    "tags": [
+      "smoker"
+    ],
+    "input": "minecraft:egg",
+    "output": "crockpot:cooked_egg"
+  }
+}

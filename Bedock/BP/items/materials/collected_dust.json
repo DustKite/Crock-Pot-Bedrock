@@ -1,0 +1,19 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:collected_dust",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.materials"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:collected_dust"
+                }
+            }
+        }
+    }
+}

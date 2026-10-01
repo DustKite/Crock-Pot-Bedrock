@@ -1,0 +1,159 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mashed_potatoes_2",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "stack1",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "stack2",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "stack3",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-8, 5, 1],
+							"size": [7, 2, 7],
+							"uv": {
+								"north": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "material_instance": "mashed_potatoes" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-7, 7, 2],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 14], "uv_size": [5, 5], "material_instance": "mashed_potatoes" },
+								"down": { "uv": [13, 20], "uv_size": [5, -5], "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-7.5, 0, 1.5],
+							"size": [6, 5, 6],
+							"uv": {
+								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes" },
+								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-0.15, 5, -1.25],
+							"size": [7, 2, 7],
+							"pivot": [3.35, 5, 2.25],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "uv_rotation": 90, "material_instance": "mashed_potatoes" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "uv_rotation": 270, "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [0.85, 7, -0.25],
+							"size": [5, 1, 5],
+							"pivot": [3.35, 5, 2.25],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 14], "uv_size": [5, 5], "uv_rotation": 270, "material_instance": "mashed_potatoes" },
+								"down": { "uv": [13, 20], "uv_size": [5, -5], "uv_rotation": 90, "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [0.35, 0, -0.75],
+							"size": [6, 5, 6],
+							"pivot": [3.35, 5, 2.25],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes" },
+								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-6.75, 5, -6.9],
+							"size": [7, 2, 7],
+							"pivot": [-3.25, 5, -3.4],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "uv_rotation": 90, "material_instance": "mashed_potatoes" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "uv_rotation": 270, "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-5.75, 7, -5.9],
+							"size": [5, 1, 5],
+							"pivot": [-3.25, 5, -3.4],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [0, 14], "uv_size": [5, 5], "uv_rotation": 270, "material_instance": "mashed_potatoes" },
+								"down": { "uv": [13, 20], "uv_size": [5, -5], "uv_rotation": 90, "material_instance": "mashed_potatoes" }
+							}
+						},
+						{
+							"origin": [-6.25, 0, -6.4],
+							"size": [6, 5, 6],
+							"pivot": [-3.25, 5, -3.4],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
+								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes" },
+								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

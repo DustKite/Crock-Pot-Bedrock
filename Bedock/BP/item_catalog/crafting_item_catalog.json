@@ -1,0 +1,130 @@
+{
+   "format_version": "1.21.100",
+   "minecraft:crafting_items_catalog": {
+      "categories": [
+         {
+            "category_name": "items",
+            "groups": [
+               {
+                  "group_identifier": {
+                     "icon": "crockpot:volt_goat_horn",
+                     "name": "crockpot:itemGroup.name.materials"
+                  },
+                  "items": [
+                     "crockpot:blackstone_dust",
+                     "crockpot:collected_dust",
+                     "crockpot:pot_upgrade_smithing_template",
+                     "crockpot:volt_goat_horn"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "crockpot:corn_seeds",
+                     "name": "crockpot:itemGroup.name.seeds"
+                  },
+                  "items": [
+                     "crockpot:unknown_seeds",
+                     "crockpot:asparagus_seeds",
+                     "crockpot:corn_seeds",
+                     "crockpot:eggplant_seeds",
+                     "crockpot:garlic_seeds",
+                     "crockpot:onion_seeds",
+                     "crockpot:pepper_seeds",
+                     "crockpot:tomato_seeds"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "crockpot:tomato",
+                     "name": "crockpot:itemGroup.name.ingredients"
+                  },
+                  "items": [
+                     "crockpot:asparagus",
+                     "crockpot:corn",
+                     "crockpot:popcorn",
+                     "crockpot:onion",
+                     "crockpot:tomato",
+                     "crockpot:milk_bottle",
+                     "crockpot:syrup",
+                     "crockpot:eggplant",
+                     "crockpot:cooked_eggplant",
+                     "crockpot:pepper",
+                     "crockpot:cooked_egg",
+                     "crockpot:frog_legs",
+                     "crockpot:cooked_frog_legs",
+                     "crockpot:hoglin_nose",
+                     "crockpot:cooked_hoglin_nose",
+                     "crockpot:garlic",
+                     "crockpot:parrot_egg_red_blue",
+                     "crockpot:parrot_egg_blue",
+                     "crockpot:parrot_egg_green",
+                     "crockpot:parrot_egg_yellow_blue",
+                     "crockpot:parrot_egg_grey"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "crockpot:meat_balls",
+                     "name": "crockpot:itemGroup.name.dishes"
+                  },
+                  "items": [
+                     "crockpot:asparagus_soup",
+                     "crockpot:bacon_eggs",
+                     "crockpot:bone_stew",
+                     "crockpot:california_roll",
+                     "crockpot:candy",
+                     "crockpot:ceviche",
+                     "crockpot:fish_sticks",
+                     "crockpot:fish_tacos",
+                     "crockpot:flower_salad",
+                     "crockpot:fruit_medley",
+                     "crockpot:honey_ham",
+                     "crockpot:honey_nuggets",
+                     "crockpot:hot_chili",
+                     "crockpot:hot_cocoa",
+                     "crockpot:ice_cream",
+                     "crockpot:iced_tea",
+                     "crockpot:jammy_preserves",
+                     "crockpot:kabobs",
+                     "crockpot:meat_balls",
+                     "crockpot:monster_lasagna",
+                     "crockpot:perogies",
+                     "crockpot:potato_tornado",
+                     "crockpot:pow_cake",
+                     "crockpot:pumpkin_cookie",
+                     "crockpot:ratatouille",
+                     "crockpot:salsa",
+                     "crockpot:seafood_gumbo",
+                     "crockpot:surf_n_turf",
+                     "crockpot:taffy",
+                     "crockpot:tea",
+                     "crockpot:tropical_bouillabaisse",
+                     "crockpot:turkey_dinner",
+                     "crockpot:veg_stinger",
+                     "crockpot:watermelon_icle",
+                     "crockpot:pepper_popper",
+                     "crockpot:stuffed_eggplant",
+                     "crockpot:froggle_bunwich",
+                     "crockpot:bunny_stew",
+                     "crockpot:salmon_sushi",
+                     "crockpot:breakfast_skillet",
+                     "crockpot:mashed_potatoes",
+                     "crockpot:plain_omelette",
+                     "crockpot:scotch_egg",
+                     "crockpot:bone_soup",
+                     "crockpot:gazpacho",
+                     "crockpot:monster_tartare",
+                     "crockpot:moqueca",
+                     "crockpot:potato_souffle",
+                     "crockpot:mushy_cake",
+                     "crockpot:glow_berry_mousse",
+                     "crockpot:volt_goat_jelly",
+                     "crockpot:wet_goop",
+                     "crockpot:avaj"
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

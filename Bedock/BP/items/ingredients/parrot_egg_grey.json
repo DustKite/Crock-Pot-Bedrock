@@ -1,0 +1,20 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:parrot_egg_grey",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.ingredients"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:parrot_egg_grey"
+                }
+            },
+            "minecraft:max_stack_size": 16
+        }
+    }
+}

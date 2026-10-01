@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "crockpot:crock_pot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "result": {
+      "item": "crockpot:crock_pot",
+      "count": 1
+    },
+    "pattern": [
+      "BBB",
+      "BBB",
+      "SCS"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:stone"
+      },
+      "C": {
+        "tag": "minecraft:coals"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    }
+  }
+}

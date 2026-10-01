@@ -1,0 +1,317 @@
+{
+    "asparagus_soup": [
+        "asparagus_soup"
+    ],
+    "avaj": [
+        "avaj"
+    ],
+    "bacon_eggs": [
+        "bacon_eggs"
+    ],
+    "birdcage_hanging_lower": [
+        "birdcage"
+    ],
+    "birdcage_hanging_upper": [
+        "birdcage"
+    ],
+    "birdcage_lower": [
+        "birdcage"
+    ],
+    "birdcage_upper": [
+        "birdcage"
+    ],
+    "bone_soup": [
+        "bone_soup"
+    ],
+    "bone_stew": [
+        "bone_stew"
+    ],
+    "breakfast_skillet": [
+        "breakfast_skillet"
+    ],
+    "bunny_stew": [
+        "bunny_stew"
+    ],
+    "california_roll": [
+        "california_roll"
+    ],
+    "candy": [
+        "candy"
+    ],
+    "candy_1": [
+        "candy"
+    ],
+    "candy_2": [
+        "candy"
+    ],
+    "candy_3": [
+        "candy"
+    ],
+    "candy_4": [
+        "candy"
+    ],
+    "candy_5": [
+        "candy"
+    ],
+    "ceviche": [
+        "ceviche"
+    ],
+    "crock_pot": [
+        "crock_pot"
+    ],
+    "crock_pot_gui": [
+        "crock_pot"
+    ],
+    "crock_pot_lit": [
+        "crock_pot"
+    ],
+    "crock_pot_open": [
+        "crock_pot"
+    ],
+    "crock_pot_open_lit": [
+        "crock_pot"
+    ],
+    "fish_sticks": [
+        "fish_sticks"
+    ],
+    "fish_sticks_1": [
+        "fish_sticks"
+    ],
+    "fish_tacos": [
+        "fish_tacos"
+    ],
+    "flower_salad": [
+        "flower_salad"
+    ],
+    "froggle_bunwich": [
+        "froggle_bunwich"
+    ],
+    "fruit_medley": [
+        "fruit_medley"
+    ],
+    "fruit_medley_1": [
+        "fruit_medley_1"
+    ],
+    "fruit_medley_2": [
+        "fruit_medley_2"
+    ],
+    "gazpacho": [
+        "gazpacho"
+    ],
+    "gazpacho_1": [
+        "gazpacho_1"
+    ],
+    "gazpacho_2": [
+        "gazpacho_2"
+    ],
+    "glow_berry_mousse": [
+        "glow_berry_mousse"
+    ],
+    "honey_ham": [
+        "honey_ham"
+    ],
+    "honey_nuggets": [
+        "honey_nuggets"
+    ],
+    "hot_chili": [
+        "hot_chili"
+    ],
+    "hot_cocoa": [
+        "hot_cocoa"
+    ],
+    "hot_cocoa_1": [
+        "hot_cocoa_1"
+    ],
+    "hot_cocoa_2": [
+        "hot_cocoa_2"
+    ],
+    "iced_tea": [
+        "iced_tea"
+    ],
+    "iced_tea_1": [
+        "iced_tea_1"
+    ],
+    "iced_tea_2": [
+        "iced_tea_2"
+    ],
+    "ice_cream": [
+        "ice_cream"
+    ],
+    "jammy_preserves": [
+        "jammy_preserves"
+    ],
+    "kabobs": [
+        "kabobs"
+    ],
+    "kabobs_1": [
+        "kabobs"
+    ],
+    "kabobs_2": [
+        "kabobs"
+    ],
+    "mashed_potatoes": [
+        "mashed_potatoes"
+    ],
+    "mashed_potatoes_1": [
+        "mashed_potatoes"
+    ],
+    "mashed_potatoes_2": [
+        "mashed_potatoes"
+    ],
+    "mashed_potatoes_3": [
+        "mashed_potatoes"
+    ],
+    "meat_balls": [
+        "meat_balls"
+    ],
+    "monster_lasagna": [
+        "monster_lasagna"
+    ],
+    "monster_tartare": [
+        "monster_tartare"
+    ],
+    "moqueca": [
+        "moqueca"
+    ],
+    "mushy_cake": [
+        "mushy_cake"
+    ],
+    "pepper_popper": [
+        "pepper_popper"
+    ],
+    "perogies": [
+        "perogies"
+    ],
+    "plain_omelette": [
+        "plain_omelette"
+    ],
+    "portable_crock_pot": [
+        "portable_crock_pot"
+    ],
+    "portable_crock_pot_gui": [
+        "portable_crock_pot"
+    ],
+    "portable_crock_pot_lit": [
+        "portable_crock_pot"
+    ],
+    "portable_crock_pot_open": [
+        "portable_crock_pot"
+    ],
+    "portable_crock_pot_open_lit": [
+        "portable_crock_pot"
+    ],
+    "potato_souffle": [
+        "potato_souffle"
+    ],
+    "potato_souffle_1": [
+        "potato_souffle"
+    ],
+    "potato_souffle_2": [
+        "potato_souffle"
+    ],
+    "potato_souffle_3": [
+        "potato_souffle"
+    ],
+    "potato_tornado": [
+        "potato_tornado"
+    ],
+    "potato_tornado_1": [
+        "potato_tornado"
+    ],
+    "potato_tornado_2": [
+        "potato_tornado"
+    ],
+    "pow_cake": [
+        "pow_cake"
+    ],
+    "pumpkin_cookie": [
+        "pumpkin_cookie"
+    ],
+    "pumpkin_cookie_1": [
+        "pumpkin_cookie"
+    ],
+    "pumpkin_cookie_2": [
+        "pumpkin_cookie"
+    ],
+    "ratatouille": [
+        "ratatouille"
+    ],
+    "russian_soup": [
+        "russian_soup"
+    ],
+    "salmon_sushi": [
+        "salmon_sushi"
+    ],
+    "salmon_sushi_1": [
+        "salmon_sushi"
+    ],
+    "salmon_sushi_2": [
+        "salmon_sushi"
+    ],
+    "salsa": [
+        "salsa"
+    ],
+    "scotch_egg": [
+        "scotch_egg"
+    ],
+    "seafood_gumbo": [
+        "seafood_gumbo"
+    ],
+    "stuffed_eggplant": [
+        "stuffed_eggplant"
+    ],
+    "surf_n_turf": [
+        "surf_n_turf"
+    ],
+    "taffy": [
+        "taffy"
+    ],
+    "taffy_1": [
+        "taffy"
+    ],
+    "taffy_2": [
+        "taffy"
+    ],
+    "taffy_3": [
+        "taffy"
+    ],
+    "taffy_4": [
+        "taffy"
+    ],
+    "taffy_5": [
+        "taffy"
+    ],
+    "tea": [
+        "tea"
+    ],
+    "tea_1": [
+        "tea"
+    ],
+    "tea_2": [
+        "tea_2"
+    ],
+    "tropical_bouillabaisse": [
+        "tropical_bouillabaisse"
+    ],
+    "turkey_dinner": [
+        "turkey_dinner"
+    ],
+    "veg_stinger": [
+        "veg_stinger"
+    ],
+    "volt_goat_jelly": [
+        "volt_goat_jelly"
+    ],
+    "watermelon_icle": [
+        "watermelon_icle"
+    ],
+    "watermelon_icle_1": [
+        "watermelon_icle"
+    ],
+    "watermelon_icle_2": [
+        "watermelon_icle_2"
+    ],
+    "wet_goop": [
+        "wet_goop"
+    ]
+}

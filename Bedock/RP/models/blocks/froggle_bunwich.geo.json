@@ -1,0 +1,115 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.froggle_bunwich",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [32, 4], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [32, 5], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [32, 6], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [32, 7], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-2.25, 3, -7],
+							"size": [8, 0, 14],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [12, 0], "uv_size": [8, 14], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [12, 28], "uv_size": [8, -14], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-1.5, 3.2, -7],
+							"size": [7, 0, 14],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [20, 0], "uv_size": [7, 14], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [20, 28], "uv_size": [7, -14], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-0.75, 3.4, -7],
+							"size": [6, 0, 14],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [0, 0], "uv_size": [14, 0], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [0, 24], "uv_size": [6, 14], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [6, 38], "uv_size": [6, -14], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-2.5, 1, -6],
+							"size": [5, 2, 12],
+							"uv": {
+								"north": { "uv": [32, 12], "uv_size": [5, 2], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [32, 0], "uv_size": [12, 2], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [32, 14], "uv_size": [5, 2], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [32, 2], "uv_size": [12, 2], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [27, 0], "uv_size": [5, 12], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [27, 24], "uv_size": [5, -12], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-2.5, 3, -6],
+							"size": [5, 1, 12],
+							"pivot": [-2.5, 3, 0],
+							"rotation": [0, 0, -22.5],
+							"uv": {
+								"north": { "uv": [32, 16], "uv_size": [5, 1], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [32, 8], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [32, 17], "uv_size": [5, 1], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [32, 9], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [27, 24], "uv_size": [5, 12], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [12, 40], "uv_size": [5, -12], "material_instance": "froggle_bunwich" }
+							}
+						},
+						{
+							"origin": [-1.5, 4, -6],
+							"size": [3, 1, 12],
+							"pivot": [-2.5, 3, 0],
+							"rotation": [0, 0, -22.5],
+							"uv": {
+								"north": { "uv": [23, 28], "uv_size": [3, 1], "material_instance": "froggle_bunwich" },
+								"east": { "uv": [32, 10], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"south": { "uv": [23, 29], "uv_size": [3, 1], "material_instance": "froggle_bunwich" },
+								"west": { "uv": [32, 11], "uv_size": [12, 1], "material_instance": "froggle_bunwich" },
+								"up": { "uv": [17, 28], "uv_size": [3, 12], "material_instance": "froggle_bunwich" },
+								"down": { "uv": [20, 40], "uv_size": [3, -12], "material_instance": "froggle_bunwich" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

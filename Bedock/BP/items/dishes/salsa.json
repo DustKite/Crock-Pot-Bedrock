@@ -1,0 +1,30 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:salsa",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.dishes"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:salsa"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 7,
+                "saturation_modifier": 0.8,
+                "using_converts_to": "minecraft:bowl"
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "use_duration": 1.2,
+                "movement_modifier": 0.4
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.potato_souffle_1",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [0.25, 5, -7.25],
+							"size": [7, 4, 7],
+							"uv": {
+								"north": { "uv": [18, 16], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"east": { "uv": [0, 20], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"south": { "uv": [20, 0], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"west": { "uv": [20, 4], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "material_instance": "potato_souffle" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "material_instance": "potato_souffle" }
+							}
+						},
+						{
+							"origin": [0.25, 9, -7.25],
+							"size": [7, -1, 7],
+							"uv": {
+								"north": { "uv": [20, 8], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"east": { "uv": [20, 9], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"south": { "uv": [20, 10], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"west": { "uv": [20, 11], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"up": { "uv": [7, 0], "uv_size": [7, 7], "material_instance": "potato_souffle" },
+								"down": { "uv": [7, 14], "uv_size": [7, -7], "material_instance": "potato_souffle" }
+							}
+						},
+						{
+							"origin": [0.75, 0, -6.75],
+							"size": [6, 5, 6],
+							"uv": {
+								"north": { "uv": [6, 14], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"east": { "uv": [14, 6], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"south": { "uv": [14, 11], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"west": { "uv": [12, 16], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"up": { "uv": [0, 14], "uv_size": [6, 6], "material_instance": "potato_souffle" },
+								"down": { "uv": [14, 6], "uv_size": [6, -6], "material_instance": "potato_souffle" }
+							}
+						},
+						{
+							"origin": [-6.25, 5, -0.25],
+							"size": [7, 4, 7],
+							"pivot": [-3.75, 5.5, 3.75],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 20], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"east": { "uv": [20, 0], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"south": { "uv": [20, 4], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"west": { "uv": [18, 16], "uv_size": [7, 4], "material_instance": "potato_souffle" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "uv_rotation": 270, "material_instance": "potato_souffle" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "uv_rotation": 90, "material_instance": "potato_souffle" }
+							}
+						},
+						{
+							"origin": [-6.25, 9, -0.25],
+							"size": [7, -1, 7],
+							"pivot": [-3.75, 5.5, 3.75],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [20, 8], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"east": { "uv": [20, 9], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"south": { "uv": [20, 10], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"west": { "uv": [20, 11], "uv_size": [7, 1], "material_instance": "potato_souffle" },
+								"up": { "uv": [7, 0], "uv_size": [7, 7], "material_instance": "potato_souffle" },
+								"down": { "uv": [7, 14], "uv_size": [7, -7], "material_instance": "potato_souffle" }
+							}
+						},
+						{
+							"origin": [-5.75, 0, 0.25],
+							"size": [6, 5, 6],
+							"pivot": [-3.75, 5.5, 3.75],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [6, 14], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"east": { "uv": [14, 6], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"south": { "uv": [14, 11], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"west": { "uv": [12, 16], "uv_size": [6, 5], "material_instance": "potato_souffle" },
+								"up": { "uv": [0, 14], "uv_size": [6, 6], "material_instance": "potato_souffle" },
+								"down": { "uv": [14, 6], "uv_size": [6, -6], "material_instance": "potato_souffle" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

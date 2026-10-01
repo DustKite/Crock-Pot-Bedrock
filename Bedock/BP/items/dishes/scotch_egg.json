@@ -1,0 +1,29 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:scotch_egg",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.dishes"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:scotch_egg"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 8,
+                "saturation_modifier": 1.0
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "use_duration": 1.6,
+                "movement_modifier": 0.4
+            }
+        }
+    }
+}

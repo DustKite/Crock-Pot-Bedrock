@@ -1,0 +1,95 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.scotch_egg",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [17, 21], "uv_size": [12, 1], "material_instance": "scotch_egg" },
+								"east": { "uv": [17, 22], "uv_size": [12, 1], "material_instance": "scotch_egg" },
+								"south": { "uv": [12, 23], "uv_size": [12, 1], "material_instance": "scotch_egg" },
+								"west": { "uv": [0, 24], "uv_size": [12, 1], "material_instance": "scotch_egg" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "scotch_egg" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "scotch_egg" }
+							}
+						},
+						{
+							"origin": [-4.75, 1, -2],
+							"size": [5, 3, 7],
+							"pivot": [-2.25, 2.5, 1.5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [19, 15], "uv_size": [5, 3], "material_instance": "scotch_egg" },
+								"east": { "uv": [19, 0], "uv_size": [7, 3], "material_instance": "scotch_egg" },
+								"south": { "uv": [19, 12], "uv_size": [5, 3], "material_instance": "scotch_egg" },
+								"west": { "uv": [19, 3], "uv_size": [7, 3], "material_instance": "scotch_egg" },
+								"up": { "uv": [12, 0], "uv_size": [7, 5], "uv_rotation": 90, "material_instance": "scotch_egg" },
+								"down": { "uv": [12, 10], "uv_size": [7, -5], "uv_rotation": 270, "material_instance": "scotch_egg" }
+							}
+						},
+						{
+							"origin": [-3.25, 3.25, -0.5],
+							"size": [2, 1, 2],
+							"pivot": [-2.25, 2.5, 1.5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [24, 17], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"east": { "uv": [17, 20], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"south": { "uv": [16, 24], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"west": { "uv": [24, 16], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"up": { "uv": [12, 24], "uv_size": [2, 2], "uv_rotation": 90, "material_instance": "scotch_egg" },
+								"down": { "uv": [24, 14], "uv_size": [2, -2], "uv_rotation": 270, "material_instance": "scotch_egg" }
+							}
+						},
+						{
+							"origin": [-0.25, 1, -5],
+							"size": [5, 3, 7],
+							"pivot": [2.25, 2.5, -1.5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [12, 20], "uv_size": [5, 3], "material_instance": "scotch_egg" },
+								"east": { "uv": [19, 6], "uv_size": [7, 3], "material_instance": "scotch_egg" },
+								"south": { "uv": [19, 18], "uv_size": [5, 3], "material_instance": "scotch_egg" },
+								"west": { "uv": [19, 9], "uv_size": [7, 3], "material_instance": "scotch_egg" },
+								"up": { "uv": [12, 10], "uv_size": [7, 5], "uv_rotation": 90, "material_instance": "scotch_egg" },
+								"down": { "uv": [12, 20], "uv_size": [7, -5], "uv_rotation": 270, "material_instance": "scotch_egg" }
+							}
+						},
+						{
+							"origin": [1.25, 3.25, -3.5],
+							"size": [2, 1, 2],
+							"pivot": [2.25, 2.5, -1.5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [20, 24], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"east": { "uv": [18, 24], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"south": { "uv": [24, 18], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"west": { "uv": [24, 19], "uv_size": [2, 1], "material_instance": "scotch_egg" },
+								"up": { "uv": [14, 24], "uv_size": [2, 2], "uv_rotation": 90, "material_instance": "scotch_egg" },
+								"down": { "uv": [24, 16], "uv_size": [2, -2], "uv_rotation": 270, "material_instance": "scotch_egg" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

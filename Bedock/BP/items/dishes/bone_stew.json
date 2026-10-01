@@ -1,0 +1,30 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:bone_stew",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.dishes"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:bone_stew"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 20,
+                "saturation_modifier": 0.4,
+                "using_converts_to": "minecraft:bowl"
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "use_duration": 2.4,
+                "movement_modifier": 0.4
+            }
+        }
+    }
+}

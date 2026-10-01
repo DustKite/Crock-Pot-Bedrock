@@ -1,0 +1,87 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mushy_cake",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [32, 0], "uv_size": [12, 1], "material_instance": "mushy_cake" },
+								"east": { "uv": [32, 1], "uv_size": [12, 1], "material_instance": "mushy_cake" },
+								"south": { "uv": [32, 2], "uv_size": [12, 1], "material_instance": "mushy_cake" },
+								"west": { "uv": [32, 3], "uv_size": [12, 1], "material_instance": "mushy_cake" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "mushy_cake" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "mushy_cake" }
+							}
+						},
+						{
+							"origin": [-5, 1, -5],
+							"size": [10, 5, 10],
+							"uv": {
+								"north": { "uv": [22, 0], "uv_size": [10, 5], "material_instance": "mushy_cake" },
+								"east": { "uv": [22, 5], "uv_size": [10, 5], "material_instance": "mushy_cake" },
+								"south": { "uv": [22, 10], "uv_size": [10, 5], "material_instance": "mushy_cake" },
+								"west": { "uv": [22, 15], "uv_size": [10, 5], "material_instance": "mushy_cake" },
+								"up": { "uv": [12, 0], "uv_size": [10, 10], "material_instance": "mushy_cake" },
+								"down": { "uv": [12, 20], "uv_size": [10, -10], "material_instance": "mushy_cake" }
+							}
+						},
+						{
+							"origin": [-4, 6, -4],
+							"size": [8, 2, 8],
+							"uv": {
+								"north": { "uv": [28, 24], "uv_size": [8, 2], "material_instance": "mushy_cake" },
+								"east": { "uv": [28, 26], "uv_size": [8, 2], "material_instance": "mushy_cake" },
+								"south": { "uv": [0, 30], "uv_size": [8, 2], "material_instance": "mushy_cake" },
+								"west": { "uv": [30, 28], "uv_size": [8, 2], "material_instance": "mushy_cake" },
+								"up": { "uv": [12, 20], "uv_size": [8, 8], "material_instance": "mushy_cake" },
+								"down": { "uv": [20, 28], "uv_size": [8, -8], "material_instance": "mushy_cake" }
+							}
+						},
+						{
+							"origin": [-3, 8, -3],
+							"size": [6, 4, 6],
+							"uv": {
+								"north": { "uv": [12, 28], "uv_size": [6, 4], "material_instance": "mushy_cake" },
+								"east": { "uv": [18, 28], "uv_size": [6, 4], "material_instance": "mushy_cake" },
+								"south": { "uv": [28, 20], "uv_size": [6, 4], "material_instance": "mushy_cake" },
+								"west": { "uv": [24, 28], "uv_size": [6, 4], "material_instance": "mushy_cake" },
+								"up": { "uv": [0, 24], "uv_size": [6, 6], "material_instance": "mushy_cake" },
+								"down": { "uv": [6, 30], "uv_size": [6, -6], "material_instance": "mushy_cake" }
+							}
+						},
+						{
+							"origin": [-2, 12, -2],
+							"size": [4, 1, 4],
+							"uv": {
+								"north": { "uv": [0, 32], "uv_size": [4, 1], "material_instance": "mushy_cake" },
+								"east": { "uv": [4, 32], "uv_size": [4, 1], "material_instance": "mushy_cake" },
+								"south": { "uv": [32, 4], "uv_size": [4, 1], "material_instance": "mushy_cake" },
+								"west": { "uv": [32, 5], "uv_size": [4, 1], "material_instance": "mushy_cake" },
+								"up": { "uv": [8, 30], "uv_size": [4, 4], "material_instance": "mushy_cake" },
+								"down": { "uv": [30, 34], "uv_size": [4, -4], "material_instance": "mushy_cake" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "crockpot:pot_upgrade_smithing_template"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "result": {
+      "item": "crockpot:pot_upgrade_smithing_template",
+      "count": 2
+    },
+    "pattern": [
+      "GSG",
+      "GCG",
+      "GGG"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:copper_block"
+      },
+      "G": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "crockpot:pot_upgrade_smithing_template"
+      }
+    }
+  }
+}

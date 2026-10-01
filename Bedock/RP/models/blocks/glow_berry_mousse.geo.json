@@ -1,0 +1,99 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.glow_berry_mousse",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-3, 0, -3],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": { "uv": [22, 6], "uv_size": [6, 2], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [22, 8], "uv_size": [6, 2], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [22, 10], "uv_size": [6, 2], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [15, 23], "uv_size": [6, 2], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [8, 14], "uv_size": [6, 6], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [14, 20], "uv_size": [6, -6], "material_instance": "glow_berry_mousse" }
+							}
+						},
+						{
+							"origin": [-4, 2, -4],
+							"size": [8, 3, 8],
+							"uv": {
+								"north": { "uv": [15, 20], "uv_size": [8, 3], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [20, 17], "uv_size": [8, 3], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [22, 0], "uv_size": [8, 3], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [22, 3], "uv_size": [8, 3], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [0, 0], "uv_size": [8, 8], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [0, 16], "uv_size": [8, -8], "material_instance": "glow_berry_mousse" }
+							}
+						},
+						{
+							"origin": [-2.5, 2, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": { "uv": [23, 22], "uv_size": [5, 1], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [25, 16], "uv_size": [5, 1], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [17, 25], "uv_size": [5, 1], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [22, 25], "uv_size": [5, 1], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [0, 20], "uv_size": [5, 5], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [5, 25], "uv_size": [5, -5], "material_instance": "glow_berry_mousse" }
+							}
+						},
+						{
+							"origin": [-3.5, 3, -3.5],
+							"size": [7, 4, 7],
+							"uv": {
+								"north": { "uv": [15, 0], "uv_size": [7, 4], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [15, 4], "uv_size": [7, 4], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [15, 8], "uv_size": [7, 4], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [0, 16], "uv_size": [7, 4], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [8, 0], "uv_size": [7, 7], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [8, 14], "uv_size": [7, -7], "material_instance": "glow_berry_mousse" }
+							}
+						},
+						{
+							"origin": [-2.5, 7, -2.5],
+							"size": [5, 2, 5],
+							"uv": {
+								"north": { "uv": [15, 12], "uv_size": [5, 2], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [23, 20], "uv_size": [5, 2], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [21, 23], "uv_size": [5, 2], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [0, 25], "uv_size": [5, 2], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [10, 20], "uv_size": [5, 5], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [20, 17], "uv_size": [5, -5], "material_instance": "glow_berry_mousse" }
+							}
+						},
+						{
+							"origin": [-1.5, 9, -1.5],
+							"size": [3, 2, 3],
+							"uv": {
+								"north": { "uv": [11, 25], "uv_size": [3, 2], "material_instance": "glow_berry_mousse" },
+								"east": { "uv": [25, 12], "uv_size": [3, 2], "material_instance": "glow_berry_mousse" },
+								"south": { "uv": [14, 25], "uv_size": [3, 2], "material_instance": "glow_berry_mousse" },
+								"west": { "uv": [25, 14], "uv_size": [3, 2], "material_instance": "glow_berry_mousse" },
+								"up": { "uv": [5, 25], "uv_size": [3, 3], "material_instance": "glow_berry_mousse" },
+								"down": { "uv": [8, 28], "uv_size": [3, -3], "material_instance": "glow_berry_mousse" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

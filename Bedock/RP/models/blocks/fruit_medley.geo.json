@@ -1,0 +1,103 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fruit_medley",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-2, 1, -2],
+							"size": [4, 1, 4],
+							"uv": {
+								"north": { "uv": [15, 24], "uv_size": [4, 1], "material_instance": "fruit_medley" },
+								"east": { "uv": [19, 24], "uv_size": [4, 1], "material_instance": "fruit_medley" },
+								"south": { "uv": [23, 24], "uv_size": [4, 1], "material_instance": "fruit_medley" },
+								"west": { "uv": [0, 25], "uv_size": [4, 1], "material_instance": "fruit_medley" },
+								"up": { "uv": [22, 10], "uv_size": [4, 4], "material_instance": "fruit_medley" },
+								"down": { "uv": [22, 18], "uv_size": [4, -4], "material_instance": "fruit_medley" }
+							}
+						},
+						{
+							"origin": [-3, 2, -3],
+							"size": [6, 9, 6],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [6, 9], "material_instance": "fruit_medley" },
+								"east": { "uv": [6, 0], "uv_size": [6, 9], "material_instance": "fruit_medley" },
+								"south": { "uv": [0, 9], "uv_size": [6, 9], "material_instance": "fruit_medley" },
+								"west": { "uv": [6, 9], "uv_size": [6, 9], "material_instance": "fruit_medley" },
+								"up": { "uv": [0, 18], "uv_size": [6, 6], "material_instance": "fruit_medley" },
+								"down": { "uv": [6, 24], "uv_size": [6, -6], "material_instance": "fruit_medley" }
+							}
+						},
+						{
+							"origin": [-2.5, 0, -2.5],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": { "uv": [15, 23], "uv_size": [5, 1], "material_instance": "fruit_medley" },
+								"east": { "uv": [20, 23], "uv_size": [5, 1], "material_instance": "fruit_medley" },
+								"south": { "uv": [0, 24], "uv_size": [5, 1], "material_instance": "fruit_medley" },
+								"west": { "uv": [5, 24], "uv_size": [5, 1], "material_instance": "fruit_medley" },
+								"up": { "uv": [12, 18], "uv_size": [5, 5], "material_instance": "fruit_medley" },
+								"down": { "uv": [17, 23], "uv_size": [5, -5], "material_instance": "fruit_medley" }
+							}
+						},
+						{
+							"origin": [-2.5, 3, -2.5],
+							"size": [5, 9, 5],
+							"uv": {
+								"north": { "uv": [12, 0], "uv_size": [5, 9], "material_instance": "fruit_medley" },
+								"east": { "uv": [12, 9], "uv_size": [5, 9], "material_instance": "fruit_medley" },
+								"south": { "uv": [17, 0], "uv_size": [5, 9], "material_instance": "fruit_medley" },
+								"west": { "uv": [17, 9], "uv_size": [5, 9], "material_instance": "fruit_medley" },
+								"up": { "uv": [22, 0], "uv_size": [5, 5], "material_instance": "fruit_medley" },
+								"down": { "uv": [22, 10], "uv_size": [5, -5], "material_instance": "fruit_medley" }
+							}
+						},
+						{
+							"origin": [2, 11, 0.25],
+							"size": [0, 5, 3],
+							"pivot": [2, 12, 1.75],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [0, 5], "material_instance": "fruit_medley" },
+								"east": { "uv": [12, 23], "uv_size": [3, 5], "material_instance": "fruit_medley" },
+								"south": { "uv": [0, 0], "uv_size": [0, 5], "material_instance": "fruit_medley" },
+								"west": { "uv": [22, 18], "uv_size": [3, 5], "material_instance": "fruit_medley" },
+								"up": { "uv": [0, 0], "uv_size": [0, 3], "uv_rotation": 180, "material_instance": "fruit_medley" },
+								"down": { "uv": [0, 3], "uv_size": [0, -3], "uv_rotation": 180, "material_instance": "fruit_medley" }
+							}
+						},
+						{
+							"origin": [0.5, 11, 1.75],
+							"size": [3, 5, 0],
+							"pivot": [2, 12, 1.75],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [22, 18], "uv_size": [3, 5], "material_instance": "fruit_medley" },
+								"east": { "uv": [0, 0], "uv_size": [0, 5], "material_instance": "fruit_medley" },
+								"south": { "uv": [12, 23], "uv_size": [3, 5], "material_instance": "fruit_medley" },
+								"west": { "uv": [0, 0], "uv_size": [0, 5], "material_instance": "fruit_medley" },
+								"up": { "uv": [0, 0], "uv_size": [0, 3], "uv_rotation": 270, "material_instance": "fruit_medley" },
+								"down": { "uv": [0, 3], "uv_size": [0, -3], "uv_rotation": 90, "material_instance": "fruit_medley" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

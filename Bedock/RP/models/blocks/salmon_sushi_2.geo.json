@@ -1,0 +1,123 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.salmon_sushi_2",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [12, 18], "uv_size": [12, 1], "material_instance": "salmon_sushi" },
+								"east": { "uv": [18, 12], "uv_size": [12, 1], "material_instance": "salmon_sushi" },
+								"south": { "uv": [18, 13], "uv_size": [12, 1], "material_instance": "salmon_sushi" },
+								"west": { "uv": [18, 14], "uv_size": [12, 1], "material_instance": "salmon_sushi" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "salmon_sushi" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-6, 1, 2.72854],
+							"size": [6, 3, 3],
+							"pivot": [-2.5, 2.5, 4.22854],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [12, 3], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [18, 15], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [12, 0], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [12, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [12, 6], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [12, 18], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-0.5, 1, 1.42854],
+							"size": [6, 3, 3],
+							"pivot": [2.5, 2.5, 3.37854],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [15, 9], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [15, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [15, 6], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [18, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [15, 12], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [18, 6], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-0.5, 1, -2.07146],
+							"size": [6, 3, 3],
+							"pivot": [2.5, 2.5, -0.12146],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [15, 9], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [15, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [15, 6], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [18, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [15, 12], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [18, 6], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-6, 1, -0.77146],
+							"size": [6, 3, 3],
+							"pivot": [-2.5, 2.5, 0.72854],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [12, 3], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [18, 15], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [12, 0], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [12, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [12, 6], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [12, 18], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-0.5, 1, -5.57146],
+							"size": [6, 3, 3],
+							"pivot": [2.5, 2.5, -3.62146],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [15, 9], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [15, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [15, 6], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [18, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [15, 12], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [18, 6], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						},
+						{
+							"origin": [-6, 1, -4.27146],
+							"size": [6, 3, 3],
+							"pivot": [-2.5, 2.5, -2.77146],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [12, 3], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"east": { "uv": [18, 15], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"south": { "uv": [12, 0], "uv_size": [6, 3], "material_instance": "salmon_sushi" },
+								"west": { "uv": [12, 19], "uv_size": [3, 3], "material_instance": "salmon_sushi" },
+								"up": { "uv": [12, 6], "uv_size": [3, 6], "uv_rotation": 90, "material_instance": "salmon_sushi" },
+								"down": { "uv": [12, 18], "uv_size": [3, -6], "uv_rotation": 270, "material_instance": "salmon_sushi" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "crockpot:cooked_hoglin_nose_furnace_hoglin_nose"
+    },
+    "tags": [
+      "campfire"
+    ],
+    "input": "crockpot:hoglin_nose",
+    "output": "crockpot:cooked_hoglin_nose"
+  }
+}

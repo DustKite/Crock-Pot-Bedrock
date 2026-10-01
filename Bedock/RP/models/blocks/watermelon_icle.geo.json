@@ -1,0 +1,93 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.watermelon_icle",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [19, 12], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [19, 13], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [19, 14], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [19, 15], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "watermelon_icle" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "watermelon_icle" }
+							}
+						},
+						{
+							"origin": [-2, 1, 0.5],
+							"size": [3, 1, 2],
+							"uv": {
+								"north": { "uv": [20, 20], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [15, 21], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [12, 21], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [17, 21], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [20, 4], "uv_size": [3, 2], "material_instance": "watermelon_icle" },
+								"down": { "uv": [20, 8], "uv_size": [3, -2], "material_instance": "watermelon_icle" }
+							}
+						},
+						{
+							"origin": [-5, 1, -2],
+							"size": [8, 2, 5],
+							"pivot": [0, 1, -2],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": { "uv": [12, 18], "uv_size": [8, 2], "material_instance": "watermelon_icle" },
+								"east": { "uv": [19, 16], "uv_size": [5, 2], "material_instance": "watermelon_icle" },
+								"south": { "uv": [19, 10], "uv_size": [8, 2], "material_instance": "watermelon_icle" },
+								"west": { "uv": [20, 0], "uv_size": [5, 2], "material_instance": "watermelon_icle" },
+								"up": { "uv": [12, 0], "uv_size": [8, 5], "material_instance": "watermelon_icle" },
+								"down": { "uv": [12, 10], "uv_size": [8, -5], "material_instance": "watermelon_icle" }
+							}
+						},
+						{
+							"origin": [-4.5, 1.5, -1.5],
+							"size": [7, 1, 4],
+							"pivot": [0, 1, -2],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": { "uv": [20, 2], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [20, 8], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [20, 3], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [20, 9], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [12, 10], "uv_size": [7, 4], "material_instance": "watermelon_icle" },
+								"down": { "uv": [12, 18], "uv_size": [7, -4], "material_instance": "watermelon_icle" }
+							}
+						},
+						{
+							"origin": [2.5, 1.5, 0],
+							"size": [4, 1, 1],
+							"pivot": [0, 1, -2],
+							"rotation": [22.5, 0, 0],
+							"uv": {
+								"north": { "uv": [12, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [19, 21], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [16, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [20, 21], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [20, 18], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"down": { "uv": [20, 20], "uv_size": [4, -1], "material_instance": "watermelon_icle" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

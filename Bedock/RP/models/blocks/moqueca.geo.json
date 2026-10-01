@@ -1,0 +1,99 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.moqueca",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-5, 0, -5],
+							"size": [10, 7, 10],
+							"uv": {
+								"north": { "uv": [10, 18], "uv_size": [10, 7], "material_instance": "moqueca" },
+								"east": { "uv": [19, 0], "uv_size": [10, 7], "material_instance": "moqueca" },
+								"south": { "uv": [19, 7], "uv_size": [10, 7], "material_instance": "moqueca" },
+								"west": { "uv": [0, 20], "uv_size": [10, 7], "material_instance": "moqueca" },
+								"up": { "uv": [0, 0], "uv_size": [10, 10], "material_instance": "moqueca" },
+								"down": { "uv": [0, 20], "uv_size": [10, -10], "material_instance": "moqueca" }
+							}
+						},
+						{
+							"origin": [-4.5, 7, -4.5],
+							"size": [9, 1, 9],
+							"uv": {
+								"north": { "uv": [29, 0], "uv_size": [9, 1], "material_instance": "moqueca" },
+								"east": { "uv": [29, 1], "uv_size": [9, 1], "material_instance": "moqueca" },
+								"south": { "uv": [29, 2], "uv_size": [9, 1], "material_instance": "moqueca" },
+								"west": { "uv": [29, 3], "uv_size": [9, 1], "material_instance": "moqueca" },
+								"up": { "uv": [10, 0], "uv_size": [9, 9], "material_instance": "moqueca" },
+								"down": { "uv": [10, 18], "uv_size": [9, -9], "material_instance": "moqueca" }
+							}
+						},
+						{
+							"origin": [-3.5, 8, -3.5],
+							"size": [7, -7, 7],
+							"uv": {
+								"north": { "uv": [20, 14], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"east": { "uv": [20, 21], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"south": { "uv": [10, 25], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"west": { "uv": [0, 27], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"up": { "uv": [27, 14], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"down": { "uv": [27, 28], "uv_size": [7, -7], "material_instance": "moqueca" }
+							}
+						},
+						{
+							"origin": [5, 5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [17, 25], "uv_size": [1, 1], "material_instance": "moqueca" },
+								"east": { "uv": [29, 4], "uv_size": [4, 1], "material_instance": "moqueca" },
+								"south": { "uv": [18, 25], "uv_size": [1, 1], "material_instance": "moqueca" },
+								"west": { "uv": [29, 5], "uv_size": [4, 1], "material_instance": "moqueca" },
+								"up": { "uv": [19, 14], "uv_size": [1, 4], "material_instance": "moqueca" },
+								"down": { "uv": [7, 31], "uv_size": [1, -4], "material_instance": "moqueca" }
+							}
+						},
+						{
+							"origin": [-6, 5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [19, 25], "uv_size": [1, 1], "material_instance": "moqueca" },
+								"east": { "uv": [29, 6], "uv_size": [4, 1], "material_instance": "moqueca" },
+								"south": { "uv": [17, 26], "uv_size": [1, 1], "material_instance": "moqueca" },
+								"west": { "uv": [29, 7], "uv_size": [4, 1], "material_instance": "moqueca" },
+								"up": { "uv": [8, 27], "uv_size": [1, 4], "material_instance": "moqueca" },
+								"down": { "uv": [9, 31], "uv_size": [1, -4], "material_instance": "moqueca" }
+							}
+						},
+						{
+							"origin": [-3.5, 7.25, -3.5],
+							"size": [7, 0, 7],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
+								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
+								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
+								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
+								"up": { "uv": [17, 28], "uv_size": [7, 7], "material_instance": "moqueca" },
+								"down": { "uv": [24, 35], "uv_size": [7, -7], "material_instance": "moqueca" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

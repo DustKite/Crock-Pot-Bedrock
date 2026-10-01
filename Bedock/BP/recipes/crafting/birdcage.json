@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "crockpot:birdcage"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "result": {
+      "item": "crockpot:birdcage",
+      "count": 1
+    },
+    "pattern": [
+      "NNN",
+      "N N",
+      "III"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:gold_ingot"
+      },
+      "N": {
+        "item": "minecraft:gold_nugget"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:asparagus_soup",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.dishes"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:asparagus_soup"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": true,
+                "nutrition": 4,
+                "saturation_modifier": 0.3,
+                "using_converts_to": "minecraft:bowl"
+            },
+            "minecraft:use_animation": "drink",
+            "minecraft:use_modifiers": {
+                "use_duration": 1.2,
+                "movement_modifier": 0.4
+            }
+        }
+    }
+}
