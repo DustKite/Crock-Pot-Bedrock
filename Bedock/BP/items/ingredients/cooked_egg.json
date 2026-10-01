@@ -14,6 +14,12 @@
                     "default": "crockpot:cooked_egg"
                 }
             },
+            "minecraft:tags": {
+                "tags": [
+                    "crockpot:is_cooked_egg",
+                    "farmersdelight:is_cooked_egg"
+                ]
+            },
             "minecraft:food": {
                 "can_always_eat": false,
                 "nutrition": 3,

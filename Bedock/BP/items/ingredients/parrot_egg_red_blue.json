@@ -14,6 +14,12 @@
                     "default": "crockpot:parrot_egg_red_blue"
                 }
             },
+            "minecraft:tags": {
+                "tags": [
+                    "crockpot:parrot_egg",
+                    "minecraft:egg"
+                ]
+            },
             "minecraft:max_stack_size": 16
         }
     }

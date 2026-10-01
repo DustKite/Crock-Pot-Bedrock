@@ -194,8 +194,8 @@
     "crockpot:parrot_egg_blue": {
       "textures": "textures/items/crockpot/parrot_egg_blue"
     },
-    "crockpot:parrot_egg_gray": {
-      "textures": "textures/items/crockpot/parrot_egg_gray"
+    "crockpot:parrot_egg_grey": {
+      "textures": "textures/items/crockpot/parrot_egg_grey"
     },
     "crockpot:parrot_egg_green": {
       "textures": "textures/items/crockpot/parrot_egg_green"

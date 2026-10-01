@@ -1,16 +1,3 @@
-export const FOOD_CATEGORIES = {
-    MEAT: { key: "item.crockpot.food_category_meat", color: "§d" },
-    MONSTER: { key: "item.crockpot.food_category_monster", color: "§5" },
-    FISH: { key: "item.crockpot.food_category_fish", color: "§9" },
-    EGG: { key: "item.crockpot.food_category_egg", color: "§3" },
-    FRUIT: { key: "item.crockpot.food_category_fruit", color: "§6" },
-    VEGGIE: { key: "item.crockpot.food_category_veggie", color: "§a" },
-    DAIRY: { key: "item.crockpot.food_category_dairy", color: "§b" },
-    SWEETENER: { key: "item.crockpot.food_category_sweetener", color: "§e" },
-    FROZEN: { key: "item.crockpot.food_category_frozen", color: "§b" },
-    INEDIBLE: { key: "item.crockpot.food_category_inedible", color: "§7" }
-};
-
 export const FOOD_VALUES = {
 
     "minecraft:beef": { MEAT: 1 },
@@ -34,12 +21,12 @@ export const FOOD_VALUES = {
     "minecraft:crimson_fungus": { VEGGIE: 0.5, MONSTER: 1 },
     "minecraft:warped_fungus": { VEGGIE: 0.5, MONSTER: 1 },
 
-    "minecraft:cod": { "MEAT": 0.5, "FISH": 0.5 },
-    "minecraft:cooked_cod": { "MEAT": 0.5, "FISH": 0.5 },
-    "minecraft:salmon": { "MEAT": 0.5, "FISH": 1 },
-    "minecraft:cooked_salmon": { "MEAT": 0.5, "FISH": 1 },
-    "minecraft:tropical_fish": { "FISH": 1 },
-    "minecraft:pufferfish": { "FISH": 1, "MONSTER": 0.5 },
+    "minecraft:cod": { MEAT: 0.5, FISH: 0.5 },
+    "minecraft:cooked_cod": { MEAT: 0.5, FISH: 0.5 },
+    "minecraft:salmon": { MEAT: 0.5, FISH: 1 },
+    "minecraft:cooked_salmon": { MEAT: 0.5, FISH: 1 },
+    "minecraft:tropical_fish": { FISH: 1 },
+    "minecraft:pufferfish": { FISH: 0.5, MONSTER: 1 },
 
     "minecraft:egg": { EGG: 1 },
     "crockpot:cooked_egg": { EGG: 1 },
@@ -101,12 +88,12 @@ export const FOOD_VALUES = {
 };
 
 export const TAG_VALUES = {
+    "minecraft:egg": { EGG: 1 },
     "c:berries": { FRUIT: 0.5 },
     "c:crab_meats": { FISH: 0.5, MEAT: 0.5 },
     "c:butter": { DAIRY: 1 },
     "c:milk": { DAIRY: 1 },
     "c:bottles/milk": { DAIRY: 1 },
-    "minecraft:egg": { EGG: 1 },
     "c:cooked_eggs": { EGG: 1 },
     "c:fried_eggs": { EGG: 1 },
     "c:foods/eggs": { EGG: 1 },

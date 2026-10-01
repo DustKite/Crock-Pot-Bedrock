@@ -10,7 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 import { EquipmentSlot, StartupEvent, system, world } from "@minecraft/server";
 import { EventAPI } from "../lib/EventAPI";
-import { FOOD_CATEGORIES, getItemFoodValues } from "../data/FoodValuesData";
+import { getItemFoodValues } from "../data/FoodValuesData";
+
+export const FOOD_CATEGORIES = {
+    MEAT: { key: "item.crockpot:food_category_meat", color: "§d" },
+    MONSTER: { key: "item.crockpot:food_category_monster", color: "§5" },
+    FISH: { key: "item.crockpot:food_category_fish", color: "§9" },
+    EGG: { key: "item.crockpot:food_category_egg", color: "§3" },
+    FRUIT: { key: "item.crockpot:food_category_fruit", color: "§6" },
+    VEGGIE: { key: "item.crockpot:food_category_veggie", color: "§a" },
+    DAIRY: { key: "item.crockpot:food_category_dairy", color: "§b" },
+    SWEETENER: { key: "item.crockpot:food_category_sweetener", color: "§e" },
+    FROZEN: { key: "item.crockpot:food_category_frozen", color: "§b" },
+    INEDIBLE: { key: "item.crockpot:food_category_inedible", color: "§7" }
+};
 
 function formatFoodLore(values) {
     const rawtext = [];
@@ -23,7 +36,7 @@ function formatFoodLore(values) {
         if (index > 0) {
             rawtext.push({ text: "§f, §r" });
         }
-        const valStr = parseFloat(val.toFixed(2)).toString();
+        const valStr = val.toString();
         rawtext.push(
             { text: cat.color },
             { translate: cat.key },
@@ -41,7 +54,7 @@ function processItemLore(item) {
     if (!values) return null;
 
     const lore = item.getLore();
-    if (lore && lore.length > 0 && lore.some(l => l.includes("×") || l.includes("item.crockpot."))) {
+    if (lore && lore.length > 0 && lore.some(l => l.includes("×") || l.includes("item.crockpot:"))) {
         return null;
     }
 
@@ -49,7 +62,7 @@ function processItemLore(item) {
     return item;
 }
 
-export class FoodValuesRegister {
+export class FoodValues {
     register() {
         system.runInterval(() => {
             for (const player of world.getAllPlayers()) {
@@ -84,4 +97,4 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [StartupEvent]),
     __metadata("design:returntype", void 0)
-], FoodValuesRegister.prototype, "register", null);
+], FoodValues.prototype, "register", null);

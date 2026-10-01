@@ -1,11 +1,14 @@
 {
-  "format_version": "1.12",
+  "format_version": "1.17",
   "minecraft:recipe_furnace": {
     "description": {
       "identifier": "crockpot:cooked_eggplant_furnace_eggplant"
     },
     "tags": [
-      "campfire"
+      "furnace",
+      "campfire",
+      "smoker",
+      "soul_campfire"
     ],
     "input": "crockpot:eggplant",
     "output": "crockpot:cooked_eggplant"
