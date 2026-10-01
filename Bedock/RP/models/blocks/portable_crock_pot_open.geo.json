@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.portable_crock_pot_open",
+				"identifier": "geometry.crockpot.portable_crock_pot_open",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

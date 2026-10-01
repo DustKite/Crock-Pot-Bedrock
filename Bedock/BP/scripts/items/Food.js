@@ -97,7 +97,7 @@ export class Food {
             case "crockpot:flower_salad":
                 healPlayer(player, 4.0);
                 player.addEffect("regeneration", 20 * 20, { amplifier: 0 });
-                CrockPotFood.teleportPlayer(player);
+                Food.teleportPlayer(player);
                 break;
 
             case "crockpot:fruit_medley":

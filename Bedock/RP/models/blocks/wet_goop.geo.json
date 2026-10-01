@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.wet_goop",
+				"identifier": "geometry.crockpot.wet_goop",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

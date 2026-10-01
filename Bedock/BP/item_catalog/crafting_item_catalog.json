@@ -3,7 +3,7 @@
    "minecraft:crafting_items_catalog": {
       "categories": [
          {
-            "category_name": "items",
+            "category_name": "equipment",
             "groups": [
                {
                   "group_identifier": {
@@ -59,7 +59,7 @@
                      "crockpot:parrot_egg_blue",
                      "crockpot:parrot_egg_green",
                      "crockpot:parrot_egg_yellow_blue",
-                     "crockpot:parrot_egg_grey"
+                     "crockpot:parrot_egg_gray"
                   ]
                },
                {

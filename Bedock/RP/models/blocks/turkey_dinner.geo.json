@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.turkey_dinner",
+				"identifier": "geometry.crockpot.turkey_dinner",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

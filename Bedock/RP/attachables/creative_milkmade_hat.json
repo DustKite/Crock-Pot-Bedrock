@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "crockpot:creative_milkmade_hat_milkmade_hat",
+            "materials": {
+                "default": "armor",
+                "enchanted": "armor_enchanted"
+            },
+            "textures": {
+                "default": "textures/entity/milkmade_hat",
+                "enchanted": "textures/misc/enchanted_actor_glint"
+            },
+            "geometry": {
+                "default": "geometry.crockpot.milkmade_hat"
+            },
+            "scripts": {
+                "parent_setup": "v.chest_layer_visible = false;"
+            },
+            "render_controllers": [
+                "controller.render.armor"
+            ]
+        }
+    }
+}

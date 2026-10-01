@@ -2,7 +2,7 @@
     "format_version": "1.26.0",
     "minecraft:item": {
         "description": {
-            "identifier": "crockpot:parrot_egg_grey",
+            "identifier": "crockpot:parrot_egg_gray",
             "menu_category": {
                 "category": "equipment",
                 "group": "crockpot:itemGroup.name.ingredients"
@@ -11,7 +11,7 @@
         "components": {
             "minecraft:icon": {
                 "textures": {
-                    "default": "crockpot:parrot_egg_grey"
+                    "default": "crockpot:parrot_egg_gray"
                 }
             },
             "minecraft:tags": {

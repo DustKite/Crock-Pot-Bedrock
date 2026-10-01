@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.iced_tea_1",
+				"identifier": "geometry.crockpot.iced_tea_1",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

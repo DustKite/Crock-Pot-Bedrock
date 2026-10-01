@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.stuffed_eggplant",
+				"identifier": "geometry.crockpot.stuffed_eggplant",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

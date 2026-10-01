@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.meat_balls",
+				"identifier": "geometry.crockpot.meat_balls",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 2,

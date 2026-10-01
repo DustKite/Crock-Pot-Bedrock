@@ -20,6 +20,11 @@
                     "minecraft:trimmable_armors"
                 ]
             },
+            "minecraft:cooldown": {
+                "category": "crockpot:milkmade_hat_cooldown",
+                "duration": 5.0,
+                "type": "use"
+            },
             "minecraft:max_stack_size": 1,
             "minecraft:durability": {
                 "max_durability": 180

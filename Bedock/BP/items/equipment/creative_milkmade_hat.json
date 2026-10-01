@@ -1,0 +1,35 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:creative_milkmade_hat",
+            "menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.helmet"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:milkmade_hat"
+                }
+            },
+            "minecraft:glint": true,
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_armor",
+                    "minecraft:trimmable_armors"
+                ]
+            },
+            "minecraft:cooldown": {
+                "category": "crockpot:creative_milkmade_hat_cooldown",
+                "duration": 1.0,
+                "type": "use"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:wearable": {
+                "slot": "slot.armor.head"
+            }
+        }
+    }
+}
