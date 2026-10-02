@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "crockpot:volt_goat",
+      "materials": {
+        "default": "entity_alphatest",
+        "charged": "charged_creeper"
+      },
+      "textures": {
+        "default": "textures/entity/volt_goat",
+        "charged_armor": "textures/entity/creeper/creeper_armor"
+      },
+      "geometry": {
+        "default": "geometry.volt_goat"
+      },
+      "animations": {
+        "walk": "animation.volt_goat.walk",
+        "look_at_target": "animation.volt_goat.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          { "walk": "query.modified_distance_moved" }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.volt_goat",
+        "controller.render.volt_goat_charged"
+      ],
+      "spawn_egg": {
+        "base_color": "#546596",
+        "overlay_color": "#D1CB4F"
+      }
+    }
+  }
+}

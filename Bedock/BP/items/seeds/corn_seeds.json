@@ -15,7 +15,7 @@
                 }
             },
             "minecraft:block_placer": {
-                "block": "crockpot:corns"
+                "block": "crockpot:corn_bottom"
             }
         }
     }

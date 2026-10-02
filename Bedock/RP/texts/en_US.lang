@@ -64,6 +64,7 @@ item.crockpot:veg_stinger=Vegetable Stinger
 item.crockpot:volt_goat_jelly=Volt Goat Chaud-Froid
 item.crockpot:watermelon_icle=Melonsicle
 item.crockpot:wet_goop=Wet Goop
+item.crockpot:pot_upgrade_smithing_template=Portable Crock Pot Upgrade\n§9Smithing Template§r
 
 crockpot:itemGroup.name.materials=Crock Pot - Materials
 crockpot:itemGroup.name.seeds=Crock Pot - Seeds

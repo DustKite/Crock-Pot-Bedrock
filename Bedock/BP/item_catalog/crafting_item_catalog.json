@@ -7,18 +7,6 @@
             "groups": [
                {
                   "group_identifier": {
-                     "icon": "crockpot:volt_goat_horn",
-                     "name": "crockpot:itemGroup.name.materials"
-                  },
-                  "items": [
-                     "crockpot:blackstone_dust",
-                     "crockpot:collected_dust",
-                     "crockpot:pot_upgrade_smithing_template",
-                     "crockpot:volt_goat_horn"
-                  ]
-               },
-               {
-                  "group_identifier": {
                      "icon": "crockpot:corn_seeds",
                      "name": "crockpot:itemGroup.name.seeds"
                   },
@@ -55,6 +43,7 @@
                      "crockpot:hoglin_nose",
                      "crockpot:cooked_hoglin_nose",
                      "crockpot:garlic",
+                     "crockpot:volt_goat_horn",
                      "crockpot:parrot_egg_red_blue",
                      "crockpot:parrot_egg_blue",
                      "crockpot:parrot_egg_green",

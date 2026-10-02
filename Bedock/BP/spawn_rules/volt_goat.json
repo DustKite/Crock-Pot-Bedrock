@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "crockpot:volt_goat",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:sand",
+          "minecraft:hardened_clay",
+          "minecraft:stained_hardened_clay"
+        ],
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "value": "mesa" }
+          ]
+        },
+        "minecraft:brightness_filter": {
+          "min": 9,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 10
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        }
+      }
+    ]
+  }
+}

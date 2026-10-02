@@ -1,4 +1,4 @@
-export const CROCK_POT_RECIPES = [
+export const CrockPotRecipes = [
     {
         result: { id: "crockpot:mushy_cake", count: 1 },
         cookingtime: 400,
@@ -10,16 +10,6 @@ export const CROCK_POT_RECIPES = [
             { type: "contain", ingredient: { item: "minecraft:red_mushroom" }, quantity: 1 },
             { type: "contain", ingredient: { item: "minecraft:crimson_fungus" }, quantity: 1 },
             { type: "contain", ingredient: { item: "minecraft:warped_fungus" }, quantity: 1 }
-        ]
-    },
-    {
-        result: { id: "crockpot:netherosia", count: 1 },
-        cookingtime: 1600,
-        potlevel: 1,
-        priority: 100,
-        weight: 1,
-        requirements: [
-            { type: "contain", ingredient: { item: "crockpot:collected_dust" }, quantity: 1 }
         ]
     },
     {

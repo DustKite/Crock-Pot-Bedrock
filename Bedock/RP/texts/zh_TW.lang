@@ -63,6 +63,7 @@ item.crockpot:veg_stinger=蔬菜雞尾酒
 item.crockpot:volt_goat_jelly=伏特羊肉凍
 item.crockpot:watermelon_icle=西瓜冰
 item.crockpot:wet_goop=濕黏焦糊
+item.crockpot:pot_upgrade_smithing_template=便攜烹飪鍋升級\n§9鍛造模板§r
 
 
 crockpot:itemGroup.name.materials=烹飪鍋-材料

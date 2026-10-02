@@ -2,16 +2,16 @@
     "format_version": "1.26.0",
     "minecraft:item": {
         "description": {
-            "identifier": "crockpot:collected_dust",
+            "identifier": "crockpot:pot_upgrade_smithing_template",
             "menu_category": {
-                "category": "equipment",
-                "group": "crockpot:itemGroup.name.materials"
+                "category": "items",
+                "group": "minecraft:itemGroup.name.smithing_templates"
             }
         },
         "components": {
             "minecraft:icon": {
                 "textures": {
-                    "default": "crockpot:collected_dust"
+                    "default": "crockpot:pot_upgrade_smithing_template"
                 }
             }
         }

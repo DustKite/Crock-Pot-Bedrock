@@ -1,8 +1,12 @@
 import { MilkmadeHat } from "./items/MilkmadeHat";
 import { Loot } from "./items/Loot";
-import { FoodValues } from "./items/FoodValues";
+import { FoodValuesLore } from "./items/FoodValuesLore";
 import { Food } from "./items/Food";
+import { Crops } from "./blocks/Crops";
+import { VoltGoatHandler } from "./entity/VoltGoatHandler";
 new MilkmadeHat();
 new Loot();
-new FoodValues();
+new FoodValuesLore();
 new Food();
+new Crops();
+new VoltGoatHandler();

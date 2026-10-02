@@ -1,0 +1,216 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "crockpot:volt_goat",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "crockpot:is_charged": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "crockpot:volt_goat_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": { "value": 0.5 },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": ["wheat"],
+          "grow_up": {
+            "event": "crockpot:grow_up",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_parent": {
+          "priority": 5,
+          "speed_multiplier": 1.25
+        }
+      },
+      "crockpot:volt_goat_adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:breedable": {
+          "require_tame": false,
+          "breeds_with": { "crockpot:volt_goat": {} },
+          "breed_items": ["wheat"]
+        },
+        "minecraft:behavior.breed": {
+          "priority": 4,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "bucket:0" },
+                    { "test": "is_family", "subject": "other", "value": "player" },
+                    { "test": "has_component", "operator": "!=", "value": "minecraft:is_baby" }
+                  ]
+                }
+              },
+              "use_item": true,
+              "transform_to_item": "minecraft:milk_bucket",
+              "play_sounds": "milk",
+              "interact_text": "action.interact.milk"
+            }
+          ]
+        }
+      },
+      "crockpot:uncharged_state": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "player" },
+              "max_dist": 16.0,
+              "walk_speed_multiplier": 1.4,
+              "sprint_speed_multiplier": 1.5
+            }
+          ]
+        },
+        "minecraft:behavior.panic": {
+          "priority": 2,
+          "speed_multiplier": 1.5
+        }
+      },
+      "crockpot:charged_state": {
+        "minecraft:is_charged": {},
+        "minecraft:attack": {
+          "damage": 6
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "player" },
+              "max_dist": 16.0
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.5,
+          "track_target": true
+        },
+        "minecraft:timer": {
+          "time": 2400.0,
+          "looping": false,
+          "time_down_event": {
+            "event": "crockpot:discharge",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["volt_goat", "animal", "mob"]
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 1.3
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "lightning",
+            "deals_damage": false,
+            "on_damage": {
+              "event": "crockpot:become_charged",
+              "target": "self"
+            }
+          },
+          {
+            "cause": "fall",
+            "damage_modifier": -10.0
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:leashable": {},
+      "minecraft:nameable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/volt_goat.json"
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              { "weight": 95, "trigger": "crockpot:spawn_adult" },
+              { "weight": 5, "trigger": "crockpot:spawn_baby" }
+            ]
+          },
+          {
+            "add": { "component_groups": ["crockpot:uncharged_state"] }
+          }
+        ]
+      },
+      "crockpot:spawn_adult": {
+        "add": { "component_groups": ["crockpot:volt_goat_adult"] }
+      },
+      "crockpot:spawn_baby": {
+        "add": { "component_groups": ["crockpot:volt_goat_baby"] }
+      },
+      "crockpot:grow_up": {
+        "remove": { "component_groups": ["crockpot:volt_goat_baby"] },
+        "add": { "component_groups": ["crockpot:volt_goat_adult"] }
+      },
+      "crockpot:become_charged": {
+        "set_property": { "crockpot:is_charged": true },
+        "remove": { "component_groups": ["crockpot:uncharged_state"] },
+        "add": { "component_groups": ["crockpot:charged_state"] }
+      },
+      "crockpot:discharge": {
+        "set_property": { "crockpot:is_charged": false },
+        "remove": { "component_groups": ["crockpot:charged_state"] },
+        "add": { "component_groups": ["crockpot:uncharged_state"] }
+      }
+    }
+  }
+}

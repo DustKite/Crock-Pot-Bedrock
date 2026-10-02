@@ -1,4 +1,4 @@
-export const FOOD_VALUES = {
+export const FoodValues = {
 
     "minecraft:beef": { MEAT: 1 },
     "minecraft:cooked_beef": { MEAT: 1 },
@@ -87,7 +87,7 @@ export const FOOD_VALUES = {
     "crockpot:volt_goat_horn": { INEDIBLE: 1 }
 };
 
-export const TAG_VALUES = {
+export const TagFoodValues = {
     "minecraft:egg": { EGG: 1 },
     "c:berries": { FRUIT: 0.5 },
     "c:crab_meats": { FISH: 0.5, MEAT: 0.5 },
@@ -116,9 +116,9 @@ export const TAG_VALUES = {
 export function getItemFoodValues(item) {
     if (!item) return null;
     const typeId = typeof item === "string" ? item : item.typeId;
-    if (FOOD_VALUES[typeId]) return FOOD_VALUES[typeId];
+    if (FoodValues[typeId]) return FoodValues[typeId];
     if (typeof item === "object" && typeof item.hasTag === "function") {
-        for (const [tag, values] of Object.entries(TAG_VALUES)) {
+        for (const [tag, values] of Object.entries(TagFoodValues)) {
             try {
                 if (item.hasTag(tag)) return values;
             } catch (e) { }

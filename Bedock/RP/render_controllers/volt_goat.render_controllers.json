@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.volt_goat": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.default"]
+    },
+    "controller.render.volt_goat_charged": {
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.charged" }],
+      "textures": ["Texture.charged_armor"],
+      "part_visibility": [
+        { "*": "query.is_charged" }
+      ]
+    }
+  }
+}

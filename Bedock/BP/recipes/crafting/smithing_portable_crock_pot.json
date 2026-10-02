@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "crockpot:smithing_portable_crock_pot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "result": {
+      "item": "crockpot:portable_crock_pot",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "crockpot:pot_upgrade_smithing_template"
+      }
+    ],
+    "ingredients": [
+      {
+        "item": "crockpot:pot_upgrade_smithing_template"
+      },
+      {
+        "item": "crockpot:crock_pot"
+      },
+      {
+        "item": "minecraft:copper_block"
+      }
+    ]
+  }
+}

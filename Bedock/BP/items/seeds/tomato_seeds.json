@@ -15,7 +15,7 @@
                 }
             },
             "minecraft:block_placer": {
-                "block": "crockpot:tomatoes"
+                "block": "crockpot:tomato_crop"
             }
         }
     }

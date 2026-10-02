@@ -1,0 +1,181 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:eggplant_crop",
+            "states": {
+                "crockpot:growth": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('crockpot:growth') == 0",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.crop_cross",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:eggplants_stage0",
+                            "ambient_occlusion": false,
+                            "face_dimming": false,
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            5,
+                            12
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:growth') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.crop_cross",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:eggplants_stage1",
+                            "ambient_occlusion": false,
+                            "face_dimming": false,
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            11,
+                            12
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:growth') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.crop_cross",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:eggplants_stage2",
+                            "ambient_occlusion": false,
+                            "face_dimming": false,
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            14,
+                            12
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:growth') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.crop_cross",
+                    "minecraft:loot": "loot_tables/crockpot/crops/eggplant_riped.json",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:eggplants_stage3",
+                            "ambient_occlusion": false,
+                            "face_dimming": false,
+                            "render_method": "alpha_test"
+                        }
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            14,
+                            12
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "crockpot:crops": {},
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:eggplants_stage0",
+                    "ambient_occlusion": false,
+                    "face_dimming": false,
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:precipitation_interactions": {
+                "precipitation_behavior": "none"
+            },
+            "minecraft:movable": {
+                "movement_type": "popped"
+            },
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false
+            },
+            "minecraft:loot": "loot_tables/crockpot/crops/eggplant.json",
+            "minecraft:liquid_detection": {
+                "detection_rules": [
+                    {
+                        "on_liquid_touches": "popped"
+                    }
+                ]
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.0
+            },
+            "minecraft:flammable": {
+                "catch_chance_modifier": 30,
+                "destroy_chance_modifier": 30
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:geometry": "geometry.crockpot.crop_cross",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.0
+            },
+            "minecraft:collision_box": false,
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "block_filter": [
+                            "minecraft:farmland",
+                            "farmersdelight:rich_soil_farmland"
+                        ],
+                        "allowed_faces": [
+                            "up"
+                        ]
+                    }
+                ]
+            },
+            "tag:crop": {}
+        }
+    }
+}

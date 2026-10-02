@@ -15,7 +15,7 @@
                 }
             },
             "minecraft:block_placer": {
-                "block": "crockpot:peppers"
+                "block": "crockpot:pepper_crop"
             }
         }
     }

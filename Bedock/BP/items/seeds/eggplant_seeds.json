@@ -15,7 +15,7 @@
                 }
             },
             "minecraft:block_placer": {
-                "block": "crockpot:eggplants"
+                "block": "crockpot:eggplant_crop"
             }
         }
     }

@@ -15,7 +15,7 @@
                 }
             },
             "minecraft:block_placer": {
-                "block": "crockpot:asparaguses"
+                "block": "crockpot:asparagus_crop"
             }
         }
     }

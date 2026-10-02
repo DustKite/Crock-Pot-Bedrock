@@ -5,7 +5,7 @@
             "identifier": "crockpot:volt_goat_horn",
             "menu_category": {
                 "category": "equipment",
-                "group": "crockpot:itemGroup.name.materials"
+                "group": "crockpot:itemGroup.name.ingredients"
             }
         },
         "components": {

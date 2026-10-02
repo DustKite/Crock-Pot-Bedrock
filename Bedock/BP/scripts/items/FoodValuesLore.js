@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 import { EquipmentSlot, StartupEvent, system, world } from "@minecraft/server";
 import { EventAPI } from "../lib/EventAPI";
-import { getItemFoodValues } from "../data/FoodValuesData";
+import { getItemFoodValues } from "../data/FoodValues";
 
 export const FOOD_CATEGORIES = {
     MEAT: { key: "item.crockpot:food_category_meat", color: "§d" },
@@ -54,7 +54,7 @@ function processItemLore(item) {
     if (!values) return null;
 
     const lore = item.getLore();
-    if (lore && lore.length > 0 && lore.some(l => l.includes("×") || l.includes("item.crockpot:"))) {
+    if (lore && lore.length > 0 && lore.some(l => l.includes("item.crockpot:"))) {
         return null;
     }
 
@@ -62,7 +62,7 @@ function processItemLore(item) {
     return item;
 }
 
-export class FoodValues {
+export class FoodValuesLore {
     register() {
         system.runInterval(() => {
             for (const player of world.getAllPlayers()) {
@@ -97,4 +97,4 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [StartupEvent]),
     __metadata("design:returntype", void 0)
-], FoodValues.prototype, "register", null);
+], FoodValuesLore.prototype, "register", null);

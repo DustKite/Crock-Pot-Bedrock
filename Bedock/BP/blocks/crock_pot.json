@@ -1,0 +1,145 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:crock_pot",
+            "menu_category": {
+                "category": "equipment"
+            },
+            "states": {
+                "crockpot:lit": [
+                    false,
+                    true
+                ]
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:lit') == true",
+                "components": {
+                    "minecraft:light_emission": 13,
+                    "minecraft:geometry": {
+                        "identifier": "geometry.crockpot.crock_pot_lit"
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:movable": {
+                "movement_type": "immovable"
+            },
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+            "minecraft:destruction_particles": {
+                "texture": "crockpot:crock_pot_particle"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:crock_pot",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:item_visual": {
+                "geometry": "geometry.crockpot.crock_pot_gui",
+                "material_instances": {
+                    "*": {
+                        "texture": "crockpot:crock_pot",
+                        "render_method": "alpha_test_single_sided"
+                    }
+                }
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -7.06041,
+                    0,
+                    -7.06041
+                ],
+                "size": [
+                    14.12083,
+                    16,
+                    14.12083
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -7.06041,
+                    0,
+                    -7.06041
+                ],
+                "size": [
+                    14.12083,
+                    16,
+                    14.12083
+                ]
+            },
+            "minecraft:geometry": {
+                "identifier": "geometry.crockpot.crock_pot"
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "block.crockpot.crock_pot.open": {
+            "category": "block",
+            "sounds": [
+                "sounds/block/crock_pot_open"
+            ]
+        },
+        "block.crockpot.crock_pot.close": {
+            "category": "block",
+            "sounds": [
+                "sounds/block/crock_pot_close"
+            ]
+        },
+        "block.crockpot.crock_pot.finish": {
+            "category": "block",
+            "sounds": [
+                "sounds/block/crock_pot_finish"
+            ]
+        },
+        "block.crockpot.crock_pot.rattle": {
+            "category": "block",
+            "sounds": [
+                "sounds/block/crock_pot_rattle_1",
+                "sounds/block/crock_pot_rattle_2",
+                "sounds/block/crock_pot_rattle_3",
+                "sounds/block/crock_pot_rattle_4",
+                "sounds/block/crock_pot_rattle_5",
+                "sounds/block/crock_pot_rattle_6",
+                "sounds/block/crock_pot_rattle_7"
+            ]
+        }
+    }
+}

@@ -1,0 +1,222 @@
+{
+  "namespace": "crock_pot",
+  "crock_pot_slot_button@common.container_slot_button_prototype": {
+    "size": [
+      18,
+      18
+    ]
+  },
+  "crock_pot_output_slot_button@common.container_slot_button_prototype": {
+    "size": [
+      26,
+      26
+    ]
+  },
+  "input_slot_0@crock_pot.crock_pot_slot_button": {
+    "offset": [
+      38,
+      16
+    ],
+    "$focus_id": "input_slot_0",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "input_slot_1@crock_pot.crock_pot_slot_button": {
+    "offset": [
+      56,
+      16
+    ],
+    "$focus_id": "input_slot_1",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "input_slot_2@crock_pot.crock_pot_slot_button": {
+    "offset": [
+      38,
+      34
+    ],
+    "$focus_id": "input_slot_2",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "input_slot_3@crock_pot.crock_pot_slot_button": {
+    "offset": [
+      56,
+      34
+    ],
+    "$focus_id": "input_slot_3",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "fuel_slot_4@crock_pot.crock_pot_slot_button": {
+    "offset": [
+      47,
+      70
+    ],
+    "$focus_id": "fuel_slot_4",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "output_slot_5@crock_pot.crock_pot_output_slot_button": {
+    "offset": [
+      116,
+      43
+    ],
+    "$focus_id": "output_slot_5",
+    "$item_collection_name": "container_items",
+    "$button_ref": "crafting.inventory_container_slot_button",
+    "$cell_overlay_ref": "crafting.cell_overlay_ref",
+    "bindings": [
+      {
+        "binding_type": "collection",
+        "binding_collection_name": "container_items",
+        "binding_collection_prefix": "container_item"
+      }
+    ]
+  },
+  "container_slots_panel": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [
+      176,
+      100
+    ],
+    "controls": [
+      {
+        "slot_0@crock_pot.input_slot_0": {}
+      },
+      {
+        "slot_1@crock_pot.input_slot_1": {}
+      },
+      {
+        "slot_2@crock_pot.input_slot_2": {}
+      },
+      {
+        "slot_3@crock_pot.input_slot_3": {}
+      },
+      {
+        "slot_4@crock_pot.fuel_slot_4": {}
+      },
+      {
+        "slot_5@crock_pot.output_slot_5": {}
+      }
+    ]
+  },
+  "title_label@common_dx.global_label": {
+    "text": "container.crockpot.crock_pot",
+    "color": "$title_text_color",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [
+      0,
+      5
+    ]
+  },
+  "inventory_label@common_dx.global_label": {
+    "text": "container.inventory",
+    "color": "$title_text_color",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [
+      8,
+      91
+    ]
+  },
+  "crock_pot_dialog": {
+    "type": "panel",
+    "size": [
+      176,
+      184
+    ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "background": {
+          "type": "image",
+          "texture": "textures/gui/crock_pot",
+          "size": [
+            176,
+            184
+          ],
+          "layer": 1
+        }
+      },
+      {
+        "title@crock_pot.title_label": {
+          "layer": 2
+        }
+      },
+      {
+        "inventory_title@crock_pot.inventory_label": {
+          "layer": 2
+        }
+      },
+      {
+        "slots@crock_pot.container_slots_panel": {
+          "layer": 3
+        }
+      },
+      {
+        "player_inventory@chest.player_inventory": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            7,
+            101
+          ],
+          "layer": 3
+        }
+      }
+    ]
+  },
+  "crock_pot_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "dialog@crock_pot.crock_pot_dialog": {}
+      }
+    ]
+  }
+}
