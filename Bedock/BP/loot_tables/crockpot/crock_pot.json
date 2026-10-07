@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "conditions": [
+                        {
+                            "condition": "match_tool",
+                            "count": {
+                                "range_min": 1
+                            },
+                            "minecraft:match_tool_filter_any": [
+                                "minecraft:is_pickaxe"
+                            ]
+                        }
+                    ],
+                    "type": "item",
+                    "name": "minecraft:stone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 6
+                        }
+                    ]
+                },
+                {
+                    "type": "empty"
+                }
+            ]
+        }
+    ]
+}

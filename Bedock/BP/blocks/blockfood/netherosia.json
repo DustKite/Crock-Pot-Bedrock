@@ -1,0 +1,132 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:netherosia",
+            "menu_category": {
+                "category": "none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 0.0
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.crockpot.netherosia",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.01
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -3.26641,
+                    0,
+                    -3.26641
+                ],
+                "size": [
+                    6.53281,
+                    6.53519,
+                    6.53281
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -3.26641,
+                    0,
+                    -3.26641
+                ],
+                "size": [
+                    6.53281,
+                    6.53519,
+                    6.53281
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:netherosia",
+                    "render_method": "alpha_test_single_sided"
+                },
+                "netherosia": {
+                    "texture": "crockpot:netherosia",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('minecraft:crop','plant','crop') && (!q.all_tags('fertilize_area') || q.any_tag('grass') || q.any_tag('dirt') || q.any_tag('minecraft:is_pickaxe_item_destructible'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:crockpot:food": {}
+        }
+    }
+}

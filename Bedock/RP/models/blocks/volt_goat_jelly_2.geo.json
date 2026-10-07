@@ -1,0 +1,227 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.volt_goat_jelly_2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 0.5, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7.75, 0, 0.25],
+							"size": [7, 9, 7],
+							"uv": {
+								"north": { "uv": [12, 0], "uv_size": [7, 9], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [12, 9], "uv_size": [7, 9], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [12, 18], "uv_size": [7, 9], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [19, 0], "uv_size": [7, 9], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [19, 9], "uv_size": [7, 7], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [19, 23], "uv_size": [7, -7], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-6.75, 9, 1.25],
+							"size": [5, 1, 5],
+							"uv": {
+								"north": { "uv": [26, 22], "uv_size": [5, 1], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [42, 26], "uv_size": [5, 1], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [42, 27], "uv_size": [5, 1], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [43, 10], "uv_size": [5, 1], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [22, 36], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [27, 41], "uv_size": [5, -5], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-7.25, 10, 0.75],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": { "uv": [38, 15], "uv_size": [6, 2], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [22, 41], "uv_size": [6, 2], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [41, 28], "uv_size": [6, 2], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [41, 30], "uv_size": [6, 2], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [26, 16], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [5, 35], "uv_size": [6, -6], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-0.6, 0, -1.4],
+							"size": [6, 11, 6],
+							"pivot": [4.4, 0, 2.6],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [6, 11], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [6, 0], "uv_size": [6, 11], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [0, 11], "uv_size": [6, 11], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [6, 11], "uv_size": [6, 11], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [17, 30], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [23, 36], "uv_size": [6, -6], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [0.4, 11, -0.4],
+							"size": [4, 1, 4],
+							"pivot": [4.4, 9, 2.6],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [31, 28], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [31, 29], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [38, 17], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [43, 11], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [32, 18], "uv_size": [4, 4], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [10, 45], "uv_size": [4, -4], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [0.4, 12, -0.65],
+							"size": [5, 2, 5],
+							"pivot": [4.9, 10, 2.1],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [41, 32], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [0, 42], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [42, 0], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [42, 2], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [0, 37], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [37, 5], "uv_size": [5, -5], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-7, 0, -7],
+							"size": [6, 7, 6],
+							"pivot": [-4, 6.25, -4],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 22], "uv_size": [6, 7], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [6, 22], "uv_size": [6, 7], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [19, 23], "uv_size": [6, 7], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [25, 23], "uv_size": [6, 7], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [29, 30], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [31, 6], "uv_size": [6, -6], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-6, 7, -6],
+							"size": [4, 1, 4],
+							"pivot": [-4, 6.25, -4],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [43, 12], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [43, 13], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [43, 14], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [43, 39], "uv_size": [4, 1], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [14, 41], "uv_size": [4, 4], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [18, 45], "uv_size": [4, -4], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-6.5, 8, -6.5],
+							"size": [5, 2, 5],
+							"pivot": [-4, 6.25, -4],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [42, 4], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [42, 6], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [42, 8], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [42, 17], "uv_size": [5, 2], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [37, 5], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [37, 23], "uv_size": [5, -5], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-7.25, 1, 0.75],
+							"size": [6, 6, 6],
+							"uv": {
+								"north": { "uv": [31, 6], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [31, 22], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [32, 12], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [5, 35], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [11, 35], "uv_size": [6, 6], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [35, 34], "uv_size": [6, -6], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-0.35, 1, -0.4],
+							"size": [5, 8, 5],
+							"pivot": [4.9, 1, 3.1],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [26, 0], "uv_size": [5, 8], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [26, 8], "uv_size": [5, 8], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [12, 27], "uv_size": [5, 8], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [0, 29], "uv_size": [5, 8], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [35, 34], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [17, 41], "uv_size": [5, -5], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-6.5, 1, -6.5],
+							"size": [5, 5, 5],
+							"pivot": [-4, 6.25, -4],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [37, 23], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [38, 10], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [32, 39], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [37, 39], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [40, 34], "uv_size": [5, 5], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [5, 46], "uv_size": [5, -5], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-4.75, 7, 3.25],
+							"size": [1, 7, 1],
+							"uv": {
+								"north": { "uv": [28, 41], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [29, 41], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [30, 41], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [31, 41], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [17, 27], "uv_size": [1, 1], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [18, 28], "uv_size": [1, -1], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [0.65, 9, -1.65],
+							"size": [1, 7, 1],
+							"pivot": [0.43239, 11.61313, 2.6],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [42, 19], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [42, 39], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [43, 19], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [22, 43], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [17, 28], "uv_size": [1, 1], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [18, 29], "uv_size": [1, -1], "material_instance": "volt_goat_jelly_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 5, -4.5],
+							"size": [1, 7, 1],
+							"pivot": [-4, 6.25, -4],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [23, 43], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"east": { "uv": [24, 43], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"south": { "uv": [25, 43], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"west": { "uv": [26, 43], "uv_size": [1, 7], "material_instance": "volt_goat_jelly_2" },
+								"up": { "uv": [11, 29], "uv_size": [1, 1], "material_instance": "volt_goat_jelly_2" },
+								"down": { "uv": [17, 30], "uv_size": [1, -1], "material_instance": "volt_goat_jelly_2" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

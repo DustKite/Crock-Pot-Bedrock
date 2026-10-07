@@ -1,0 +1,295 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.perogies_2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [14, 8, 14],
+							"uv": {
+								"north": { "uv": [14, 24], "uv_size": [14, 8], "material_instance": "perogies_2" },
+								"east": { "uv": [26, 0], "uv_size": [14, 8], "material_instance": "perogies_2" },
+								"south": { "uv": [26, 8], "uv_size": [14, 8], "material_instance": "perogies_2" },
+								"west": { "uv": [26, 16], "uv_size": [14, 8], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [14, 14], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 28], "uv_size": [14, -14], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-6, 8, -6],
+							"size": [12, -3, 12],
+							"uv": {
+								"north": { "uv": [0, 28], "uv_size": [12, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [28, 24], "uv_size": [12, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [28, 27], "uv_size": [12, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [28, 30], "uv_size": [12, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [14, 0], "uv_size": [12, 12], "material_instance": "perogies_2" },
+								"down": { "uv": [14, 24], "uv_size": [12, -12], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-7.75, 2.5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [12, 30], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"east": { "uv": [24, 38], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"south": { "uv": [13, 30], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"west": { "uv": [20, 40], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 23], "uv_size": [1, 4], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 31], "uv_size": [1, -4], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [6.75, 2.5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [4, 42], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"east": { "uv": [26, 41], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"south": { "uv": [5, 42], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"west": { "uv": [41, 27], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"up": { "uv": [30, 41], "uv_size": [1, 4], "material_instance": "perogies_2" },
+								"down": { "uv": [31, 45], "uv_size": [1, -4], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [6.75, 6.5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [2, 42], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"east": { "uv": [17, 41], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"south": { "uv": [3, 42], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"west": { "uv": [21, 41], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"up": { "uv": [41, 23], "uv_size": [1, 4], "material_instance": "perogies_2" },
+								"down": { "uv": [25, 45], "uv_size": [1, -4], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-7.75, 6.5, -2],
+							"size": [1, 1, 4],
+							"uv": {
+								"north": { "uv": [41, 30], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"east": { "uv": [40, 31], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"south": { "uv": [1, 42], "uv_size": [1, 1], "material_instance": "perogies_2" },
+								"west": { "uv": [40, 32], "uv_size": [4, 1], "material_instance": "perogies_2" },
+								"up": { "uv": [15, 41], "uv_size": [1, 4], "material_instance": "perogies_2" },
+								"down": { "uv": [16, 45], "uv_size": [1, -4], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-0.5, 4.7, -4.95533],
+							"size": [5, 2, 1],
+							"pivot": [2, 5.95, -4.45533],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [14, 38], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [12, 28], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [19, 38], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [13, 28], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 10], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 12], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-1.5, 4.7, -4.45533],
+							"size": [7, 3, 0],
+							"pivot": [2, 5.95, -4.45533],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 31], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [7, 31], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-0.5, 4.7, 4.04467],
+							"size": [5, 2, 1],
+							"pivot": [2, 5.95, 4.54467],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [24, 39], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [41, 28], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [29, 39], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [32, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 12], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 14], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-1.5, 4.7, 4.54467],
+							"size": [7, 3, 0],
+							"pivot": [2, 5.95, 4.54467],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [14, 32], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [21, 32], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 4.93851, -3.49004],
+							"size": [5, 2, 1],
+							"pivot": [-2, 6.18851, -2.99004],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [34, 39], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [33, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [39, 39], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [34, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 14], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [15, 41], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-5.5, 4.93851, -2.99004],
+							"size": [7, 3, 0],
+							"pivot": [-2, 6.18851, -2.99004],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [28, 33], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [0, 34], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 4.93851, 2.50996],
+							"size": [5, 2, 1],
+							"pivot": [-2, 6.18851, 3.00996],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 40], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [35, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [40, 0], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [36, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 15], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 17], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-5.5, 4.93851, 3.00996],
+							"size": [7, 3, 0],
+							"pivot": [-2, 6.18851, 3.00996],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [7, 34], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [14, 35], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-0.5, 5, -2.00533],
+							"size": [5, 2, 1],
+							"pivot": [2, 6.25, -1.50533],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [40, 2], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [37, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [40, 4], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [38, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 17], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 19], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-1.5, 5, -1.50533],
+							"size": [7, 3, 0],
+							"pivot": [2, 6.25, -1.50533],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [21, 35], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [35, 33], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 4.93851, -0.49004],
+							"size": [5, 2, 1],
+							"pivot": [-2, 6.18851, 0.00996],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [5, 40], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [39, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [40, 6], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [40, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 19], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 21], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-5.5, 4.93851, 0.00996],
+							"size": [7, 3, 0],
+							"pivot": [-2, 6.18851, 0.00996],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [28, 36], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [35, 36], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-0.5, 5, 0.99467],
+							"size": [5, 2, 1],
+							"pivot": [2, 6.25, 1.49467],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [40, 8], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"east": { "uv": [41, 41], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"south": { "uv": [10, 40], "uv_size": [5, 2], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 42], "uv_size": [1, 2], "material_instance": "perogies_2" },
+								"up": { "uv": [40, 21], "uv_size": [5, 1], "material_instance": "perogies_2" },
+								"down": { "uv": [40, 23], "uv_size": [5, -1], "material_instance": "perogies_2" }
+							}
+						},
+						{
+							"origin": [-1.5, 5, 1.49467],
+							"size": [7, 3, 0],
+							"pivot": [2, 6.25, 1.49467],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [0, 37], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"south": { "uv": [7, 37], "uv_size": [7, 3], "material_instance": "perogies_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "perogies_2" },
+								"up": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" },
+								"down": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "perogies_2" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

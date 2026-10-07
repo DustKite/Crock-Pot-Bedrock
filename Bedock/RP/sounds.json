@@ -1,0 +1,23 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "crockpot:volt_goat": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "mob.goat.ambient",
+                    "hurt": "mob.goat.hurt",
+                    "death": "mob.goat.death",
+                    "step": "mob.goat.step",
+                    "ambient.screamer": "mob.goat.ambient.screamer",
+                    "hurt.screamer": "mob.goat.hurt.screamer",
+                    "death.screamer": "mob.goat.death.screamer",
+                    "eat": "mob.goat.eat"
+                }
+            }
+        }
+    }
+}

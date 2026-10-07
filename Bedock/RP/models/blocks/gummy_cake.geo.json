@@ -1,0 +1,63 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.gummy_cake",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": { "uv": [21, 16], "uv_size": [12, 1], "material_instance": "gummy_cake" },
+								"east": { "uv": [21, 17], "uv_size": [12, 1], "material_instance": "gummy_cake" },
+								"south": { "uv": [26, 18], "uv_size": [12, 1], "material_instance": "gummy_cake" },
+								"west": { "uv": [26, 19], "uv_size": [12, 1], "material_instance": "gummy_cake" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "gummy_cake" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "gummy_cake" }
+							}
+						},
+						{
+							"origin": [-4.5, 1, -4.5],
+							"size": [9, 4, 9],
+							"uv": {
+								"north": { "uv": [21, 0], "uv_size": [9, 4], "material_instance": "gummy_cake" },
+								"east": { "uv": [21, 4], "uv_size": [9, 4], "material_instance": "gummy_cake" },
+								"south": { "uv": [21, 8], "uv_size": [9, 4], "material_instance": "gummy_cake" },
+								"west": { "uv": [21, 12], "uv_size": [9, 4], "material_instance": "gummy_cake" },
+								"up": { "uv": [12, 0], "uv_size": [9, 9], "material_instance": "gummy_cake" },
+								"down": { "uv": [12, 18], "uv_size": [9, -9], "material_instance": "gummy_cake" }
+							}
+						},
+						{
+							"origin": [-3.5, 5, -3.5],
+							"size": [7, 3, 7],
+							"uv": {
+								"north": { "uv": [0, 24], "uv_size": [7, 3], "material_instance": "gummy_cake" },
+								"east": { "uv": [7, 25], "uv_size": [7, 3], "material_instance": "gummy_cake" },
+								"south": { "uv": [14, 25], "uv_size": [7, 3], "material_instance": "gummy_cake" },
+								"west": { "uv": [21, 25], "uv_size": [7, 3], "material_instance": "gummy_cake" },
+								"up": { "uv": [12, 18], "uv_size": [7, 7], "material_instance": "gummy_cake" },
+								"down": { "uv": [19, 25], "uv_size": [7, -7], "material_instance": "gummy_cake" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,257 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.honey_nuggets_1",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7, 3, -2],
+							"size": [9, 6, 9],
+							"uv": {
+								"north": { "uv": [9, 16], "uv_size": [9, 6], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [17, 0], "uv_size": [9, 6], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [17, 6], "uv_size": [9, 6], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [0, 18], "uv_size": [9, 6], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [0, 0], "uv_size": [9, 9], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [0, 18], "uv_size": [9, -9], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-6.5, 0, -1.5],
+							"size": [8, 3, 8],
+							"uv": {
+								"north": { "uv": [25, 22], "uv_size": [8, 3], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [25, 25], "uv_size": [8, 3], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [26, 0], "uv_size": [8, 3], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [26, 3], "uv_size": [8, 3], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [9, 0], "uv_size": [8, 8], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [9, 16], "uv_size": [8, -8], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-6, 9, -1],
+							"size": [7, -3, 7],
+							"uv": {
+								"north": { "uv": [26, 6], "uv_size": [7, 3], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [26, 9], "uv_size": [7, 3], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [16, 26], "uv_size": [7, 3], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [23, 28], "uv_size": [7, 3], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [18, 12], "uv_size": [7, 7], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [18, 26], "uv_size": [7, -7], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [2, 3, -6],
+							"size": [4, -2, 3],
+							"uv": {
+								"north": { "uv": [23, 31], "uv_size": [4, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [31, 31], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [27, 31], "uv_size": [4, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [5, 32], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [19, 29], "uv_size": [4, 3], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [31, 15], "uv_size": [4, -3], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [1, 0, -7],
+							"size": [6, 3, 5],
+							"uv": {
+								"north": { "uv": [7, 29], "uv_size": [6, 3], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [30, 28], "uv_size": [5, 3], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [13, 29], "uv_size": [6, 3], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [0, 31], "uv_size": [5, 3], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [25, 12], "uv_size": [6, 5], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [25, 22], "uv_size": [6, -5], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [2, 2.75, -6],
+							"size": [4, 0, 3],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [31, 15], "uv_size": [4, 3], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [31, 21], "uv_size": [4, -3], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-6, 6.5, -1],
+							"size": [7, 0, 7],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [9, 22], "uv_size": [7, 7], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [0, 31], "uv_size": [7, -7], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-2.25, 6.25, 3.75],
+							"size": [3, 2, 2],
+							"uv": {
+								"north": { "uv": [8, 32], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [23, 26], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [11, 32], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [7, 27], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [14, 32], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [17, 34], "uv_size": [3, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-3, 9, 1],
+							"size": [3, 2, 2],
+							"pivot": [-1.5, 10, 2],
+							"rotation": [0, 0, -45],
+							"uv": {
+								"north": { "uv": [20, 32], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [35, 16], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [33, 6], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [35, 18], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [33, 8], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [33, 12], "uv_size": [3, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-1.5, 6.25, -1],
+							"size": [2, 2, 3],
+							"pivot": [-0.5, 7.25, 0.5],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [23, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [33, 21], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [25, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [23, 33], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [16, 22], "uv_size": [2, 3], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [7, 27], "uv_size": [2, -3], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-4, 5.75, 1.5],
+							"size": [3, 2, 2],
+							"uv": {
+								"north": { "uv": [33, 23], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [27, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [33, 25], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [35, 27], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [26, 33], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [29, 35], "uv_size": [3, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-5.25, 8.25, -0.5],
+							"size": [3, 2, 2],
+							"pivot": [-3.75, 9.25, 0.5],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [32, 33], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [29, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [0, 34], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [35, 29], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [34, 0], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [34, 4], "uv_size": [3, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-2.25, 8.25, 2.75],
+							"size": [2, 2, 3],
+							"pivot": [-1.25, 9.25, 4.25],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"north": { "uv": [31, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [3, 34], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [33, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [34, 4], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [6, 34], "uv_size": [2, 3], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [8, 37], "uv_size": [2, -3], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-6, 8.25, 4],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": { "uv": [35, 33], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [35, 35], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [0, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [2, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [4, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [36, 8], "uv_size": [2, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-5.25, 9.85, 1.5],
+							"size": [2, 2, 3],
+							"pivot": [-4.75, 10.85, 3.5],
+							"rotation": [45, 0, 0],
+							"uv": {
+								"north": { "uv": [36, 8], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [10, 34], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [10, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [13, 34], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [16, 34], "uv_size": [2, 3], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [18, 37], "uv_size": [2, -3], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-5.75, 6.25, 3.5],
+							"size": [3, 2, 2],
+							"pivot": [-4.25, 7.25, 4.5],
+							"rotation": [0, -22.5, 0],
+							"uv": {
+								"north": { "uv": [20, 34], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [36, 10], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [34, 31], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [12, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [35, 12], "uv_size": [3, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [35, 16], "uv_size": [3, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-5.5, 6.25, -0.75],
+							"size": [2, 2, 2],
+							"pivot": [-4, 7.25, 0.25],
+							"rotation": [0, 22.5, 0],
+							"uv": {
+								"north": { "uv": [14, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [20, 36], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [36, 20], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [36, 22], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [36, 24], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [37, 2], "uv_size": [2, -2], "material_instance": "honey_nuggets_1" }
+							}
+						},
+						{
+							"origin": [-1, 8.25, -0.75],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": { "uv": [37, 2], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"east": { "uv": [37, 4], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"south": { "uv": [6, 37], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"west": { "uv": [8, 37], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"up": { "uv": [16, 37], "uv_size": [2, 2], "material_instance": "honey_nuggets_1" },
+								"down": { "uv": [37, 18], "uv_size": [2, -2], "material_instance": "honey_nuggets_1" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

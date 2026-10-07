@@ -92,10 +92,10 @@
 							}
 						},
 						{
-							"origin": [-0.05, 6, -0.5],
+							"origin": [-0.5, 6, -0.05],
 							"size": [2, 6, 2],
 							"pivot": [0.5, 7, 0.5],
-							"rotation": [0, 0, 22.5],
+							"rotation": [-22.5, 0, 0],
 							"uv": {
 								"north": { "uv": [16, 21], "uv_size": [2, 6], "material_instance": "gazpacho" },
 								"east": { "uv": [18, 21], "uv_size": [2, 6], "material_instance": "gazpacho" },

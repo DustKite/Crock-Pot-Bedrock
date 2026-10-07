@@ -9,6 +9,7 @@
             }
         },
         "components": {
+            "minecraft:rarity": "uncommon",
             "minecraft:icon": {
                 "textures": {
                     "default": "crockpot:pot_upgrade_smithing_template"

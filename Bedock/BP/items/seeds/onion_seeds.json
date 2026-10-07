@@ -1,22 +1,30 @@
 {
-    "format_version": "1.26.0",
-    "minecraft:item": {
-        "description": {
-            "identifier": "crockpot:onion_seeds",
-            "menu_category": {
-                "category": "equipment",
-                "group": "crockpot:itemGroup.name.seeds"
-            }
-        },
-        "components": {
-            "minecraft:icon": {
-                "textures": {
-                    "default": "crockpot:onion_seeds"
-                }
-            },
-            "minecraft:block_placer": {
-                "block": "crockpot:onion_crop"
-            }
+  "format_version": "1.26.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "crockpot:onion_seeds",
+      "menu_category": {
+        "category": "equipment",
+        "group": "crockpot:itemGroup.name.seeds"
+      }
+    },
+    "components": {
+      "minecraft:tags": {
+        "tags": [
+          "crockpot:is_seeds"
+        ]
+      },
+      "minecraft:icon": {
+        "textures": {
+          "default": "crockpot:onion_seeds"
         }
+      },
+      "minecraft:block_placer": {
+        "block": "crockpot:onion_crop"
+      },
+      "minecraft:compostable": {
+        "composting_chance": 30
+      }
     }
+  }
 }

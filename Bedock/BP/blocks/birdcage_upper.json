@@ -1,0 +1,88 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "crockpot:birdcage_upper",
+      "states": {
+        "crockpot:has_parrot": [
+          false,
+          true
+        ],
+        "crockpot:parrot_variant": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "crockpot:hanging": [
+          false,
+          true
+        ]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('crockpot:hanging') == true",
+        "components": {
+          "minecraft:geometry": "geometry.crockpot.birdcage_hanging_upper",
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "crockpot:birdcage",
+              "render_method": "alpha_test_single_sided"
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.5
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6.0
+      },
+      "minecraft:collision_box": {
+        "origin": [
+          -7.0,
+          9.0,
+          -7.0
+        ],
+        "size": [
+          14.0,
+          7.0,
+          14.0
+        ]
+      },
+      "minecraft:selection_box": {
+        "origin": [
+          -7.0,
+          0.0,
+          -7.0
+        ],
+        "size": [
+          14.0,
+          13.0,
+          14.0
+        ]
+      },
+      "minecraft:tick": {
+        "interval_range": [
+          1,
+          1
+        ]
+      },
+      "minecraft:destruction_particles": {
+        "texture": "crockpot:birdcage_particle"
+      },
+      "minecraft:geometry": "geometry.crockpot.birdcage_upper",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "crockpot:birdcage",
+          "render_method": "alpha_test_single_sided"
+        }
+      },
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}

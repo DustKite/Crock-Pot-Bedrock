@@ -17,8 +17,7 @@
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 3,
-                "saturation_modifier": 0.1,
-                "using_converts_to": "minecraft:glass_bottle"
+                "saturation_modifier": 0.1
             },
             "minecraft:use_animation": "drink",
             "minecraft:use_modifiers": {

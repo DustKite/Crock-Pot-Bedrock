@@ -21,144 +21,84 @@
 					"cubes": [
 						{
 							"origin": [-5, 0, -5],
-							"size": [10, 1, 10],
+							"size": [10, 6, 10],
 							"uv": {
-								"north": { "uv": [27, 0], "uv_size": [10, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [27, 1], "uv_size": [10, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [27, 2], "uv_size": [10, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [27, 3], "uv_size": [10, 1], "material_instance": "bone_stew" },
+								"north": { "uv": [18, 8], "uv_size": [10, 6], "material_instance": "bone_stew" },
+								"east": { "uv": [18, 14], "uv_size": [10, 6], "material_instance": "bone_stew" },
+								"south": { "uv": [0, 20], "uv_size": [10, 6], "material_instance": "bone_stew" },
+								"west": { "uv": [18, 20], "uv_size": [10, 6], "material_instance": "bone_stew" },
 								"up": { "uv": [0, 0], "uv_size": [10, 10], "material_instance": "bone_stew" },
 								"down": { "uv": [0, 20], "uv_size": [10, -10], "material_instance": "bone_stew" }
 							}
 						},
 						{
-							"origin": [-4, 1, 4],
-							"size": [9, 5, 1],
+							"origin": [-4, 6, -4],
+							"size": [8, -2, 8],
 							"uv": {
-								"north": { "uv": [10, 16], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"east": { "uv": [16, 26], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"south": { "uv": [18, 0], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"west": { "uv": [17, 26], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"up": { "uv": [27, 4], "uv_size": [9, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [27, 6], "uv_size": [9, -1], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [-5, 1, -5],
-							"size": [9, 5, 1],
-							"uv": {
-								"north": { "uv": [18, 5], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"east": { "uv": [0, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"south": { "uv": [18, 10], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"west": { "uv": [1, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"up": { "uv": [27, 6], "uv_size": [9, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [27, 8], "uv_size": [9, -1], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [4, 1, -5],
-							"size": [1, 5, 9],
-							"uv": {
-								"north": { "uv": [2, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"east": { "uv": [19, 15], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"south": { "uv": [3, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"west": { "uv": [0, 20], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"up": { "uv": [12, 26], "uv_size": [1, 9], "material_instance": "bone_stew" },
-								"down": { "uv": [13, 35], "uv_size": [1, -9], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [-5, 1, -4],
-							"size": [1, 5, 9],
-							"uv": {
-								"north": { "uv": [4, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"east": { "uv": [19, 20], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"south": { "uv": [5, 27], "uv_size": [1, 5], "material_instance": "bone_stew" },
-								"west": { "uv": [9, 21], "uv_size": [9, 5], "material_instance": "bone_stew" },
-								"up": { "uv": [14, 26], "uv_size": [1, 9], "material_instance": "bone_stew" },
-								"down": { "uv": [15, 35], "uv_size": [1, -9], "material_instance": "bone_stew" }
+								"north": { "uv": [10, 24], "uv_size": [8, 2], "material_instance": "bone_stew" },
+								"east": { "uv": [0, 26], "uv_size": [8, 2], "material_instance": "bone_stew" },
+								"south": { "uv": [26, 0], "uv_size": [8, 2], "material_instance": "bone_stew" },
+								"west": { "uv": [26, 2], "uv_size": [8, 2], "material_instance": "bone_stew" },
+								"up": { "uv": [10, 16], "uv_size": [8, 8], "material_instance": "bone_stew" },
+								"down": { "uv": [18, 8], "uv_size": [8, -8], "material_instance": "bone_stew" }
 							}
 						},
 						{
 							"origin": [5, 4, -2],
-							"size": [2, 1, 1],
+							"size": [2, 1, 4],
 							"uv": {
-								"north": { "uv": [6, 25], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [18, 15], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [28, 20], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [9, 20], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [28, 21], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [28, 23], "uv_size": [2, -1], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [5, 4, 1],
-							"size": [2, 1, 1],
-							"uv": {
-								"north": { "uv": [28, 23], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [8, 25], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [28, 24], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [27, 14], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [28, 27], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [28, 29], "uv_size": [2, -1], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [6, 4, -1],
-							"size": [1, 1, 2],
-							"uv": {
-								"north": { "uv": [8, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [29, 8], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [9, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [29, 9], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [18, 21], "uv_size": [1, 2], "material_instance": "bone_stew" },
-								"down": { "uv": [18, 25], "uv_size": [1, -2], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [-7, 4, 1],
-							"size": [2, 1, 1],
-							"uv": {
-								"north": { "uv": [29, 10], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [10, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [29, 11], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [11, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [29, 12], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [29, 14], "uv_size": [2, -1], "material_instance": "bone_stew" }
-							}
-						},
-						{
-							"origin": [-7, 4, -1],
-							"size": [1, 1, 2],
-							"uv": {
-								"north": { "uv": [30, 14], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [18, 29], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [30, 15], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [20, 29], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [22, 29], "uv_size": [1, 2], "material_instance": "bone_stew" },
-								"down": { "uv": [23, 31], "uv_size": [1, -2], "material_instance": "bone_stew" }
+								"north": { "uv": [30, 9], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"east": { "uv": [8, 29], "uv_size": [4, 1], "material_instance": "bone_stew" },
+								"south": { "uv": [30, 10], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"west": { "uv": [12, 29], "uv_size": [4, 1], "material_instance": "bone_stew" },
+								"up": { "uv": [28, 8], "uv_size": [2, 4], "material_instance": "bone_stew" },
+								"down": { "uv": [28, 16], "uv_size": [2, -4], "material_instance": "bone_stew" }
 							}
 						},
 						{
 							"origin": [-7, 4, -2],
-							"size": [2, 1, 1],
+							"size": [2, 1, 4],
 							"uv": {
-								"north": { "uv": [24, 29], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"east": { "uv": [30, 16], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"south": { "uv": [26, 29], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"west": { "uv": [30, 17], "uv_size": [1, 1], "material_instance": "bone_stew" },
-								"up": { "uv": [28, 29], "uv_size": [2, 1], "material_instance": "bone_stew" },
-								"down": { "uv": [6, 31], "uv_size": [2, -1], "material_instance": "bone_stew" }
+								"north": { "uv": [30, 11], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"east": { "uv": [8, 30], "uv_size": [4, 1], "material_instance": "bone_stew" },
+								"south": { "uv": [12, 30], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"west": { "uv": [30, 8], "uv_size": [4, 1], "material_instance": "bone_stew" },
+								"up": { "uv": [16, 28], "uv_size": [2, 4], "material_instance": "bone_stew" },
+								"down": { "uv": [28, 20], "uv_size": [2, -4], "material_instance": "bone_stew" }
 							}
 						},
 						{
-							"origin": [-4, 5, -4],
-							"size": [8, 0, 8],
+							"origin": [-6, 5, -1],
+							"size": [1, -1, 2],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "bone_stew" },
-								"east": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "bone_stew" },
-								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "bone_stew" },
-								"west": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "bone_stew" },
+								"north": { "uv": [30, 18], "uv_size": [1, 1], "material_instance": "bone_stew" },
+								"east": { "uv": [30, 12], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"south": { "uv": [19, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
+								"west": { "uv": [30, 13], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"up": { "uv": [14, 30], "uv_size": [1, 2], "material_instance": "bone_stew" },
+								"down": { "uv": [30, 16], "uv_size": [1, -2], "material_instance": "bone_stew" }
+							}
+						},
+						{
+							"origin": [5, 5, -1],
+							"size": [1, -1, 2],
+							"uv": {
+								"north": { "uv": [30, 19], "uv_size": [1, 1], "material_instance": "bone_stew" },
+								"east": { "uv": [30, 16], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"south": { "uv": [20, 30], "uv_size": [1, 1], "material_instance": "bone_stew" },
+								"west": { "uv": [30, 17], "uv_size": [2, 1], "material_instance": "bone_stew" },
+								"up": { "uv": [15, 30], "uv_size": [1, 2], "material_instance": "bone_stew" },
+								"down": { "uv": [18, 32], "uv_size": [1, -2], "material_instance": "bone_stew" }
+							}
+						},
+						{
+							"origin": [-4, 4, -4],
+							"size": [8, 1, 8],
+							"uv": {
+								"north": { "uv": [20, 26], "uv_size": [8, 1], "material_instance": "bone_stew" },
+								"east": { "uv": [20, 27], "uv_size": [8, 1], "material_instance": "bone_stew" },
+								"south": { "uv": [0, 28], "uv_size": [8, 1], "material_instance": "bone_stew" },
+								"west": { "uv": [8, 28], "uv_size": [8, 1], "material_instance": "bone_stew" },
 								"up": { "uv": [10, 0], "uv_size": [8, 8], "material_instance": "bone_stew" },
 								"down": { "uv": [10, 16], "uv_size": [8, -8], "material_instance": "bone_stew" }
 							}
@@ -169,36 +109,36 @@
 							"pivot": [3.25, 6.85, 2],
 							"rotation": [0, 0, -45],
 							"uv": {
-								"north": { "uv": [0, 25], "uv_size": [6, 2], "material_instance": "bone_stew" },
-								"east": { "uv": [27, 8], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"south": { "uv": [18, 25], "uv_size": [6, 2], "material_instance": "bone_stew" },
-								"west": { "uv": [27, 10], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"up": { "uv": [24, 25], "uv_size": [6, 2], "material_instance": "bone_stew" },
-								"down": { "uv": [6, 28], "uv_size": [6, -2], "material_instance": "bone_stew" }
+								"north": { "uv": [26, 4], "uv_size": [6, 2], "material_instance": "bone_stew" },
+								"east": { "uv": [18, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"south": { "uv": [26, 6], "uv_size": [6, 2], "material_instance": "bone_stew" },
+								"west": { "uv": [20, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"up": { "uv": [8, 26], "uv_size": [6, 2], "material_instance": "bone_stew" },
+								"down": { "uv": [14, 28], "uv_size": [6, -2], "material_instance": "bone_stew" }
 							}
 						},
 						{
 							"origin": [2.35355, 7.51421, 0.9],
 							"size": [2, 2, 2],
 							"uv": {
-								"north": { "uv": [27, 12], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"east": { "uv": [18, 27], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"south": { "uv": [20, 27], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"west": { "uv": [22, 27], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"up": { "uv": [24, 27], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"down": { "uv": [26, 29], "uv_size": [2, -2], "material_instance": "bone_stew" }
+								"north": { "uv": [28, 20], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"east": { "uv": [22, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"south": { "uv": [28, 22], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"west": { "uv": [24, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"up": { "uv": [28, 24], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"down": { "uv": [26, 30], "uv_size": [2, -2], "material_instance": "bone_stew" }
 							}
 						},
 						{
 							"origin": [3.48744, 6.02678, 1.1],
 							"size": [2, 2, 2],
 							"uv": {
-								"north": { "uv": [6, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"east": { "uv": [8, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"south": { "uv": [10, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"west": { "uv": [28, 14], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"up": { "uv": [28, 16], "uv_size": [2, 2], "material_instance": "bone_stew" },
-								"down": { "uv": [28, 20], "uv_size": [2, -2], "material_instance": "bone_stew" }
+								"north": { "uv": [28, 26], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"east": { "uv": [28, 28], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"south": { "uv": [0, 29], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"west": { "uv": [2, 29], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"up": { "uv": [4, 29], "uv_size": [2, 2], "material_instance": "bone_stew" },
+								"down": { "uv": [6, 31], "uv_size": [2, -2], "material_instance": "bone_stew" }
 							}
 						}
 					]

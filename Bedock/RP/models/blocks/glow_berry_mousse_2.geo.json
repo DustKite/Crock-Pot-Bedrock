@@ -1,0 +1,235 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.glow_berry_mousse_2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-5.5, 0, -5.5],
+							"size": [11, 2, 11],
+							"uv": {
+								"north": { "uv": [12, 37], "uv_size": [11, 2], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [23, 38], "uv_size": [11, 2], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [34, 38], "uv_size": [11, 2], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [12, 39], "uv_size": [11, 2], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [12, 0], "uv_size": [11, 11], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [12, 22], "uv_size": [11, -11], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-6, 2, -6],
+							"size": [12, 3, 12],
+							"uv": {
+								"north": { "uv": [34, 4], "uv_size": [12, 3], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [34, 7], "uv_size": [12, 3], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [32, 35], "uv_size": [12, 3], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [0, 37], "uv_size": [12, 3], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 2, -4.5],
+							"size": [9, 1, 9],
+							"uv": {
+								"north": { "uv": [34, 10], "uv_size": [9, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [23, 40], "uv_size": [9, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [32, 40], "uv_size": [9, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [8, 41], "uv_size": [9, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [23, 11], "uv_size": [9, 9], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [23, 29], "uv_size": [9, -9], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-5.5, 3, -5.5],
+							"size": [11, 4, 11],
+							"uv": {
+								"north": { "uv": [32, 31], "uv_size": [11, 4], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [0, 33], "uv_size": [11, 4], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [11, 33], "uv_size": [11, 4], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [34, 0], "uv_size": [11, 4], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [12, 22], "uv_size": [11, 11], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [23, 11], "uv_size": [11, -11], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 7, -4.5],
+							"size": [9, 5, 9],
+							"uv": {
+								"north": { "uv": [32, 11], "uv_size": [9, 5], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [32, 16], "uv_size": [9, 5], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [32, 21], "uv_size": [9, 5], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [32, 26], "uv_size": [9, 5], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [0, 24], "uv_size": [9, 9], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [23, 38], "uv_size": [9, -9], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 12, -4.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [9, 32], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [8, 40], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [10, 40], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [4, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [9, 24], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [9, 28], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [2.5, 12, -4.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [6, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [43, 10], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [43, 11], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [43, 12], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [9, 28], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [9, 32], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-1, 12, -4.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [43, 13], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [43, 14], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [43, 15], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [16, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 11], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [41, 15], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 12, 2.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [43, 16], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [43, 17], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [18, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [43, 18], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 15], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [17, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-1, 12, 2.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [43, 19], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [20, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [43, 20], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [43, 21], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 17], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [19, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [2.5, 12, 2.5],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [22, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [43, 22], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [43, 23], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [24, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 19], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [21, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-4.5, 12, -1],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [43, 24], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [43, 25], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [26, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [43, 26], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 21], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [23, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [2.5, 12, -1],
+							"size": [2, 1, 2],
+							"uv": {
+								"north": { "uv": [43, 27], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [28, 43], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [43, 28], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [43, 29], "uv_size": [2, 1], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 23], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [25, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-0.25, 12.25, -0.5],
+							"size": [2, 2, 2],
+							"pivot": [0.75, 13.25, 0.5],
+							"rotation": [0, 0, -22.5],
+							"uv": {
+								"north": { "uv": [41, 25], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [27, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [41, 27], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [29, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 29], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [31, 43], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-1, 11.5, -2],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": { "uv": [33, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [35, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [37, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [39, 41], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [41, 40], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [8, 44], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-2, 11.25, 0],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": { "uv": [10, 42], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [12, 42], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [14, 42], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [41, 42], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [0, 43], "uv_size": [2, 2], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [2, 45], "uv_size": [2, -2], "material_instance": "glow_berry_mousse_2" }
+							}
+						},
+						{
+							"origin": [-0.75, 14, 0],
+							"size": [4, 3, 0],
+							"pivot": [0.25, 15, 0],
+							"rotation": [0, 0, -22.5],
+							"uv": {
+								"north": { "uv": [0, 40], "uv_size": [4, 3], "material_instance": "glow_berry_mousse_2" },
+								"east": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "glow_berry_mousse_2" },
+								"south": { "uv": [4, 40], "uv_size": [4, 3], "material_instance": "glow_berry_mousse_2" },
+								"west": { "uv": [0, 0], "uv_size": [0, 3], "material_instance": "glow_berry_mousse_2" },
+								"up": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "glow_berry_mousse_2" },
+								"down": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "glow_berry_mousse_2" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

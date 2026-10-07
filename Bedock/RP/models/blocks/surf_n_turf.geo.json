@@ -110,6 +110,8 @@
 						{
 							"origin": [1.875, 1.5, -4],
 							"size": [3, 0, 2],
+							"pivot": [3.375, 1.5, -2],
+							"rotation": [-22.5, 0, 0],
 							"uv": {
 								"north": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "surf_n_turf" },
 								"east": { "uv": [0, 0], "uv_size": [2, 0], "material_instance": "surf_n_turf" },

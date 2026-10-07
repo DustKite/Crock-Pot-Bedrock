@@ -1,4 +1,4 @@
-import { MolangVariableMap, system, world } from "@minecraft/server";
+import { EntityDamageCause, MolangVariableMap, system, world } from "@minecraft/server";
 import { CUSTOM_EFFECTS } from "./EffectDefinitions";
 
 const DYNAMIC_PROP_KEY = "crockpot:custom_effects";
@@ -6,40 +6,35 @@ const playerEffects = new Map();
 const customDamageInProgress = new Set();
 
 function savePlayerEffects(player) {
-    if (!player || !player.isValid) return;
+    if (!player?.isValid) return;
     const effects = playerEffects.get(player.id);
-    try {
-        if (!effects || effects.size === 0) {
-            player.setDynamicProperty(DYNAMIC_PROP_KEY, undefined);
-            return;
-        }
-        const data = {};
-        for (const [name, ticks] of effects) {
-            if (ticks > 0) data[name] = ticks;
-        }
-        player.setDynamicProperty(DYNAMIC_PROP_KEY, Object.keys(data).length > 0 ? JSON.stringify(data) : undefined);
-    } catch (e) { }
+    if (!effects || effects.size === 0) {
+        player.setDynamicProperty(DYNAMIC_PROP_KEY, undefined);
+        return;
+    }
+    const data = {};
+    for (const [name, ticks] of effects) {
+        if (ticks > 0) data[name] = ticks;
+    }
+    player.setDynamicProperty(DYNAMIC_PROP_KEY, Object.keys(data).length > 0 ? JSON.stringify(data) : undefined);
 }
 
 function loadPlayerEffects(player) {
-    if (!player || !player.isValid) return;
+    if (!player?.isValid) return;
+    const raw = player.getDynamicProperty(DYNAMIC_PROP_KEY);
+    if (!raw || typeof raw !== "string") return;
     try {
-        const raw = player.getDynamicProperty(DYNAMIC_PROP_KEY);
-        if (raw && typeof raw === "string") {
-            const parsed = JSON.parse(raw);
-            const map = new Map();
-            for (const [name, ticks] of Object.entries(parsed)) {
-                if (typeof ticks === "number" && ticks > 0) {
-                    map.set(name, ticks);
-                }
-            }
-            if (map.size > 0) playerEffects.set(player.id, map);
+        const parsed = JSON.parse(raw);
+        const map = new Map();
+        for (const [name, ticks] of Object.entries(parsed)) {
+            if (typeof ticks === "number" && ticks > 0) map.set(name, ticks);
         }
-    } catch (e) { }
+        if (map.size > 0) playerEffects.set(player.id, map);
+    } catch { }
 }
 
 export function applyCustomEffect(player, effectName, durationTicks) {
-    if (!player || !player.isValid) return;
+    if (!player?.isValid) return;
     let effects = playerEffects.get(player.id);
     if (!effects) {
         effects = new Map();
@@ -54,17 +49,13 @@ export function applyCustomEffect(player, effectName, durationTicks) {
 }
 
 export function hasCustomEffect(player, effectName) {
-    if (!player || !player.isValid) return false;
-    const effects = playerEffects.get(player.id);
-    return !!(effects && effects.get(effectName) > 0);
+    return Boolean(player?.isValid && playerEffects.get(player.id)?.get(effectName) > 0);
 }
 
 export function clearAllCustomEffects(player) {
     if (!player) return;
     playerEffects.delete(player.id);
-    try {
-        player.setDynamicProperty(DYNAMIC_PROP_KEY, undefined);
-    } catch (e) { }
+    player.setDynamicProperty(DYNAMIC_PROP_KEY, undefined);
 }
 
 system.runInterval(() => {
@@ -95,16 +86,14 @@ system.runInterval(() => {
             for (const effectName of effects.keys()) {
                 const color = CUSTOM_EFFECTS[effectName]?.color;
                 if (color) {
-                    try {
-                        const molang = new MolangVariableMap();
-                        molang.setColorRGBA("variable.color", color);
-                        const pos = {
-                            x: player.location.x + (Math.random() - 0.5) * 0.7,
-                            y: player.location.y + 0.2 + Math.random() * 1.5,
-                            z: player.location.z + (Math.random() - 0.5) * 0.7
-                        };
-                        player.dimension.spawnParticle("minecraft:mobspell_emitter", pos, molang);
-                    } catch (e) { }
+                    const molang = new MolangVariableMap();
+                    molang.setColorRGBA("variable.color", color);
+                    const pos = {
+                        x: player.location.x + (Math.random() - 0.5) * 0.7,
+                        y: player.location.y + 0.2 + Math.random() * 1.5,
+                        z: player.location.z + (Math.random() - 0.5) * 0.7
+                    };
+                    player.dimension.spawnParticle("minecraft:mobspell_emitter", pos, molang);
                 }
             }
         }
@@ -129,46 +118,28 @@ world.beforeEvents.playerLeave.subscribe(({ player }) => {
 });
 
 world.afterEvents.entityDie.subscribe(({ deadEntity }) => {
-    if (deadEntity && deadEntity.typeId === "minecraft:player") {
+    if (deadEntity?.typeId === "minecraft:player") {
         clearAllCustomEffects(deadEntity);
     }
 });
 
 world.beforeEvents.entityHurt.subscribe((event) => {
     const { hurtEntity, damageSource, damage } = event;
-    if (!hurtEntity || !damageSource) return;
-
-    if (customDamageInProgress.has(hurtEntity.id)) {
-        return;
-    }
-
-    if (damageSource.cause !== "entityAttack" && damageSource.cause !== "entity_attack") {
-        return;
-    }
+    if (!hurtEntity || !damageSource || customDamageInProgress.has(hurtEntity.id)) return;
+    if (damageSource.cause !== EntityDamageCause.entityAttack) return;
 
     const attacker = damageSource.damagingEntity;
-    if (!attacker || !attacker.isValid || attacker.typeId !== "minecraft:player") {
-        return;
-    }
+    if (!attacker?.isValid || attacker.typeId !== "minecraft:player") return;
 
     const hasWellFed = hasCustomEffect(attacker, "well_fed");
     const hasCharge = hasCustomEffect(attacker, "charge");
-
     if (!hasWellFed && !hasCharge) return;
 
     event.cancel = true;
 
-    let baseDamage = damage;
-    if (hasWellFed) {
-        baseDamage += CUSTOM_EFFECTS.well_fed.baseBonus;
-    }
-
-    let multiplier = 1.0;
-    if (hasCharge) {
-        multiplier = CUSTOM_EFFECTS.charge.getMultiplier(hurtEntity);
-    }
-
-    const finalDamage = baseDamage * multiplier;
+    let finalDamage = damage;
+    if (hasWellFed) finalDamage += CUSTOM_EFFECTS.well_fed.baseBonus;
+    if (hasCharge) finalDamage *= CUSTOM_EFFECTS.charge.getMultiplier(hurtEntity);
 
     system.run(() => {
         if (!hurtEntity.isValid) return;
@@ -176,7 +147,7 @@ world.beforeEvents.entityHurt.subscribe((event) => {
         try {
             hurtEntity.applyDamage(finalDamage, {
                 damagingEntity: attacker,
-                cause: "entityAttack"
+                cause: EntityDamageCause.entityAttack
             });
         } finally {
             customDamageInProgress.delete(hurtEntity.id);

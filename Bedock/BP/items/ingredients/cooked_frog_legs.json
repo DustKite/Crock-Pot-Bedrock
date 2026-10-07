@@ -14,6 +14,13 @@
                     "default": "crockpot:cooked_frog_legs"
                 }
             },
+            "minecraft:tags": {
+                "tags": [
+                    "crockpot:cooked_frog_leg",
+                    "crockpot:is_frog_leg",
+                    "farmersdelight:frog_leg"
+                ]
+            },
             "minecraft:food": {
                 "can_always_eat": false,
                 "nutrition": 5,

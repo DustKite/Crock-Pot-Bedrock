@@ -131,6 +131,9 @@
     "crockpot:guano": {
       "textures": "textures/items/crockpot/guano"
     },
+    "crockpot:gummy_cake": {
+      "textures": "textures/items/crockpot/gummy_cake"
+    },
     "crockpot:hoglin_nose": {
       "textures": "textures/items/crockpot/hoglin_nose"
     },
@@ -266,6 +269,15 @@
     "crockpot:seafood_gumbo": {
       "textures": "textures/items/crockpot/seafood_gumbo"
     },
+    "crockpot:snake_bone_soup": {
+      "textures": "textures/items/crockpot/snake_bone_soup"
+    },
+    "crockpot:steamed_ham_sandwich": {
+      "textures": "textures/items/crockpot/steamed_ham_sandwich"
+    },
+    "crockpot:steamed_sticks": {
+      "textures": "textures/items/crockpot/steamed_sticks"
+    },
     "crockpot:stuffed_eggplant": {
       "textures": "textures/items/crockpot/stuffed_eggplant"
     },
@@ -305,11 +317,110 @@
     "crockpot:volt_goat_jelly": {
       "textures": "textures/items/crockpot/volt_goat_jelly"
     },
+    "crockpot:volt_goat_spawn_egg": {
+      "textures": "textures/items/crockpot/volt_goat_spawn_egg"
+    },
     "crockpot:watermelon_icle": {
       "textures": "textures/items/crockpot/watermelon_icle"
     },
     "crockpot:wet_goop": {
       "textures": "textures/items/crockpot/wet_goop"
+    },
+    "crockpot:food_category_dairy": {
+      "textures": "textures/items/crockpot/food_category/food_category_dairy"
+    },
+    "crockpot:food_category_egg": {
+      "textures": "textures/items/crockpot/food_category/food_category_egg"
+    },
+    "crockpot:food_category_fish": {
+      "textures": "textures/items/crockpot/food_category/food_category_fish"
+    },
+    "crockpot:food_category_frozen": {
+      "textures": "textures/items/crockpot/food_category/food_category_frozen"
+    },
+    "crockpot:food_category_fruit": {
+      "textures": "textures/items/crockpot/food_category/food_category_fruit"
+    },
+    "crockpot:food_category_inedible": {
+      "textures": "textures/items/crockpot/food_category/food_category_inedible"
+    },
+    "crockpot:food_category_meat": {
+      "textures": "textures/items/crockpot/food_category/food_category_meat"
+    },
+    "crockpot:food_category_monster": {
+      "textures": "textures/items/crockpot/food_category/food_category_monster"
+    },
+    "crockpot:food_category_sweetener": {
+      "textures": "textures/items/crockpot/food_category/food_category_sweetener"
+    },
+    "crockpot:food_category_veggie": {
+      "textures": "textures/items/crockpot/food_category/food_category_veggie"
+    },
+    "crockpot:arrow_0": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_0"
+    },
+    "crockpot:arrow_10": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_10"
+    },
+    "crockpot:arrow_100": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_100"
+    },
+    "crockpot:arrow_20": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_20"
+    },
+    "crockpot:arrow_30": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_30"
+    },
+    "crockpot:arrow_40": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_40"
+    },
+    "crockpot:arrow_50": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_50"
+    },
+    "crockpot:arrow_60": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_60"
+    },
+    "crockpot:arrow_70": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_70"
+    },
+    "crockpot:arrow_80": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_80"
+    },
+    "crockpot:arrow_90": {
+      "textures": "textures/items/crockpot/progress_bar/arrow/arrow_90"
+    },
+    "crockpot:flame_0": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_0"
+    },
+    "crockpot:flame_10": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_10"
+    },
+    "crockpot:flame_100": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_100"
+    },
+    "crockpot:flame_20": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_20"
+    },
+    "crockpot:flame_30": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_30"
+    },
+    "crockpot:flame_40": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_40"
+    },
+    "crockpot:flame_50": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_50"
+    },
+    "crockpot:flame_60": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_60"
+    },
+    "crockpot:flame_70": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_70"
+    },
+    "crockpot:flame_80": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_80"
+    },
+    "crockpot:flame_90": {
+      "textures": "textures/items/crockpot/progress_bar/flame/flame_90"
     }
   }
 }

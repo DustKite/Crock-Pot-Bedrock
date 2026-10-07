@@ -1,0 +1,101 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.hot_chili_1",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 1, 7],
+							"uv": {
+								"north": { "uv": [28, 23], "uv_size": [7, 1], "material_instance": "hot_chili_1" },
+								"east": { "uv": [28, 24], "uv_size": [7, 1], "material_instance": "hot_chili_1" },
+								"south": { "uv": [28, 25], "uv_size": [7, 1], "material_instance": "hot_chili_1" },
+								"west": { "uv": [26, 28], "uv_size": [7, 1], "material_instance": "hot_chili_1" },
+								"up": { "uv": [18, 8], "uv_size": [7, 7], "material_instance": "hot_chili_1" },
+								"down": { "uv": [18, 22], "uv_size": [7, -7], "material_instance": "hot_chili_1" }
+							}
+						},
+						{
+							"origin": [-5, 1, -5],
+							"size": [10, 4, 10],
+							"uv": {
+								"north": { "uv": [0, 20], "uv_size": [10, 4], "material_instance": "hot_chili_1" },
+								"east": { "uv": [18, 22], "uv_size": [10, 4], "material_instance": "hot_chili_1" },
+								"south": { "uv": [0, 24], "uv_size": [10, 4], "material_instance": "hot_chili_1" },
+								"west": { "uv": [25, 8], "uv_size": [10, 4], "material_instance": "hot_chili_1" },
+								"up": { "uv": [0, 0], "uv_size": [10, 10], "material_instance": "hot_chili_1" },
+								"down": { "uv": [0, 20], "uv_size": [10, -10], "material_instance": "hot_chili_1" }
+							}
+						},
+						{
+							"origin": [-4, 5, -4],
+							"size": [8, -3, 8],
+							"uv": {
+								"north": { "uv": [25, 18], "uv_size": [8, 3], "material_instance": "hot_chili_1" },
+								"east": { "uv": [26, 0], "uv_size": [8, 3], "material_instance": "hot_chili_1" },
+								"south": { "uv": [26, 3], "uv_size": [8, 3], "material_instance": "hot_chili_1" },
+								"west": { "uv": [16, 26], "uv_size": [8, 3], "material_instance": "hot_chili_1" },
+								"up": { "uv": [10, 0], "uv_size": [8, 8], "material_instance": "hot_chili_1" },
+								"down": { "uv": [10, 16], "uv_size": [8, -8], "material_instance": "hot_chili_1" }
+							}
+						},
+						{
+							"origin": [4, 4, -0.5],
+							"size": [1, 6, 2],
+							"pivot": [4.5, 7.5, 0.5],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"north": { "uv": [22, 29], "uv_size": [1, 6], "material_instance": "hot_chili_1" },
+								"east": { "uv": [8, 28], "uv_size": [2, 6], "material_instance": "hot_chili_1" },
+								"south": { "uv": [23, 29], "uv_size": [1, 6], "material_instance": "hot_chili_1" },
+								"west": { "uv": [24, 28], "uv_size": [2, 6], "material_instance": "hot_chili_1" },
+								"up": { "uv": [16, 24], "uv_size": [1, 2], "material_instance": "hot_chili_1" },
+								"down": { "uv": [17, 26], "uv_size": [1, -2], "material_instance": "hot_chili_1" }
+							}
+						},
+						{
+							"origin": [-4, 5, -4],
+							"size": [8, 2, 8],
+							"uv": {
+								"north": { "uv": [26, 6], "uv_size": [8, 2], "material_instance": "hot_chili_1" },
+								"east": { "uv": [24, 26], "uv_size": [8, 2], "material_instance": "hot_chili_1" },
+								"south": { "uv": [0, 28], "uv_size": [8, 2], "material_instance": "hot_chili_1" },
+								"west": { "uv": [28, 21], "uv_size": [8, 2], "material_instance": "hot_chili_1" },
+								"up": { "uv": [10, 16], "uv_size": [8, 8], "material_instance": "hot_chili_1" },
+								"down": { "uv": [18, 8], "uv_size": [8, -8], "material_instance": "hot_chili_1" }
+							}
+						},
+						{
+							"origin": [-3, 7, -3],
+							"size": [6, 1, 6],
+							"uv": {
+								"north": { "uv": [16, 29], "uv_size": [6, 1], "material_instance": "hot_chili_1" },
+								"east": { "uv": [26, 29], "uv_size": [6, 1], "material_instance": "hot_chili_1" },
+								"south": { "uv": [0, 30], "uv_size": [6, 1], "material_instance": "hot_chili_1" },
+								"west": { "uv": [10, 30], "uv_size": [6, 1], "material_instance": "hot_chili_1" },
+								"up": { "uv": [10, 24], "uv_size": [6, 6], "material_instance": "hot_chili_1" },
+								"down": { "uv": [25, 18], "uv_size": [6, -6], "material_instance": "hot_chili_1" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

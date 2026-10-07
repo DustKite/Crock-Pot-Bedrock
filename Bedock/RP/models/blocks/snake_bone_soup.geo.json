@@ -1,0 +1,169 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.snake_bone_soup",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [1, 0, -1]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-3.5, 0, -3.5],
+							"size": [7, 1, 7],
+							"uv": {
+								"north": { "uv": [33, 19], "uv_size": [7, 1], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [20, 33], "uv_size": [7, 1], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [33, 20], "uv_size": [7, 1], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [33, 21], "uv_size": [7, 1], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [16, 26], "uv_size": [7, 7], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [26, 23], "uv_size": [7, -7], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-4.5, 1, -4.5],
+							"size": [9, 2, 9],
+							"uv": {
+								"north": { "uv": [23, 29], "uv_size": [9, 2], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [23, 31], "uv_size": [9, 2], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [32, 29], "uv_size": [9, 2], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [32, 31], "uv_size": [9, 2], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [10, 0], "uv_size": [9, 9], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [10, 18], "uv_size": [9, -9], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-5, 3, -5],
+							"size": [10, 3, 10],
+							"uv": {
+								"north": { "uv": [23, 26], "uv_size": [10, 3], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [26, 23], "uv_size": [10, 3], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [27, 0], "uv_size": [10, 3], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [27, 3], "uv_size": [10, 3], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [0, 0], "uv_size": [10, 10], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [0, 20], "uv_size": [10, -10], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-4, 6, -4],
+							"size": [8, -3, 8],
+							"uv": {
+								"north": { "uv": [27, 6], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [27, 9], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [27, 12], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [0, 28], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [10, 18], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [18, 26], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-4, 5.25, -4],
+							"size": [8, 0, 8],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [19, 0], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [19, 16], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-4, 5.5, -4],
+							"size": [8, 0, 8],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [0, 20], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [8, 34], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-2.5, 4.5, -2],
+							"size": [4, 4, 2],
+							"pivot": [-0.6, 5.25, -2],
+							"rotation": [0, 0, -45],
+							"uv": {
+								"north": { "uv": [0, 31], "uv_size": [4, 4], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [8, 20], "uv_size": [2, 4], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [4, 31], "uv_size": [4, 4], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [33, 15], "uv_size": [2, 4], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [19, 16], "uv_size": [4, 2], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [16, 35], "uv_size": [4, -2], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-1.5, 7.5, -2],
+							"size": [2, -2, 2],
+							"pivot": [-0.6, 5.25, -2],
+							"rotation": [0, 0, -45],
+							"uv": {
+								"north": { "uv": [23, 16], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [8, 24], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [33, 26], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [9, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [11, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [13, 36], "uv_size": [2, -2], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [-5.03553, 7.03553, -2],
+							"size": [2, 2, 2],
+							"pivot": [-4.13553, 8.78553, -1],
+							"rotation": [0, 0, -45],
+							"uv": {
+								"north": { "uv": [20, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [22, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [24, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [34, 33], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [0, 35], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [2, 37], "uv_size": [2, -2], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [2.8, 4, 0.5],
+							"size": [1, 5, 1],
+							"pivot": [3.3, 6, 1],
+							"rotation": [0, 0, 45],
+							"uv": {
+								"north": { "uv": [27, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [28, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [29, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [30, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [25, 16], "uv_size": [1, 1], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [25, 18], "uv_size": [1, -1], "material_instance": "snake_bone_soup" }
+							}
+						},
+						{
+							"origin": [3, 4, 1.75],
+							"size": [1, 5, 1],
+							"pivot": [3.5, 6, 2.25],
+							"rotation": [0, 0, 22.5],
+							"uv": {
+								"north": { "uv": [31, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"east": { "uv": [32, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"south": { "uv": [33, 33], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"west": { "uv": [8, 34], "uv_size": [1, 5], "material_instance": "snake_bone_soup" },
+								"up": { "uv": [27, 15], "uv_size": [1, 1], "material_instance": "snake_bone_soup" },
+								"down": { "uv": [28, 16], "uv_size": [1, -1], "material_instance": "snake_bone_soup" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,29 +1,39 @@
 {
-    "format_version": "1.26.0",
-    "minecraft:item": {
-        "description": {
-            "identifier": "crockpot:popcorn",
-            "menu_category": {
-                "category": "equipment",
-                "group": "crockpot:itemGroup.name.ingredients"
-            }
-        },
-        "components": {
-            "minecraft:icon": {
-                "textures": {
-                    "default": "crockpot:popcorn"
-                }
-            },
-            "minecraft:food": {
-                "can_always_eat": false,
-                "nutrition": 3,
-                "saturation_modifier": 0.8
-            },
-            "minecraft:use_animation": "eat",
-            "minecraft:use_modifiers": {
-                "use_duration": 1.2,
-                "movement_modifier": 0.4
-            }
+  "format_version": "1.26.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "crockpot:popcorn",
+      "menu_category": {
+        "category": "equipment",
+        "group": "crockpot:itemGroup.name.ingredients"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "textures": {
+          "default": "crockpot:popcorn"
         }
+      },
+      "minecraft:tags": {
+        "tags": [
+          "crockpot:is_popcorn",
+          "farmersdelight:is_cooked_corn",
+          "farmersdelight:is_popcorn"
+        ]
+      },
+      "minecraft:food": {
+        "can_always_eat": false,
+        "nutrition": 3,
+        "saturation_modifier": 0.8
+      },
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.2,
+        "movement_modifier": 0.4
+      },
+      "minecraft:compostable": {
+        "composting_chance": 85
+      }
     }
+  }
 }

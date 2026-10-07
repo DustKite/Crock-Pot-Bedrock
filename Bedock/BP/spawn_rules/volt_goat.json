@@ -7,18 +7,46 @@
     },
     "conditions": [
       {
-        "minecraft:spawns_on_block_filter": [
-          "minecraft:sand",
-          "minecraft:hardened_clay",
-          "minecraft:stained_hardened_clay"
-        ],
         "minecraft:biome_filter": {
-          "any_of": [
-            { "test": "has_biome_tag", "value": "mesa" }
-          ]
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "mesa"
         },
+        "minecraft:spawns_on_block_filter": [
+          {
+            "name": "minecraft:grass_block"
+          },
+          {
+            "name": "minecraft:red_sand"
+          },
+          {
+            "name": "minecraft:coarse_dirt"
+          },
+          {
+            "name": "minecraft:brown_terracotta"
+          },
+          {
+            "name": "minecraft:hardened_clay"
+          },
+          {
+            "name": "minecraft:orange_terracotta"
+          },
+          {
+            "name": "minecraft:light_gray_terracotta"
+          },
+          {
+            "name": "minecraft:red_terracotta"
+          },
+          {
+            "name": "minecraft:white_terracotta"
+          },
+          {
+            "name": "minecraft:yellow_terracotta"
+          }
+        ],
+        "minecraft:spawns_on_surface": {},
         "minecraft:brightness_filter": {
-          "min": 9,
+          "min": 7,
           "max": 15,
           "adjust_for_weather": false
         },
@@ -26,8 +54,8 @@
           "default": 10
         },
         "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "min_size": 1,
+          "max_size": 3
         }
       }
     ]

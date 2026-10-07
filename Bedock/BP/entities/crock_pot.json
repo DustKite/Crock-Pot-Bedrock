@@ -8,27 +8,25 @@
             "is_experimental": false
         },
         "component_groups": {
-            "crockpot:crock_pot_despawn": {
-                "minecraft:despawn": {},
+            "crockpot:despawn": {
+                "minecraft:transformation": {
+                    "drop_inventory": false,
+                    "into": "minecraft:air"
+                },
                 "minecraft:instant_despawn": {
                     "remove_child_entities": false
-                },
-                "minecraft:transformation": {
-                    "drop_inventory": true,
-                    "into": "minecraft:air"
                 }
             }
         },
         "components": {
             "minecraft:damage_sensor": {
                 "triggers": {
-                    "on_damage": {},
-                    "deals_damage": "no"
+                    "deals_damage": false
                 }
             },
             "minecraft:timer": {
                 "looping": true,
-                "randomInterval": true,
+                "randomInterval": false,
                 "time": [
                     0.0,
                     0.0
@@ -36,9 +34,6 @@
                 "time_down_event": {
                     "event": "crockpot:crock_pot_tick"
                 }
-            },
-            "minecraft:nameable": {
-                "allow_name_tag_renaming": false
             },
             "minecraft:persistent": {},
             "minecraft:physics": {
@@ -48,6 +43,7 @@
             "minecraft:scale": 0,
             "minecraft:type_family": {
                 "family": [
+                    "crock_pot",
                     "crockpot_tick_block_entity"
                 ]
             },
@@ -62,11 +58,11 @@
             },
             "minecraft:collision_box": {
                 "width": 1,
-                "height": 0.5
+                "height": 0.8
             },
             "minecraft:inventory": {
-                "inventory_size": 6,
-                "can_be_siphoned_from": true,
+                "inventory_size": 8,
+                "can_be_siphoned_from": false,
                 "container_type": "minecart_chest"
             }
         },
@@ -74,7 +70,7 @@
             "crockpot:despawn": {
                 "add": {
                     "component_groups": [
-                        "crockpot:crock_pot_despawn"
+                        "crockpot:despawn"
                     ]
                 }
             },

@@ -22,7 +22,7 @@
                     "texture": "crockpot:unknown_crops",
                     "ambient_occlusion": false,
                     "face_dimming": false,
-                    "render_method": "alpha_test"
+                    "render_method": "alpha_test_single_sided"
                 }
             },
             "minecraft:precipitation_interactions": {
@@ -50,29 +50,28 @@
                 "destroy_chance_modifier": 30
             },
             "minecraft:light_dampening": 0,
-            "minecraft:geometry": "geometry.crockpot.crop_cross",
+            "minecraft:geometry": "geometry.crockpot.unknown_crops",
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 0.0
             },
             "minecraft:collision_box": false,
             "minecraft:selection_box": {
                 "origin": [
-                    -6,
+                    -2.5,
                     0,
-                    -6
+                    -2.5
                 ],
                 "size": [
-                    12,
-                    4,
-                    12
+                    5,
+                    2,
+                    5
                 ]
             },
             "minecraft:placement_filter": {
                 "conditions": [
                     {
                         "block_filter": [
-                            "minecraft:farmland",
-                            "farmersdelight:rich_soil_farmland"
+                            "minecraft:farmland"
                         ],
                         "allowed_faces": [
                             "up"

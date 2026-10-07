@@ -2,17 +2,44 @@
   "format_version": "1.8.0",
   "render_controllers": {
     "controller.render.volt_goat": {
-      "geometry": "Geometry.default",
-      "materials": [{ "*": "Material.default" }],
-      "textures": ["Texture.default"]
-    },
-    "controller.render.volt_goat_charged": {
-      "geometry": "Geometry.default",
-      "materials": [{ "*": "Material.charged" }],
-      "textures": ["Texture.charged_armor"],
-      "part_visibility": [
-        { "*": "query.is_charged" }
+      "geometry": "query.is_baby ? Geometry.baby : Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "query.is_baby ? Texture.baby : Texture.default"
       ]
+    },
+    "controller.render.volt_goat_armor": {
+      "geometry": "query.is_baby ? Geometry.baby_charged : Geometry.charged",
+      "materials": [
+        {
+          "*": "Material.charged"
+        }
+      ],
+      "textures": [
+        "Texture.charged"
+      ],
+      "overlay_color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "uv_anim": {
+        "offset": [
+          "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01 : 0.0",
+          "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.01 : 0.0"
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ]
+      },
+      "light_color_multiplier": 0.5,
+      "ignore_lighting": true
     }
   }
 }

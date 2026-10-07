@@ -14,11 +14,11 @@
                     "default": "crockpot:glow_berry_mousse"
                 }
             },
+            "minecraft:rarity": "uncommon",
             "minecraft:food": {
                 "can_always_eat": false,
                 "nutrition": 6,
-                "saturation_modifier": 0.6,
-                "using_converts_to": "minecraft:bowl"
+                "saturation_modifier": 0.6
             },
             "minecraft:use_animation": "eat",
             "minecraft:use_modifiers": {

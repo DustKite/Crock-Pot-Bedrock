@@ -31,36 +31,36 @@
 							"origin": [-7.5, 5, 0.5],
 							"size": [7, 2, 7],
 							"uv": {
-								"north": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [0, 0], "uv_size": [7, 7], "material_instance": "mashed_potatoes" },
-								"down": { "uv": [0, 14], "uv_size": [7, -7], "material_instance": "mashed_potatoes" }
+								"north": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "material_instance": "mashed_potatoes_1" }
 							}
 						},
 						{
 							"origin": [-6.5, 7, 1.5],
 							"size": [5, 1, 5],
 							"uv": {
-								"north": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [0, 14], "uv_size": [5, 5], "material_instance": "mashed_potatoes" },
-								"down": { "uv": [13, 20], "uv_size": [5, -5], "material_instance": "mashed_potatoes" }
+								"north": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [0, 14], "uv_size": [5, 5], "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [13, 20], "uv_size": [5, -5], "material_instance": "mashed_potatoes_1" }
 							}
 						},
 						{
 							"origin": [-7, 0, 1],
 							"size": [6, 5, 6],
 							"uv": {
-								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes" },
-								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes" }
+								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes_1" }
 							}
 						},
 						{
@@ -69,12 +69,12 @@
 							"pivot": [3, 5, -3],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [0, 0], "uv_size": [7, 7], "uv_rotation": 90, "material_instance": "mashed_potatoes" },
-								"down": { "uv": [0, 14], "uv_size": [7, -7], "uv_rotation": 270, "material_instance": "mashed_potatoes" }
+								"north": { "uv": [0, 19], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [5, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [18, 15], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [18, 17], "uv_size": [7, 2], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [0, 0], "uv_size": [7, 7], "uv_rotation": 90, "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [0, 14], "uv_size": [7, -7], "uv_rotation": 270, "material_instance": "mashed_potatoes_1" }
 							}
 						},
 						{
@@ -83,12 +83,12 @@
 							"pivot": [3, 5, -3],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [0, 14], "uv_size": [5, 5], "uv_rotation": 270, "material_instance": "mashed_potatoes" },
-								"down": { "uv": [13, 20], "uv_size": [5, -5], "uv_rotation": 90, "material_instance": "mashed_potatoes" }
+								"north": { "uv": [19, 1], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [19, 2], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [19, 3], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [19, 0], "uv_size": [5, 1], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [0, 14], "uv_size": [5, 5], "uv_rotation": 270, "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [13, 20], "uv_size": [5, -5], "uv_rotation": 90, "material_instance": "mashed_potatoes_1" }
 							}
 						},
 						{
@@ -97,12 +97,12 @@
 							"pivot": [3, 5, -3],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes" },
-								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes" },
-								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes" }
+								"north": { "uv": [7, 12], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"east": { "uv": [13, 0], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"south": { "uv": [13, 5], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"west": { "uv": [13, 10], "uv_size": [6, 5], "material_instance": "mashed_potatoes_1" },
+								"up": { "uv": [7, 0], "uv_size": [6, 6], "material_instance": "mashed_potatoes_1" },
+								"down": { "uv": [7, 12], "uv_size": [6, -6], "material_instance": "mashed_potatoes_1" }
 							}
 						}
 					]

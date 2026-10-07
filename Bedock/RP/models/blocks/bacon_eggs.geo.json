@@ -32,10 +32,10 @@
 							}
 						},
 						{
-							"origin": [-6, 1.1, -4],
+							"origin": [-5.53806, 1.1, -4.19134],
 							"size": [11, 0, 3],
-							"pivot": [-0.5, 1.1, -3],
-							"rotation": [0, 22.5, 0],
+							"pivot": [-0.03806, 1.2, -2.69134],
+							"rotation": [0, -22.5, 0],
 							"uv": {
 								"north": { "uv": [0, 0], "uv_size": [11, 0], "material_instance": "bacon_eggs" },
 								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bacon_eggs" },
@@ -46,10 +46,10 @@
 							}
 						},
 						{
-							"origin": [-6, 1.3, -4],
+							"origin": [-5.53806, 1.3, -4.19134],
 							"size": [11, 0, 3],
-							"pivot": [-0.5, 1.3, -3],
-							"rotation": [0, 22.5, 0],
+							"pivot": [-0.03806, 1.2, -2.69134],
+							"rotation": [0, -22.5, 0],
 							"uv": {
 								"north": { "uv": [0, 0], "uv_size": [11, 0], "material_instance": "bacon_eggs" },
 								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bacon_eggs" },
@@ -60,35 +60,35 @@
 							}
 						},
 						{
-							"origin": [-4.075, 1.3, 1.375],
+							"origin": [-3.66298, 1.3, 1.73293],
 							"size": [2, 1, 2],
-							"pivot": [-2.75, 1.3, 1.75],
+							"pivot": [-2.40914, 1.525, 2.48349],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": { "uv": [23, 15], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
-								"east": { "uv": [16, 23], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
-								"south": { "uv": [23, 16], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
-								"west": { "uv": [14, 23], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
-								"up": { "uv": [23, 9], "uv_size": [2, 2], "uv_rotation": 270, "material_instance": "bacon_eggs" },
-								"down": { "uv": [23, 13], "uv_size": [2, -2], "uv_rotation": 90, "material_instance": "bacon_eggs" }
+								"north": { "uv": [14, 23], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
+								"east": { "uv": [23, 15], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
+								"south": { "uv": [16, 23], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
+								"west": { "uv": [23, 16], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
+								"up": { "uv": [23, 9], "uv_size": [2, 2], "material_instance": "bacon_eggs" },
+								"down": { "uv": [23, 13], "uv_size": [2, -2], "material_instance": "bacon_eggs" }
 							}
 						},
 						{
-							"origin": [-5, 0.75, 0],
+							"origin": [-4.6553, 0.75, -0.26595],
 							"size": [5, 1, 5],
-							"pivot": [-1.75, 1.3, 1.75],
+							"pivot": [-2.40914, 1.525, 2.48349],
 							"rotation": [0, 22.5, 0],
 							"uv": {
-								"north": { "uv": [23, 2], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
-								"east": { "uv": [23, 3], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
-								"south": { "uv": [23, 4], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
-								"west": { "uv": [23, 1], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
-								"up": { "uv": [18, 0], "uv_size": [5, 5], "uv_rotation": 270, "material_instance": "bacon_eggs" },
-								"down": { "uv": [18, 10], "uv_size": [5, -5], "uv_rotation": 90, "material_instance": "bacon_eggs" }
+								"north": { "uv": [23, 1], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
+								"east": { "uv": [23, 2], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
+								"south": { "uv": [23, 3], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
+								"west": { "uv": [23, 4], "uv_size": [5, 1], "material_instance": "bacon_eggs" },
+								"up": { "uv": [18, 0], "uv_size": [5, 5], "material_instance": "bacon_eggs" },
+								"down": { "uv": [18, 10], "uv_size": [5, -5], "material_instance": "bacon_eggs" }
 							}
 						},
 						{
-							"origin": [2, 1.5, 1],
+							"origin": [2, 1.5, 2],
 							"size": [2, 1, 2],
 							"uv": {
 								"north": { "uv": [18, 23], "uv_size": [2, 1], "material_instance": "bacon_eggs" },
@@ -100,7 +100,7 @@
 							}
 						},
 						{
-							"origin": [0, 1, -1],
+							"origin": [0, 1, 0],
 							"size": [5, 1, 5],
 							"uv": {
 								"north": { "uv": [23, 6], "uv_size": [5, 1], "material_instance": "bacon_eggs" },

@@ -1,0 +1,249 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:veg_stinger",
+            "menu_category": {
+                "category": "none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 0.0
+                }
+            },
+            "states": {
+                "crockpot:stacks": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('crockpot:stacks') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.veg_stinger",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -3.65432,
+                            0,
+                            -3
+                        ],
+                        "size": [
+                            7.92596,
+                            14.14805,
+                            6
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -3.65432,
+                            0,
+                            -3
+                        ],
+                        "size": [
+                            7.92596,
+                            14.14805,
+                            6
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.veg_stinger_1",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -6.65432,
+                            0,
+                            -6.91969
+                        ],
+                        "size": [
+                            14.42596,
+                            15,
+                            12.91969
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6.65432,
+                            0,
+                            -6.91969
+                        ],
+                        "size": [
+                            14.42596,
+                            15,
+                            12.91969
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:veg_stinger_1",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "veg_stinger_1": {
+                            "texture": "crockpot:veg_stinger_1",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.veg_stinger_2",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7.90432,
+                            0,
+                            -7.5
+                        ],
+                        "size": [
+                            15.90432,
+                            15,
+                            15.5
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -7.90432,
+                            0,
+                            -7.5
+                        ],
+                        "size": [
+                            15.90432,
+                            15,
+                            15.5
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:veg_stinger_2",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "veg_stinger_2": {
+                            "texture": "crockpot:veg_stinger_2",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.crockpot.veg_stinger",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.01
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -3.65432,
+                    0,
+                    -3
+                ],
+                "size": [
+                    7.92596,
+                    14.14805,
+                    6
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -3.65432,
+                    0,
+                    -3
+                ],
+                "size": [
+                    7.92596,
+                    14.14805,
+                    6
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:veg_stinger",
+                    "render_method": "alpha_test_single_sided"
+                },
+                "veg_stinger": {
+                    "texture": "crockpot:veg_stinger",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('minecraft:crop','plant','crop') && (!q.all_tags('fertilize_area') || q.any_tag('grass') || q.any_tag('dirt') || q.any_tag('minecraft:is_pickaxe_item_destructible'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:crockpot:food": {}
+        }
+    }
+}

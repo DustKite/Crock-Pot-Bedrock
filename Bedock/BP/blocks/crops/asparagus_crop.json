@@ -33,7 +33,7 @@
                         ],
                         "size": [
                             12,
-                            3,
+                            5,
                             12
                         ]
                     }
@@ -85,7 +85,7 @@
                         ],
                         "size": [
                             12,
-                            10,
+                            11,
                             12
                         ]
                     }
@@ -112,7 +112,7 @@
                         ],
                         "size": [
                             12,
-                            12,
+                            15,
                             12
                         ]
                     }
@@ -166,8 +166,7 @@
                 "conditions": [
                     {
                         "block_filter": [
-                            "minecraft:farmland",
-                            "farmersdelight:rich_soil_farmland"
+                            "minecraft:farmland"
                         ],
                         "allowed_faces": [
                             "up"

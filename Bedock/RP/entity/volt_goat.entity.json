@@ -9,29 +9,39 @@
       },
       "textures": {
         "default": "textures/entity/volt_goat",
-        "charged_armor": "textures/entity/creeper/creeper_armor"
+        "charged": "textures/entity/creeper/creeper_armor",
+        "baby": "textures/entity/volt_goat_baby"
       },
       "geometry": {
-        "default": "geometry.volt_goat"
+        "default": "geometry.crockpot.volt_goat",
+        "charged": "geometry.crockpot.volt_goat.charged",
+        "baby": "geometry.crockpot.volt_goat_baby",
+        "baby_charged": "geometry.crockpot.volt_goat_baby.charged"
+      },
+      "spawn_egg": {
+        "texture": "crockpot:volt_goat_spawn_egg"
+      },
+      "scripts": {
+        "scale": "query.is_baby ? 2.0 : 1.0",
+        "pre_animation": [
+          "variable.tcos_right_side = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.tcos_left_side = -variable.tcos_right_side;"
+        ],
+        "animate": [
+          "walk",
+          "look_at_target"
+        ]
       },
       "animations": {
         "walk": "animation.volt_goat.walk",
         "look_at_target": "animation.volt_goat.look_at_target"
       },
-      "scripts": {
-        "animate": [
-          "look_at_target",
-          { "walk": "query.modified_distance_moved" }
-        ]
-      },
       "render_controllers": [
         "controller.render.volt_goat",
-        "controller.render.volt_goat_charged"
-      ],
-      "spawn_egg": {
-        "base_color": "#546596",
-        "overlay_color": "#D1CB4F"
-      }
+        {
+          "controller.render.volt_goat_armor": "query.is_powered"
+        }
+      ]
     }
   }
 }

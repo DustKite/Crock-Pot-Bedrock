@@ -14,12 +14,10 @@
                     "default": "crockpot:avaj"
                 }
             },
-            "minecraft:glint": true,
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 2,
-                "saturation_modifier": 3.6,
-                "using_converts_to": "minecraft:glass_bottle"
+                "saturation_modifier": 3.6
             },
             "minecraft:use_animation": "drink",
             "minecraft:use_modifiers": {

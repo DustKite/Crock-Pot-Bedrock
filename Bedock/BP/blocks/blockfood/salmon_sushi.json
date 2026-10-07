@@ -1,0 +1,249 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:salmon_sushi",
+            "menu_category": {
+                "category": "none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 0.0
+                }
+            },
+            "states": {
+                "crockpot:stacks": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('crockpot:stacks') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.salmon_sushi",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            4,
+                            12
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0,
+                            -6
+                        ],
+                        "size": [
+                            12,
+                            4,
+                            12
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.salmon_sushi_1",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -6.3076,
+                            0,
+                            -6.61313
+                        ],
+                        "size": [
+                            12.32547,
+                            4,
+                            12.82632
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6.3076,
+                            0,
+                            -6.61313
+                        ],
+                        "size": [
+                            12.32547,
+                            4,
+                            12.82632
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:salmon_sushi_1",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "salmon_sushi_1": {
+                            "texture": "crockpot:salmon_sushi_1",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.salmon_sushi_2",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -6.25,
+                            0,
+                            -6.61313
+                        ],
+                        "size": [
+                            13.81147,
+                            8.39104,
+                            13.92459
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6.25,
+                            0,
+                            -6.61313
+                        ],
+                        "size": [
+                            13.81147,
+                            8.39104,
+                            13.92459
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:salmon_sushi_2",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "salmon_sushi_2": {
+                            "texture": "crockpot:salmon_sushi_2",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.crockpot.salmon_sushi",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.01
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -6,
+                    0,
+                    -6
+                ],
+                "size": [
+                    12,
+                    4,
+                    12
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -6,
+                    0,
+                    -6
+                ],
+                "size": [
+                    12,
+                    4,
+                    12
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:salmon_sushi",
+                    "render_method": "alpha_test_single_sided"
+                },
+                "salmon_sushi": {
+                    "texture": "crockpot:salmon_sushi",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('minecraft:crop','plant','crop') && (!q.all_tags('fertilize_area') || q.any_tag('grass') || q.any_tag('dirt') || q.any_tag('minecraft:is_pickaxe_item_destructible'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:crockpot:food": {}
+        }
+    }
+}

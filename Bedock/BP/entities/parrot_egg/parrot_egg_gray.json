@@ -1,0 +1,43 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "crockpot:parrot_egg_gray",
+      "is_experimental": false,
+      "is_summonable": true,
+      "is_spawnable": false,
+      "runtime_identifier": "minecraft:snowball",
+      "spawn_category": "misc"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "height": 0.20,
+        "width": 0.20
+      },
+      "minecraft:physics": {},
+      "minecraft:projectile": {
+        "angle_offset": 0.0,
+        "on_hit": {
+          "impact_damage": {
+            "damage": 0,
+            "knockback": false,
+            "destroy_on_hit": true
+          },
+          "particle_on_hit": {
+            "num_particles": 8,
+            "on_other_hit": true,
+            "on_entity_hit": true,
+            "particle_type": "iconcrack"
+          },
+          "remove_on_hit": {}
+        },
+        "gravity": 0.03,
+        "power": 1.5
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

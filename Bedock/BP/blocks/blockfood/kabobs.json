@@ -1,0 +1,249 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:kabobs",
+            "menu_category": {
+                "category": "none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 0.0
+                }
+            },
+            "states": {
+                "crockpot:stacks": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('crockpot:stacks') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.kabobs",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7.8
+                        ],
+                        "size": [
+                            14,
+                            6.70984,
+                            14
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7.8
+                        ],
+                        "size": [
+                            14,
+                            6.70984,
+                            14
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.kabobs_1",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7.8
+                        ],
+                        "size": [
+                            14,
+                            6.87132,
+                            14
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7.8
+                        ],
+                        "size": [
+                            14,
+                            6.87132,
+                            14
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:kabobs_1",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "kabobs_1": {
+                            "texture": "crockpot:kabobs_1",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.kabobs_2",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0.1,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            6.87132,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0.1,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            6.87132,
+                            16
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:kabobs_2",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "kabobs_2": {
+                            "texture": "crockpot:kabobs_2",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.crockpot.kabobs",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.01
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -7,
+                    0,
+                    -7.8
+                ],
+                "size": [
+                    14,
+                    6.70984,
+                    14
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -7,
+                    0,
+                    -7.8
+                ],
+                "size": [
+                    14,
+                    6.70984,
+                    14
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:kabobs",
+                    "render_method": "alpha_test_single_sided"
+                },
+                "kabobs": {
+                    "texture": "crockpot:kabobs",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('minecraft:crop','plant','crop') && (!q.all_tags('fertilize_area') || q.any_tag('grass') || q.any_tag('dirt') || q.any_tag('minecraft:is_pickaxe_item_destructible'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:crockpot:food": {}
+        }
+    }
+}

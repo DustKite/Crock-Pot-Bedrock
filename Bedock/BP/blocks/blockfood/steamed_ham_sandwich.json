@@ -1,0 +1,249 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "crockpot:steamed_ham_sandwich",
+            "menu_category": {
+                "category": "none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 0.0
+                }
+            },
+            "states": {
+                "crockpot:stacks": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('crockpot:stacks') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.steamed_ham_sandwich",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -6,
+                            0.1,
+                            -6.37953
+                        ],
+                        "size": [
+                            12,
+                            7.15,
+                            12.75907
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -6,
+                            0.1,
+                            -6.37953
+                        ],
+                        "size": [
+                            12,
+                            7.15,
+                            12.75907
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 2",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.steamed_ham_sandwich_1",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7.97953,
+                            0,
+                            -7.5
+                        ],
+                        "size": [
+                            15.95265,
+                            8.45,
+                            15
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -7.97953,
+                            0,
+                            -7.5
+                        ],
+                        "size": [
+                            15.95265,
+                            8.45,
+                            15
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:steamed_ham_sandwich_1",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "steamed_ham_sandwich_1": {
+                            "texture": "crockpot:steamed_ham_sandwich_1",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:stacks') == 3",
+                "components": {
+                    "minecraft:geometry": "geometry.crockpot.steamed_ham_sandwich_2",
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7.97953,
+                            0,
+                            -7.97611
+                        ],
+                        "size": [
+                            15.95265,
+                            15.72521,
+                            15.72611
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -7.97953,
+                            0,
+                            -7.97611
+                        ],
+                        "size": [
+                            15.95265,
+                            15.72521,
+                            15.72611
+                        ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:steamed_ham_sandwich_2",
+                            "render_method": "alpha_test_single_sided"
+                        },
+                        "steamed_ham_sandwich_2": {
+                            "texture": "crockpot:steamed_ham_sandwich_2",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            270,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": "geometry.crockpot.steamed_ham_sandwich",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.01
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -6,
+                    0.1,
+                    -6.37953
+                ],
+                "size": [
+                    12,
+                    7.15,
+                    12.75907
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -6,
+                    0.1,
+                    -6.37953
+                ],
+                "size": [
+                    12,
+                    7.15,
+                    12.75907
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "crockpot:steamed_ham_sandwich",
+                    "render_method": "alpha_test_single_sided"
+                },
+                "steamed_ham_sandwich": {
+                    "texture": "crockpot:steamed_ham_sandwich",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:connection_rule": {
+                "accepts_connections_from": "none"
+            },
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": [
+                            "up"
+                        ],
+                        "block_filter": [
+                            {
+                                "tags": "!q.any_tag('minecraft:crop','plant','crop') && (!q.all_tags('fertilize_area') || q.any_tag('grass') || q.any_tag('dirt') || q.any_tag('minecraft:is_pickaxe_item_destructible'))"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "tag:crockpot:food": {}
+        }
+    }
+}

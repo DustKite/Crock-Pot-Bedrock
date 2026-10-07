@@ -1,0 +1,99 @@
+{
+	"format_version": "1.21.110",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crockpot.monster_lasagna_2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7.5, 0, -6],
+							"size": [15, 5, 12],
+							"uv": {
+								"north": { "uv": [28, 18], "uv_size": [15, 5], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [28, 28], "uv_size": [12, 5], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [28, 23], "uv_size": [15, 5], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [13, 30], "uv_size": [12, 5], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [0, 0], "uv_size": [15, 12], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [0, 24], "uv_size": [15, -12], "material_instance": "monster_lasagna_2" }
+							}
+						},
+						{
+							"origin": [-6.5, 5, -5],
+							"size": [13, -1, 10],
+							"uv": {
+								"north": { "uv": [25, 33], "uv_size": [13, 1], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [13, 35], "uv_size": [10, 1], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [0, 34], "uv_size": [13, 1], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [23, 35], "uv_size": [10, 1], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [15, 0], "uv_size": [13, 10], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [15, 20], "uv_size": [13, -10], "material_instance": "monster_lasagna_2" }
+							}
+						},
+						{
+							"origin": [7, 3.75, -4],
+							"size": [1, 1, 8],
+							"uv": {
+								"north": { "uv": [13, 25], "uv_size": [1, 1], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [28, 36], "uv_size": [8, 1], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [14, 25], "uv_size": [1, 1], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [36, 36], "uv_size": [8, 1], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [0, 37], "uv_size": [1, 8], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [1, 45], "uv_size": [1, -8], "material_instance": "monster_lasagna_2" }
+							}
+						},
+						{
+							"origin": [-8, 3.75, -4],
+							"size": [1, 1, 8],
+							"uv": {
+								"north": { "uv": [13, 24], "uv_size": [1, 1], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [10, 36], "uv_size": [8, 1], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [14, 24], "uv_size": [1, 1], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [18, 36], "uv_size": [8, 1], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [26, 36], "uv_size": [1, 8], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [27, 44], "uv_size": [1, -8], "material_instance": "monster_lasagna_2" }
+							}
+						},
+						{
+							"origin": [-6.5, 3.5, -5],
+							"size": [13, 1, 10],
+							"uv": {
+								"north": { "uv": [25, 34], "uv_size": [13, 1], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [33, 35], "uv_size": [10, 1], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [0, 35], "uv_size": [13, 1], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [0, 36], "uv_size": [10, 1], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [15, 20], "uv_size": [13, 10], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [0, 34], "uv_size": [13, -10], "material_instance": "monster_lasagna_2" }
+							}
+						},
+						{
+							"origin": [-6, 4.75, -4.5],
+							"size": [12, 0, 9],
+							"uv": {
+								"north": { "uv": [0, 0], "uv_size": [12, 0], "material_instance": "monster_lasagna_2" },
+								"east": { "uv": [0, 0], "uv_size": [9, 0], "material_instance": "monster_lasagna_2" },
+								"south": { "uv": [0, 0], "uv_size": [12, 0], "material_instance": "monster_lasagna_2" },
+								"west": { "uv": [0, 0], "uv_size": [9, 0], "material_instance": "monster_lasagna_2" },
+								"up": { "uv": [28, 0], "uv_size": [12, 9], "material_instance": "monster_lasagna_2" },
+								"down": { "uv": [28, 18], "uv_size": [12, -9], "material_instance": "monster_lasagna_2" }
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

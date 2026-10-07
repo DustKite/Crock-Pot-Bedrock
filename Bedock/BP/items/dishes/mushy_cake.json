@@ -14,6 +14,7 @@
                     "default": "crockpot:mushy_cake"
                 }
             },
+            "minecraft:rarity": "uncommon",
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 6,

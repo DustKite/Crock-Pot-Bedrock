@@ -14,11 +14,11 @@
                     "default": "crockpot:volt_goat_jelly"
                 }
             },
+            "minecraft:rarity": "uncommon",
             "minecraft:food": {
                 "can_always_eat": true,
                 "nutrition": 4,
-                "saturation_modifier": 0.6,
-                "using_converts_to": "minecraft:bowl"
+                "saturation_modifier": 0.6
             },
             "minecraft:use_animation": "eat",
             "minecraft:use_modifiers": {

@@ -20,27 +20,27 @@
 					"pivot": [8, 0, -8],
 					"cubes": [
 						{
-							"origin": [-6, 0, -6],
-							"size": [12, 1, 12],
+							"origin": [-6, 0, -5],
+							"size": [12, 1, 10],
 							"uv": {
 								"north": { "uv": [19, 12], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
-								"east": { "uv": [19, 13], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
-								"south": { "uv": [19, 14], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
-								"west": { "uv": [19, 15], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
-								"up": { "uv": [0, 0], "uv_size": [12, 12], "material_instance": "watermelon_icle" },
-								"down": { "uv": [0, 24], "uv_size": [12, -12], "material_instance": "watermelon_icle" }
+								"east": { "uv": [19, 14], "uv_size": [10, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [19, 13], "uv_size": [12, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [19, 15], "uv_size": [10, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [0, 0], "uv_size": [12, 10], "material_instance": "watermelon_icle" },
+								"down": { "uv": [0, 20], "uv_size": [12, -10], "material_instance": "watermelon_icle" }
 							}
 						},
 						{
 							"origin": [-2, 1, 0.5],
 							"size": [3, 1, 2],
 							"uv": {
-								"north": { "uv": [20, 20], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
-								"east": { "uv": [15, 21], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
-								"south": { "uv": [12, 21], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
-								"west": { "uv": [17, 21], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
-								"up": { "uv": [20, 4], "uv_size": [3, 2], "material_instance": "watermelon_icle" },
-								"down": { "uv": [20, 8], "uv_size": [3, -2], "material_instance": "watermelon_icle" }
+								"north": { "uv": [13, 20], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [20, 18], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [16, 20], "uv_size": [3, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [19, 20], "uv_size": [2, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [20, 2], "uv_size": [3, 2], "material_instance": "watermelon_icle" },
+								"down": { "uv": [20, 6], "uv_size": [3, -2], "material_instance": "watermelon_icle" }
 							}
 						},
 						{
@@ -52,7 +52,7 @@
 								"north": { "uv": [12, 18], "uv_size": [8, 2], "material_instance": "watermelon_icle" },
 								"east": { "uv": [19, 16], "uv_size": [5, 2], "material_instance": "watermelon_icle" },
 								"south": { "uv": [19, 10], "uv_size": [8, 2], "material_instance": "watermelon_icle" },
-								"west": { "uv": [20, 0], "uv_size": [5, 2], "material_instance": "watermelon_icle" },
+								"west": { "uv": [0, 20], "uv_size": [5, 2], "material_instance": "watermelon_icle" },
 								"up": { "uv": [12, 0], "uv_size": [8, 5], "material_instance": "watermelon_icle" },
 								"down": { "uv": [12, 10], "uv_size": [8, -5], "material_instance": "watermelon_icle" }
 							}
@@ -63,10 +63,10 @@
 							"pivot": [0, 1, -2],
 							"rotation": [22.5, 0, 0],
 							"uv": {
-								"north": { "uv": [20, 2], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
-								"east": { "uv": [20, 8], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
-								"south": { "uv": [20, 3], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
-								"west": { "uv": [20, 9], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"north": { "uv": [20, 0], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [5, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [20, 1], "uv_size": [7, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [20, 6], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
 								"up": { "uv": [12, 10], "uv_size": [7, 4], "material_instance": "watermelon_icle" },
 								"down": { "uv": [12, 18], "uv_size": [7, -4], "material_instance": "watermelon_icle" }
 							}
@@ -77,12 +77,12 @@
 							"pivot": [0, 1, -2],
 							"rotation": [22.5, 0, 0],
 							"uv": {
-								"north": { "uv": [12, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
-								"east": { "uv": [19, 21], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
-								"south": { "uv": [16, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
-								"west": { "uv": [20, 21], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
-								"up": { "uv": [20, 18], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
-								"down": { "uv": [20, 20], "uv_size": [4, -1], "material_instance": "watermelon_icle" }
+								"north": { "uv": [20, 7], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"east": { "uv": [20, 19], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
+								"south": { "uv": [20, 8], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"west": { "uv": [5, 21], "uv_size": [1, 1], "material_instance": "watermelon_icle" },
+								"up": { "uv": [9, 20], "uv_size": [4, 1], "material_instance": "watermelon_icle" },
+								"down": { "uv": [20, 10], "uv_size": [4, -1], "material_instance": "watermelon_icle" }
 							}
 						}
 					]

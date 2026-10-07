@@ -1,0 +1,220 @@
+{
+    "crockpot:asparagus_crop": {
+        "sound": "grass"
+    },
+    "crockpot:asparagus_soup": {
+        "sound": "coral"
+    },
+    "crockpot:avaj": {
+        "sound": "glass"
+    },
+    "crockpot:bacon_eggs": {
+        "sound": "wood"
+    },
+    "crockpot:birdcage_lower": {
+        "sound": "lantern"
+    },
+    "crockpot:birdcage_upper": {
+        "sound": "lantern"
+    },
+    "crockpot:bone_soup": {
+        "sound": "cloth"
+    },
+    "crockpot:bone_stew": {
+        "sound": "lantern"
+    },
+    "crockpot:breakfast_skillet": {
+        "sound": "lantern"
+    },
+    "crockpot:bunny_stew": {
+        "sound": "cloth"
+    },
+    "crockpot:california_roll": {
+        "sound": "cloth"
+    },
+    "crockpot:candy": {
+        "sound": "glass"
+    },
+    "crockpot:ceviche": {
+        "sound": "cloth"
+    },
+    "crockpot:corn_bottom": {
+        "sound": "grass"
+    },
+    "crockpot:corn_top": {
+        "sound": "grass"
+    },
+    "crockpot:crock_pot": {
+        "sound": "metal"
+    },
+    "crockpot:eggplant_crop": {
+        "sound": "grass"
+    },
+    "crockpot:fish_sticks": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:fish_tacos": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:flower_salad": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:froggle_bunwich": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:fruit_medley": {
+        "sound": "glass"
+    },
+    "crockpot:garlic_crop": {
+        "sound": "grass"
+    },
+    "crockpot:gazpacho": {
+        "sound": "glass"
+    },
+    "crockpot:glow_berry_mousse": {
+        "sound": "coral"
+    },
+    "crockpot:gummy_cake": {
+        "sound": "coral"
+    },
+    "crockpot:honey_ham": {
+        "sound": "wood"
+    },
+    "crockpot:honey_nuggets": {
+        "sound": "wood"
+    },
+    "crockpot:hot_chili": {
+        "sound": "cloth"
+    },
+    "crockpot:hot_cocoa": {
+        "sound": "glass"
+    },
+    "crockpot:ice_cream": {
+        "sound": "coral"
+    },
+    "crockpot:iced_tea": {
+        "sound": "glass"
+    },
+    "crockpot:jammy_preserves": {
+        "sound": "coral"
+    },
+    "crockpot:kabobs": {
+        "sound": "wood"
+    },
+    "crockpot:mashed_potatoes": {
+        "sound": "cloth"
+    },
+    "crockpot:meat_balls": {
+        "sound": "wood"
+    },
+    "crockpot:monster_lasagna": {
+        "sound": "coral"
+    },
+    "crockpot:monster_tartare": {
+        "sound": "cloth"
+    },
+    "crockpot:moqueca": {
+        "sound": "lantern"
+    },
+    "crockpot:mushy_cake": {
+        "sound": "cloth"
+    },
+    "crockpot:netherosia": {
+        "sound": "cloth"
+    },
+    "crockpot:onion_crop": {
+        "sound": "grass"
+    },
+    "crockpot:pepper_crop": {
+        "sound": "grass"
+    },
+    "crockpot:pepper_popper": {
+        "sound": "wood"
+    },
+    "crockpot:perogies": {
+        "sound": "wood"
+    },
+    "crockpot:plain_omelette": {
+        "sound": "cloth"
+    },
+    "crockpot:portable_crock_pot": {
+        "sound": "metal"
+    },
+    "crockpot:potato_souffle": {
+        "sound": "cloth"
+    },
+    "crockpot:potato_tornado": {
+        "sound": "wood"
+    },
+    "crockpot:pow_cake": {
+        "sound": "cloth"
+    },
+    "crockpot:pumpkin_cookie": {
+        "sound": "wood"
+    },
+    "crockpot:ratatouille": {
+        "sound": "lantern"
+    },
+    "crockpot:salmon_sushi": {
+        "sound": "cloth"
+    },
+    "crockpot:salsa": {
+        "sound": "cloth"
+    },
+    "crockpot:scotch_egg": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:seafood_gumbo": {
+        "sound": "coral"
+    },
+    "crockpot:snake_bone_soup": {
+        "sound": "cloth"
+    },
+    "crockpot:steamed_ham_sandwich": {
+        "sound": "cloth"
+    },
+    "crockpot:steamed_sticks": {
+        "sound": "cloth"
+    },
+    "crockpot:stuffed_eggplant": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:surf_n_turf": {
+        "sound": "wood"
+    },
+    "crockpot:taffy": {
+        "sound": "glass"
+    },
+    "crockpot:tea": {
+        "sound": "glass"
+    },
+    "crockpot:tomato_crop": {
+        "sound": "grass"
+    },
+    "crockpot:tropical_bouillabaisse": {
+        "sound": "cloth"
+    },
+    "crockpot:turkey_dinner": {
+        "sound": "sweet_berry_bush"
+    },
+    "crockpot:unknown_crops": {
+        "sound": "grass"
+    },
+    "crockpot:veg_stinger": {
+        "sound": "glass"
+    },
+    "crockpot:volt_goat_jelly": {
+        "sound": "coral"
+    },
+    "crockpot:watermelon_icle": {
+        "sound": "glass"
+    },
+    "crockpot:wet_goop": {
+        "sound": "coral"
+    },
+    "format_version": [
+        1,
+        1,
+        0
+    ]
+}

@@ -1,0 +1,170 @@
+export const FuelValues = {
+    "minecraft:lava_bucket": 20000,
+    "minecraft:coal_block": 16000,
+    "minecraft:dried_kelp_block": 4000,
+    "minecraft:blaze_rod": 2400,
+
+
+    "minecraft:coal": 1600,
+    "minecraft:charcoal": 1600,
+
+    "minecraft:scaffolding": 50,
+    "minecraft:stick": 100,
+    "minecraft:bamboo": 50,
+    "minecraft:leaf_litter": 100,
+    "minecraft:dead_bush": 100,
+    "minecraft:short_dry_grass": 100,
+    "minecraft:tall_dry_grass": 100,
+    "minecraft:bowl": 100,
+
+    "minecraft:oak_sapling": 100,
+    "minecraft:spruce_sapling": 100,
+    "minecraft:birch_sapling": 100,
+    "minecraft:jungle_sapling": 100,
+    "minecraft:acacia_sapling": 100,
+    "minecraft:dark_oak_sapling": 100,
+    "minecraft:mangrove_propagule": 100,
+    "minecraft:cherry_sapling": 100,
+    "minecraft:pale_oak_sapling": 100,
+
+    "braziliandelight:acai_palm_sapling": 100,
+    "braziliandelight:coconut_palm_sapling": 100,
+    "braziliandelight:lemon_sapling": 100,
+
+    "minecraft:oak_button": 100,
+    "minecraft:spruce_button": 100,
+    "minecraft:birch_button": 100,
+    "minecraft:jungle_button": 100,
+    "minecraft:acacia_button": 100,
+    "minecraft:dark_oak_button": 100,
+    "minecraft:mangrove_button": 100,
+    "minecraft:cherry_button": 100,
+    "minecraft:pale_oak_button": 100,
+    "minecraft:bamboo_button": 100,
+    "minecraft:crimson_button": 100,
+    "minecraft:warped_button": 100,
+
+    "minecraft:oak_pressure_plate": 300,
+    "minecraft:spruce_pressure_plate": 300,
+    "minecraft:birch_pressure_plate": 300,
+    "minecraft:jungle_pressure_plate": 300,
+    "minecraft:acacia_pressure_plate": 300,
+    "minecraft:dark_oak_pressure_plate": 300,
+    "minecraft:mangrove_pressure_plate": 300,
+    "minecraft:cherry_pressure_plate": 300,
+    "minecraft:pale_oak_pressure_plate": 300,
+    "minecraft:bamboo_pressure_plate": 300,
+    "minecraft:crimson_pressure_plate": 300,
+    "minecraft:warped_pressure_plate": 300,
+
+    "minecraft:oak_trapdoor": 300,
+    "minecraft:spruce_trapdoor": 300,
+    "minecraft:birch_trapdoor": 300,
+    "minecraft:jungle_trapdoor": 300,
+    "minecraft:acacia_trapdoor": 300,
+    "minecraft:dark_oak_trapdoor": 300,
+    "minecraft:mangrove_trapdoor": 300,
+    "minecraft:cherry_trapdoor": 300,
+    "minecraft:pale_oak_trapdoor": 300,
+    "minecraft:bamboo_trapdoor": 300,
+    "minecraft:crimson_trapdoor": 300,
+    "minecraft:warped_trapdoor": 300,
+
+    "minecraft:oak_door": 200,
+    "minecraft:spruce_door": 200,
+    "minecraft:birch_door": 200,
+    "minecraft:jungle_door": 200,
+    "minecraft:acacia_door": 200,
+    "minecraft:dark_oak_door": 200,
+    "minecraft:mangrove_door": 200,
+    "minecraft:cherry_door": 200,
+    "minecraft:pale_oak_door": 200,
+    "minecraft:bamboo_door": 200,
+    "minecraft:crimson_door": 200,
+    "minecraft:warped_door": 200,
+
+    "minecraft:oak_fence": 300,
+    "minecraft:spruce_fence": 300,
+    "minecraft:birch_fence": 300,
+    "minecraft:jungle_fence": 300,
+    "minecraft:acacia_fence": 300,
+    "minecraft:dark_oak_fence": 300,
+    "minecraft:mangrove_fence": 300,
+    "minecraft:cherry_fence": 300,
+    "minecraft:pale_oak_fence": 300,
+    "minecraft:bamboo_fence": 300,
+    "minecraft:crimson_fence": 300,
+    "minecraft:warped_fence": 300,
+
+    "minecraft:oak_fence_gate": 300,
+    "minecraft:spruce_fence_gate": 300,
+    "minecraft:birch_fence_gate": 300,
+    "minecraft:jungle_fence_gate": 300,
+    "minecraft:acacia_fence_gate": 300,
+    "minecraft:dark_oak_fence_gate": 300,
+    "minecraft:mangrove_fence_gate": 300,
+    "minecraft:cherry_fence_gate": 300,
+    "minecraft:pale_oak_fence_gate": 300,
+    "minecraft:bamboo_fence_gate": 300,
+    "minecraft:crimson_fence_gate": 300,
+    "minecraft:warped_fence_gate": 300,
+
+    "minecraft:oak_stairs": 300,
+    "minecraft:spruce_stairs": 300,
+    "minecraft:birch_stairs": 300,
+    "minecraft:jungle_stairs": 300,
+    "minecraft:acacia_stairs": 300,
+    "minecraft:dark_oak_stairs": 300,
+    "minecraft:mangrove_stairs": 300,
+    "minecraft:cherry_stairs": 300,
+    "minecraft:pale_oak_stairs": 300,
+    "minecraft:bamboo_stairs": 300,
+    "minecraft:crimson_stairs": 300,
+    "minecraft:warped_stairs": 300,
+
+    "minecraft:white_carpet": 67,
+    "minecraft:orange_carpet": 67,
+    "minecraft:magenta_carpet": 67,
+    "minecraft:light_blue_carpet": 67,
+    "minecraft:yellow_carpet": 67,
+    "minecraft:lime_carpet": 67,
+    "minecraft:pink_carpet": 67,
+    "minecraft:gray_carpet": 67,
+    "minecraft:light_gray_carpet": 67,
+    "minecraft:cyan_carpet": 67,
+    "minecraft:purple_carpet": 67,
+    "minecraft:blue_carpet": 67,
+    "minecraft:brown_carpet": 67,
+    "minecraft:green_carpet": 67,
+    "minecraft:red_carpet": 67,
+    "minecraft:black_carpet": 67,
+
+};
+
+export const TagFuelValues = {
+    "minecraft:coals": 1600,
+    "minecraft:logs_that_burn": 300,
+    "minecraft:wool": 100,
+    "minecraft:boat": 1200,
+    "minecraft:boats": 1200,
+    "minecraft:wooden_tier": 200,
+    "minecraft:banner": 300,
+
+    // "minecraft:planks": 300,
+    // "minecraft:wooden_slabs": 150,
+    // "minecraft:sign": 200,
+    // "minecraft:hanging_sign": 300,
+};
+
+export function getFuelBurnTime(item) {
+    if (!item) return 0;
+    const typeId = typeof item === "string" ? item : item.typeId;
+    if (FuelValues[typeId]) return FuelValues[typeId];
+
+    if (typeof item === "object" && typeof item.hasTag === "function") {
+        for (const [tag, time] of Object.entries(TagFuelValues)) {
+            if (item.hasTag(tag)) return time;
+        }
+    }
+    return 0;
+}

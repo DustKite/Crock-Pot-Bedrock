@@ -4,10 +4,15 @@
         "description": {
             "identifier": "crockpot:portable_crock_pot",
             "menu_category": {
-                "category": "equipment"
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.utensils"
             },
             "states": {
                 "crockpot:lit": [
+                    false,
+                    true
+                ],
+                "crockpot:open": [
                     false,
                     true
                 ]
@@ -70,11 +75,38 @@
                 }
             },
             {
-                "condition": "query.block_state('crockpot:lit') == true",
+                "condition": "query.block_state('crockpot:lit') == false && query.block_state('crockpot:open') == false",
+                "components": {
+                    "minecraft:light_emission": 0,
+                    "minecraft:geometry": {
+                        "identifier": "geometry.crockpot.crock_pot"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:lit') == false && query.block_state('crockpot:open') == true",
+                "components": {
+                    "minecraft:light_emission": 0,
+                    "minecraft:geometry": {
+                        "identifier": "geometry.crockpot.crock_pot_open"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:lit') == true && query.block_state('crockpot:open') == false",
                 "components": {
                     "minecraft:light_emission": 13,
                     "minecraft:geometry": {
                         "identifier": "geometry.crockpot.crock_pot_lit"
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('crockpot:lit') == true && query.block_state('crockpot:open') == true",
+                "components": {
+                    "minecraft:light_emission": 13,
+                    "minecraft:geometry": {
+                        "identifier": "geometry.crockpot.crock_pot_open_lit"
                     }
                 }
             }
@@ -101,7 +133,7 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:portable_crock_pot",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:item_visual": {
@@ -109,7 +141,7 @@
                 "material_instances": {
                     "*": {
                         "texture": "crockpot:portable_crock_pot",
-                        "render_method": "alpha_test_single_sided"
+                        "render_method": "alpha_test"
                     }
                 }
             },
@@ -139,7 +171,8 @@
             },
             "minecraft:geometry": {
                 "identifier": "geometry.crockpot.crock_pot"
-            }
+            },
+            "tag:minecraft:is_pickaxe_item_destructible": {}
         }
     }
 }

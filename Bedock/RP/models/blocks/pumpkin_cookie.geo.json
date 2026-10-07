@@ -32,29 +32,29 @@
 							}
 						},
 						{
-							"origin": [-1.625, 1, -4],
+							"origin": [-4.375, 1, -4],
 							"size": [6, 1, 6],
 							"uv": {
-								"north": { "uv": [24, 10], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"east": { "uv": [24, 12], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"south": { "uv": [18, 18], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"west": { "uv": [24, 11], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"up": { "uv": [18, 0], "uv_size": [-6, 6], "material_instance": "pumpkin_cookie" },
-								"down": { "uv": [18, 12], "uv_size": [-6, -6], "material_instance": "pumpkin_cookie" }
+								"north": { "uv": [18, 10], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"east": { "uv": [18, 11], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"south": { "uv": [12, 18], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"west": { "uv": [18, 12], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"up": { "uv": [12, 0], "uv_size": [6, 6], "material_instance": "pumpkin_cookie" },
+								"down": { "uv": [12, 12], "uv_size": [6, -6], "material_instance": "pumpkin_cookie" }
 							}
 						},
 						{
-							"origin": [-4.375, 2.05, -2.5],
+							"origin": [-1.625, 2.05, -2.5],
 							"size": [6, 1, 6],
-							"pivot": [-1.375, 2.55, 0.5],
-							"rotation": [0, 0, -22.5],
+							"pivot": [1.375, 2.55, 0.5],
+							"rotation": [0, 0, 22.5],
 							"uv": {
-								"north": { "uv": [24, 13], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"east": { "uv": [24, 16], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"south": { "uv": [24, 15], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"west": { "uv": [24, 14], "uv_size": [-6, 1], "material_instance": "pumpkin_cookie" },
-								"up": { "uv": [18, 12], "uv_size": [-6, 6], "material_instance": "pumpkin_cookie" },
-								"down": { "uv": [24, 6], "uv_size": [-6, -6], "material_instance": "pumpkin_cookie" }
+								"north": { "uv": [18, 13], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"east": { "uv": [18, 14], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"south": { "uv": [18, 15], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"west": { "uv": [18, 16], "uv_size": [6, 1], "material_instance": "pumpkin_cookie" },
+								"up": { "uv": [12, 12], "uv_size": [6, 6], "material_instance": "pumpkin_cookie" },
+								"down": { "uv": [18, 6], "uv_size": [6, -6], "material_instance": "pumpkin_cookie" }
 							}
 						}
 					]

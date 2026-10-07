@@ -14,11 +14,11 @@
                     "default": "crockpot:monster_tartare"
                 }
             },
+            "minecraft:rarity": "uncommon",
             "minecraft:food": {
                 "can_always_eat": false,
                 "nutrition": 8,
-                "saturation_modifier": 0.7,
-                "using_converts_to": "minecraft:bowl"
+                "saturation_modifier": 0.7
             },
             "minecraft:use_animation": "eat",
             "minecraft:use_modifiers": {

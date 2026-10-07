@@ -1,0 +1,29 @@
+{
+    "format_version": "1.26.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "crockpot:gummy_cake",
+            "menu_category": {
+                "category": "equipment",
+                "group": "crockpot:itemGroup.name.dishes"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "crockpot:gummy_cake"
+                }
+            },
+            "minecraft:food": {
+                "can_always_eat": false,
+                "nutrition": 12,
+                "saturation_modifier": 0.1
+            },
+            "minecraft:use_animation": "eat",
+            "minecraft:use_modifiers": {
+                "use_duration": 2.0,
+                "movement_modifier": 0.4
+            }
+        }
+    }
+}

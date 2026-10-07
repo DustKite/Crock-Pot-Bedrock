@@ -14,6 +14,12 @@
                     "default": "crockpot:hoglin_nose"
                 }
             },
+            "minecraft:tags": {
+                "tags": [
+                    "crockpot:is_hoglin_nose",
+                    "farmersdelight:is_hoglin_nose"
+                ]
+            },
             "minecraft:food": {
                 "can_always_eat": false,
                 "nutrition": 3,
