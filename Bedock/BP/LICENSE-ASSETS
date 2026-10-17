@@ -17,16 +17,14 @@ Original works:
 
 Bedrock port:
 - Ported to Minecraft Bedrock Edition by Elaikes.
-- Fixed Bedrock geometry z-fighting and texture-occlusion issues in multiple CrockPot models.
-- Removed or corrected negative-sized cubes and overlapping duplicate faces that caused bottom textures to render on top.
-- Corrected zero-height and zero-depth planes by keeping only the required face to prevent flickering.
-- Adjusted UV mappings where necessary to preserve the original appearance after geometry fixes.
+- Adjusted the potato_souffle model textures (potato_souffle and potato_souffle_1–3) and the volt_goat_horn item texture, and split the crock_pot UI image into parts.
+- Fixed z-fighting, occlusion, and flickering in CrockPot models; cleaned invalid geometry and adjusted UVs as needed.
 - Affected models include, but are not limited to:
-  steamed_sticks, seafood_gumbo, bacon_eggs, potato_souffle,
-  glow_berry_mousse, bunny_stew, california_roll, ceviche,
-  froggle_bunwich, gummy_cake, volt_goat_jelly, hot_cocoa,
-  ice_cream, tea, tropical_bouillabaisse, turkey_dinner,
-  snake_bone_soup, moqueca, perogies, kabobs.
+  bacon_eggs, bunny_stew, california_roll, ceviche, crock_pot,
+  froggle_bunwich, glow_berry_mousse, gummy_cake, hot_cocoa,
+  ice_cream, kabobs, moqueca, perogies, portable_crock_pot,
+  potato_souffle, seafood_gumbo, snake_bone_soup, steamed_sticks,
+  tea, tropical_bouillabaisse, turkey_dinner, volt_goat_jelly.
 
 You are free to:
 - Share — copy and redistribute the material in any medium or format

@@ -23,16 +23,31 @@ export function handleHoppers(dim, bx, by, bz, container) {
                 const it = topInv.getItem(i);
                 if (!it) continue;
                 if (getItemFoodValues(it)) {
+                    let placed = false;
                     for (let s = 0; s < 4; s++) {
-                        if (!container.getItem(s)) {
-                            if (it.amount > 1) {
-                                it.amount -= 1;
-                                topInv.setItem(i, it);
-                            } else {
-                                topInv.setItem(i, undefined);
-                            }
-                            container.setItem(s, new ItemStack(it.typeId, 1));
+                        const slot = container.getItem(s);
+                        if (slot && slot.typeId === it.typeId && slot.amount < slot.maxAmount) {
+                            slot.amount += 1;
+                            container.setItem(s, slot);
+                            placed = true;
                             break;
+                        }
+                    }
+                    if (!placed) {
+                        for (let s = 0; s < 4; s++) {
+                            if (!container.getItem(s)) {
+                                container.setItem(s, new ItemStack(it.typeId, 1));
+                                placed = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (placed) {
+                        if (it.amount > 1) {
+                            it.amount -= 1;
+                            topInv.setItem(i, it);
+                        } else {
+                            topInv.setItem(i, undefined);
                         }
                     }
                 }

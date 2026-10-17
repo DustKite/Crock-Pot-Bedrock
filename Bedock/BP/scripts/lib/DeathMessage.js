@@ -3,6 +3,38 @@ import { EntityDamageCause, system, world } from "@minecraft/server";
 const customHitTargets = new Map();
 const recentAttackers = new Map();
 
+function entityTranslateKey(typeId) {
+    const idx = typeId.indexOf(":");
+    if (idx === -1) return `entity.${typeId}.name`;
+    const ns = typeId.slice(0, idx);
+    const name = typeId.slice(idx + 1);
+    if (ns === "minecraft") return `entity.${name}.name`;
+    return `entity.${typeId}.name`;
+}
+
+function resolveAttackerName(attacker) {
+    if (!attacker?.isValid) return null;
+    if (attacker.typeId === "minecraft:player") {
+        return { text: attacker.name };
+    }
+    const tag = attacker.nameTag;
+    if (tag && tag.trim().length > 0 && tag !== attacker.typeId) {
+        return { text: tag };
+    }
+    return { translate: entityTranslateKey(attacker.typeId) };
+}
+
+function resolveVictimName(target) {
+    if (target.typeId === "minecraft:player") {
+        return { text: target.name };
+    }
+    const tag = target.nameTag;
+    if (tag && tag.trim().length > 0 && tag !== target.typeId) {
+        return { text: tag };
+    }
+    return { translate: entityTranslateKey(target.typeId) };
+}
+
 export function applyCustomDamage(target, damage, deathKey) {
     if (!target?.isValid || damage <= 0) return;
 
@@ -11,7 +43,7 @@ export function applyCustomDamage(target, damage, deathKey) {
     if (isPlayer || (name && name.trim().length > 0)) {
         customHitTargets.set(target.id, {
             key: deathKey,
-            name: name
+            targetObj: resolveVictimName(target)
         });
         system.runTimeout(() => {
             customHitTargets.delete(target.id);
@@ -35,14 +67,21 @@ export function applyCustomDamage(target, damage, deathKey) {
 }
 
 world.afterEvents.entityHurt.subscribe(({ hurtEntity, damageSource }) => {
-    const attacker = damageSource?.damagingEntity;
-    if (hurtEntity && attacker?.isValid) {
-        const attackerName = attacker.typeId === "minecraft:player" ? attacker.name : (attacker.nameTag || attacker.typeId);
-        recentAttackers.set(hurtEntity.id, {
-            name: attackerName,
-            tick: system.currentTick
-        });
-    }
+    let attacker = damageSource?.damagingEntity;
+    if (!hurtEntity || !attacker?.isValid) return;
+
+    try {
+        const proj = attacker.getComponent("minecraft:projectile");
+        if (proj?.owner?.isValid) attacker = proj.owner;
+    } catch { }
+
+    const attackerName = resolveAttackerName(attacker);
+    if (!attackerName) return;
+
+    recentAttackers.set(hurtEntity.id, {
+        nameObj: attackerName,
+        tick: system.currentTick
+    });
 });
 
 world.afterEvents.entityDie.subscribe(({ deadEntity }) => {
@@ -56,10 +95,18 @@ world.afterEvents.entityDie.subscribe(({ deadEntity }) => {
     const inCombat = attackerInfo && (system.currentTick - attackerInfo.tick <= 100);
 
     const key = inCombat ? `${hitInfo.key}.player` : hitInfo.key;
-    const withParams = inCombat ? [hitInfo.name, attackerInfo.name] : [hitInfo.name];
+    const params = inCombat
+        ? { rawtext: [hitInfo.targetObj, attackerInfo.nameObj] }
+        : { rawtext: [hitInfo.targetObj] };
 
-    world.sendMessage({
-        translate: key,
-        with: withParams
-    });
+    const rawMessage = {
+        rawtext: [
+            {
+                translate: key,
+                with: params
+            }
+        ]
+    };
+
+    world.sendMessage(rawMessage);
 });

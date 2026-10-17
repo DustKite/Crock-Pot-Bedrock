@@ -78,7 +78,6 @@ export class CrockPotEntity extends BlockEntity {
         let cookingTotal = Number(entity.getDynamicProperty("crockpot:cooking_total") ?? 0);
         let targetResult = String(entity.getDynamicProperty("crockpot:target_result") ?? "");
         let resultCount = Number(entity.getDynamicProperty("crockpot:result_count") ?? 1);
-        let returnItemsJson = String(entity.getDynamicProperty("crockpot:return_items") ?? "[]");
         let completeDelay = Number(entity.getDynamicProperty("crockpot:complete_delay") ?? 0);
 
         if (system.currentTick % 8 === 0) {
@@ -158,12 +157,13 @@ export class CrockPotEntity extends BlockEntity {
                     const matched = matchRecipe(inputs, potLevel);
 
                     if (matched) {
-                        const returns = [];
                         for (let i = 0; i <= 3; i++) {
                             const item = container.getItem(i);
                             const retId = getReturnItem(item);
-                            if (retId) returns.push(retId);
                             ItemAPI.clear(entity, i, 1);
+                            if (retId) {
+                                popOutItem(dim, block.location, retId, 1);
+                            }
                         }
 
                         targetResult = matched.result.id;
@@ -176,7 +176,6 @@ export class CrockPotEntity extends BlockEntity {
                         entity.setDynamicProperty("crockpot:result_count", resultCount);
                         entity.setDynamicProperty("crockpot:cooking_time", 0);
                         entity.setDynamicProperty("crockpot:cooking_total", cookingTotal);
-                        entity.setDynamicProperty("crockpot:return_items", JSON.stringify(returns));
                         entity.setDynamicProperty("crockpot:complete_delay", 0);
                     }
                 }
@@ -260,15 +259,9 @@ export class CrockPotEntity extends BlockEntity {
                             container.setItem(6, undefined);
                             dim.playSound("block.crockpot.crock_pot.finish", entity.location);
 
-                            const returns = JSON.parse(returnItemsJson);
-                            for (const retId of returns) {
-                                popOutItem(dim, block.location, retId, 1);
-                            }
-
                             entity.setDynamicProperty("crockpot:target_result", "");
                             entity.setDynamicProperty("crockpot:cooking_time", 0);
                             entity.setDynamicProperty("crockpot:cooking_total", 0);
-                            entity.setDynamicProperty("crockpot:return_items", "[]");
                             entity.setDynamicProperty("crockpot:complete_delay", 0);
                         }
                     }

@@ -20,7 +20,7 @@
         ],
         "offset": [
             84,
-            52
+            50
         ],
         "anchor_from": "top_left",
         "anchor_to": "top_left",
@@ -295,7 +295,7 @@
                                                                 "top_left@crock_pot.display_slot_item": {
                                                                     "offset": [
                                                                         -45,
-                                                                        49
+                                                                        47
                                                                     ],
                                                                     "$item_renderer_size": [
                                                                         13,
