@@ -19,7 +19,7 @@ export const CrockPotRecipes = [
         priority: 20,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/pepper" }, { tag: "c:crops/pepper" }], quantity: 1 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_red_pepper" }, { tag: "farmersdelight:is_red_pepper" }], quantity: 1 },
             { type: "gt", category: "MEAT", value: 0.0 },
             { type: "max", category: "MEAT", value: 1.5 },
             { type: "without", category: "INEDIBLE" }
@@ -84,7 +84,7 @@ export const CrockPotRecipes = [
         requirements: [
             { type: "contain", ingredient: [{ item: "minecraft:stick" }, { item: "minecraft:bamboo" }], quantity: 1 },
             { type: "contain", ingredient: [{ item: "minecraft:honeycomb" }, { item: "minecraft:honey_bottle" }], quantity: 1 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/corn" }, { tag: "c:crops/corn" }, { item: "crockpot:popcorn" }], quantity: 1 }
+            { type: "contain", ingredient: [{ item: "crockpot:popcorn" }, { tag: "crockpot:is_corn" }, { tag: "farmersdelight:is_corn" }], quantity: 1 }
         ]
     },
     {
@@ -94,7 +94,7 @@ export const CrockPotRecipes = [
         priority: 10,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: { tag: "c:vegetables/pumpkin" }, quantity: 1 },
+            { type: "contain", ingredient: { item: "minecraft:pumpkin" }, quantity: 1 },
             { type: "min", category: "SWEETENER", value: 2.0 }
         ]
     },
@@ -128,8 +128,8 @@ export const CrockPotRecipes = [
         priority: 20,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/tomato" }, { tag: "c:crops/tomato" }], quantity: 1 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/onion" }, { tag: "c:crops/onion" }], quantity: 1 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_tomato" }, { tag: "farmersdelight:is_tomato" }], quantity: 1 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_onion" }, { tag: "farmersdelight:is_onion" }], quantity: 1 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "INEDIBLE" },
             { type: "without", category: "EGG" }
@@ -142,8 +142,8 @@ export const CrockPotRecipes = [
         priority: 10,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/asparagus" }, { tag: "c:crops/asparagus" }], quantity: 1 },
-            { type: "gt", category: "VEGGIE", value: 2.0 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 1 },
+            { type: "min", category: "VEGGIE", value: 2.5 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "INEDIBLE" }
         ]
@@ -177,7 +177,7 @@ export const CrockPotRecipes = [
         priority: 10,
         weight: 1,
         requirements: [
-            { type: "gt", category: "EGG", value: 1.0 },
+            { type: "min", category: "EGG", value: 2.0 },
             { type: "gt", category: "MEAT", value: 1.0 },
             { type: "without", category: "VEGGIE" }
         ]
@@ -190,8 +190,8 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "contain", ingredient: [{ item: "minecraft:bone" }], quantity: 2 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/onion" }, { tag: "c:crops/onion" }], quantity: 1 },
-            { type: "lt", category: "INEDIBLE", value: 3.0 }
+            { type: "contain", ingredient: [{ tag: "crockpot:is_onion" }, { tag: "farmersdelight:is_onion" }], quantity: 1 },
+            { type: "max", category: "INEDIBLE", value: 2.0 }
         ]
     },
     {
@@ -250,7 +250,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "contain", ingredient: { item: "crockpot:syrup" }, quantity: 1 },
-            { type: "min", category: "SWEETENER", value: 2.5 },
+            { type: "min", category: "SWEETENER", value: 2.0 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "VEGGIE" }
         ]
@@ -288,7 +288,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "gt", category: "FISH", value: 0.0 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/corn" }, { tag: "c:crops/corn" }, { item: "crockpot:popcorn" }], quantity: 1 }
+            { type: "contain", ingredient: [{ item: "crockpot:popcorn" }, { tag: "farmersdelight:is_corn" }, { tag: "crockpot:is_corn" }], quantity: 1 }
         ]
     },
     {
@@ -337,7 +337,7 @@ export const CrockPotRecipes = [
         priority: 30,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/asparagus" }, { tag: "c:crops/asparagus" }], quantity: 2 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 2 },
             { type: "min", category: "FROZEN", value: 2.0 }
         ]
     },
@@ -362,7 +362,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "contain", ingredient: [{ item: "minecraft:honeycomb" }, { item: "minecraft:honey_bottle" }], quantity: 1 },
-            { type: "gt", category: "MEAT", value: 1.5 },
+            { type: "min", category: "MEAT", value: 1.5 },
             { type: "without", category: "INEDIBLE" }
         ]
     },
@@ -375,7 +375,7 @@ export const CrockPotRecipes = [
         requirements: [
             { type: "contain", ingredient: [{ item: "minecraft:honeycomb" }, { item: "minecraft:honey_bottle" }], quantity: 1 },
             { type: "gt", category: "MEAT", value: 0.0 },
-            { type: "max", category: "MEAT", value: 1.5 },
+            { type: "lt", category: "MEAT", value: 1.5 },
             { type: "without", category: "INEDIBLE" }
         ]
     },
@@ -435,7 +435,7 @@ export const CrockPotRecipes = [
         priority: 30,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { item: "minecraft:large_fern" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea" }], quantity: 2 },
             { type: "gt", category: "SWEETENER", value: 0.0 },
             { type: "gt", category: "FROZEN", value: 0.0 }
         ]
@@ -474,7 +474,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "contain", ingredient: [{ item: "minecraft:potato" }, { item: "minecraft:potato" }, { item: "minecraft:baked_potato" }], quantity: 2 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/garlic" }, { tag: "c:crops/garlic" }, { item: "crockpot:garlic" }], quantity: 1 },
+            { type: "contain", ingredient: [{ item: "crockpot:garlic" }, { tag: "crockpot:is_garlic" }, { tag: "farmersdelight:is_garlic" }], quantity: 1 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "INEDIBLE" }
         ]
@@ -533,8 +533,8 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "gt", category: "FISH", value: 0.0 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/onion" }, { tag: "c:crops/onion" }, { item: "crockpot:onion" }], quantity: 1 },
-            { type: "contain", ingredient: [{ tag: "c:vegetables/tomato" }, { tag: "c:crops/tomato" }, { item: "crockpot:tomato" }], quantity: 1 },
+            { type: "contain", ingredient: [{ item: "crockpot:onion" }, { tag: "crockpot:is_onion" }, { tag: "farmersdelight:is_onion" }], quantity: 1 },
+            { type: "contain", ingredient: [{ item: "crockpot:tomato" }, { tag: "crockpot:is_tomato" }, { tag: "farmersdelight:is_tomato" }], quantity: 1 },
             { type: "without", category: "INEDIBLE" }
         ]
     },
@@ -566,8 +566,8 @@ export const CrockPotRecipes = [
         priority: 1,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/eggplant" }, { tag: "c:crops/eggplant" }, { item: "crockpot:cooked_eggplant" }], quantity: 1 },
-            { type: "gt", category: "VEGGIE", value: 1.0 }
+            { type: "contain", ingredient: [{ tag: "crockpot:is_eggplant" }, { tag: "farmersdelight:is_eggplant" }], quantity: 1 },
+            { type: "min", category: "VEGGIE", value: 1.5 }
         ]
     },
     {
@@ -589,7 +589,7 @@ export const CrockPotRecipes = [
         priority: 40,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/corn" }, { tag: "c:crops/corn" }, { item: "crockpot:popcorn" }, { item: "minecraft:honeycomb" }], quantity: 4 }
+            { type: "contain", ingredient: [{ item: "crockpot:popcorn" }, { item: "minecraft:honeycomb" }, { tag: "farmersdelight:is_corn" }, { tag: "crockpot:is_corn" }], quantity: 4 }
         ]
     },
     {
@@ -610,10 +610,10 @@ export const CrockPotRecipes = [
         priority: 25,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { item: "minecraft:large_fern" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea" }], quantity: 2 },
             { type: "gt", category: "SWEETENER", value: 0.0 },
             { type: "without", category: "MEAT" },
-            { type: "max", category: "VEGGIE", value: 0.5 },
+            { type: "max", category: "VEGGIE", value: 1.0 },
             { type: "without", category: "INEDIBLE" }
         ]
     },
@@ -625,7 +625,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "contain", ingredient: { item: "minecraft:tropical_fish" }, quantity: 2 },
-            { type: "gt", category: "FISH", value: 2.5 },
+            { type: "min", category: "FISH", value: 2.5 },
             { type: "gt", category: "VEGGIE", value: 0.0 }
         ]
     },
@@ -636,7 +636,7 @@ export const CrockPotRecipes = [
         priority: 10,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ item: "minecraft:chicken" }, { item: "minecraft:cooked_chicken" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "minecraft:chicken" }, { item: "minecraft:cooked_chicken" }, { tag: "farmersdelight:is_raw_chicken" }, { tag: "farmersdelight:is_cooked_chicken" }], quantity: 2 },
             { type: "gt", category: "MEAT", value: 1.0 },
             {
                 type: "or",
@@ -652,8 +652,8 @@ export const CrockPotRecipes = [
         priority: 15,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "c:vegetables/asparagus" }, { tag: "c:crops/asparagus" }, { tag: "c:vegetables/tomato" }, { tag: "c:crops/tomato" }], quantity: 1 },
-            { type: "gt", category: "VEGGIE", value: 2.0 },
+            { type: "contain", ingredient: [{ tag: "crockpot:is_asparagus" }, { tag: "crockpot:is_tomato" }, { tag: "farmersdelight:is_tomato" }], quantity: 2 },
+            { type: "min", category: "VEGGIE", value: 2.5 },
             { type: "gt", category: "FROZEN", value: 0.0 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "INEDIBLE" },
@@ -695,7 +695,7 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "gt", category: "SWEETENER", value: 0.0 },
-            { type: "contain", ingredient: { tag: "crockpot:ingredients/slime" }, quantity: 1 }
+            { type: "contain", ingredient: { item: "minecraft:slime_ball" }, quantity: 1 }
         ]
     },
     {
@@ -717,8 +717,8 @@ export const CrockPotRecipes = [
         weight: 1,
         requirements: [
             { type: "min", category: "VEGGIE", value: 2.0 },
-            { type: "contain", ingredient: { tag: "crockpot:ingredients/ham" }, quantity: 1 },
-            { type: "contain", ingredient: { tag: "crockpot:ingredients/sandwich_leaf" }, quantity: 1 }
+            { type: "contain", ingredient: [{ item: "minecraft:porkchop" }, { item: "minecraft:cooked_porkchop" }, { item: "farmersdelight:ham" }, { item: "farmersdelight:smoked_ham" }, { tag: "farmersdelight:is_porkchop" }], quantity: 1 },
+            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_cabbage" }], quantity: 1 }
         ]
     },
     {

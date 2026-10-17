@@ -39,7 +39,7 @@ export class CowMilking {
         if (!player || !target || !itemStack) return;
 
         if (itemStack.typeId !== "minecraft:glass_bottle") return;
-        if (target.typeId !== "minecraft:cow" && target.typeId !== "minecraft:mooshroom") return;
+        if (target.typeId !== "minecraft:cow" && target.typeId !== "minecraft:mooshroom" && target.typeId !== "minecraft:goat") return;
         if (target.hasComponent("minecraft:is_baby")) return;
 
         event.cancel = true;

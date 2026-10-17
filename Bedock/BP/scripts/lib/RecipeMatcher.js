@@ -1,5 +1,5 @@
-import { getItemFoodValues } from "./FoodValues";
-import { CrockPotRecipes } from "./CrockPotRecipes";
+import { getItemFoodValues } from "../data/FoodValues";
+import { CrockPotRecipes } from "../data/CrockPotRecipes";
 
 export function matchIngredient(item, ingredient) {
     if (Array.isArray(ingredient)) return ingredient.some(ing => matchIngredient(item, ing));

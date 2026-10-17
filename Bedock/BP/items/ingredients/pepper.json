@@ -17,6 +17,7 @@
       "minecraft:tags": {
         "tags": [
           "crockpot:is_pepper",
+          "crockpot:is_red_pepper",
           "farmersdelight:is_pepper",
           "farmersdelight:is_red_pepper"
         ]

@@ -314,3 +314,72 @@ integration.crockpot.jei.information.pot_upgrade_smithing_template=可以在下�
 config.jade.plugin_crockpot=烹飪鍋
 config.jade.plugin_crockpot.crock_pot=烹飪鍋
 config.jade.plugin_crockpot.birdcage=鳥籠
+
+guide.crockpot.root.title=烹飪鍋使用指南
+guide.crockpot.root.body=一本關於烹飪鍋、種植、生物與效果的手冊。
+guide.crockpot.button.devices=器具
+guide.crockpot.button.recipes=烹飪
+guide.crockpot.button.farming=種植
+guide.crockpot.button.entities=生物
+guide.crockpot.button.effects=效果
+guide.crockpot.button.thanks=致謝
+guide.crockpot.button.back=返回
+guide.crockpot.button.prev=上一頁
+guide.crockpot.button.next=下一頁
+
+guide.crockpot.devices.title=器具
+guide.crockpot.devices.body=烹飪鍋系列與鳥籠。
+guide.crockpot.device.crock_pot.body=放入四格食材和燃料，自動匹配配方並烹飪。\n介面：4 個輸入槽、1 個燃料槽、1 個輸出槽。\n速度：實際時間 = 配方時間 × (1 − 0.15 × 鍋等級)，烹飪鍋等級為 0。\n自動化：上方漏斗輸入食材，下方漏斗抽取產物，側面漏斗輸入燃料。\n破壞時掉落鍋內所有物品；若正在烹飪，額外掉落濕黏焦糊。\n沒有匹配到任何配方時，產物為濕黏焦糊。
+guide.crockpot.device.portable_crock_pot.body=與烹飪鍋相同，但等級為 1，比烹飪鍋快 15%。\n升級：在鍛造檯中使用 烹飪鍋 + 便攜烹飪鍋升級 + 銅方塊。\n便攜烹飪鍋升級模板僅可在地獄要塞的箱子中找到。
+guide.crockpot.device.birdcage.body=兩格高，可懸掛在天花板下，也可落地放置。\n放入鸚鵡：空手且肩膀上坐著鸚鵡時，右鍵鳥籠即可放入。\n取出鸚鵡：潛行 + 空手右鍵，僅主人可以取出。\n餵食：手持肉類時鸚鵡產下對應變種的鸚鵡蛋；手持種子或作物時鸚鵡吃掉並產出對應種子。\n破壞鳥籠會掉落鳥籠本身。
+
+guide.crockpot.recipes.title=烹飪
+guide.crockpot.recipes.intro=向烹飪鍋放入四格食材，它們的食物值會合併，再與配方進行匹配。\n十個類別：
+guide.crockpot.recipes.rule=匹配規則：鍋等級滿足配方要求 → 所有需求條件通過 → 取優先度最高的配方 → 同優先度按權重隨機。\n沒有任何配方匹配時，產出濕黏焦糊。
+guide.crockpot.recipe.category.soup=湯與燉菜
+guide.crockpot.recipe.category.main=主菜與燒烤
+guide.crockpot.recipe.category.dessert=甜點與小吃
+guide.crockpot.recipe.category.beverage=飲品
+guide.crockpot.recipe.category.special=特殊
+guide.crockpot.recipe.category.hint=點擊查看配方詳情
+guide.crockpot.recipe.category.page=第 %1$s / %2$s 頁
+
+guide.crockpot.recipe.detail.count_suffix= ×%s
+guide.crockpot.recipe.detail.time=§7烹飪時間：§r%s 秒
+guide.crockpot.recipe.detail.pot_level=§7鍋等級：§r%s
+guide.crockpot.recipe.detail.priority=§7優先度：§r%s
+guide.crockpot.recipe.detail.weight=§7權重：§r%s
+guide.crockpot.recipe.detail.requirements=§e需求：§r
+
+guide.crockpot.recipe.req.contain_prefix=§7含有：§r
+guide.crockpot.recipe.req.contain_suffix= §7× %s§r
+guide.crockpot.recipe.req.without_prefix=§c禁止：§r
+guide.crockpot.recipe.req.and=§7同時滿足：§r
+guide.crockpot.recipe.req.or=§7滿足任一：§r
+guide.crockpot.recipe.req.join=§7 或 §r
+guide.crockpot.recipe.req.min_suffix= §e≥ §r%s
+guide.crockpot.recipe.req.gt_suffix= §e> §r%s
+guide.crockpot.recipe.req.max_suffix= §e≤ §r%s
+guide.crockpot.recipe.req.lt_suffix= §e< §r%s
+
+guide.crockpot.farming.title=種植
+guide.crockpot.farming.body=可種植作物：蘆筍、玉米、茄子、大蒜、洋蔥、辣椒、番茄。\n未知種子：破壞草或高草有 10% 機率掉落，種下後隨機長成上面 7 種作物之一。\n種子來源：破壞成熟作物、用鸚鵡餵食對應作物、用作物合成對應種子。
+
+guide.crockpot.entities.title=生物
+guide.crockpot.entities.body=伏特羊與牛奶瓶。
+guide.crockpot.entity.volt_goat.body=伏特羊生成在惡地。\n普通山羊被閃電擊中後會轉化為伏特羊。\n伏特羊再次被閃電擊中會進入充能狀態，獲得充電效果。\n充能後的伏特羊不再對玩家中立，會主動敵對並攻擊靠近的玩家。\n充能狀態持續 2 個遊戲日後，伏特羊變回正常。\n掉落伏特羊角。
+guide.crockpot.entity.milk_bottle.body=獲取：手持玻璃瓶右鍵牛、哞菇、伏特羊或山羊。\n食物值：§b乳類§r × 1。\n飲用後清除身上所有狀態效果。
+
+guide.crockpot.effects.title=效果
+guide.crockpot.effects.body=本包新增 4 個自訂效果。
+effect.crockpot.charge=充電
+effect.crockpot.well_fed=飽食
+effect.crockpot.wither_resistance=凋零抗性
+effect.crockpot.ocean_affinity=海洋親和
+guide.crockpot.effect.charge.body=來源：伏特羊肉凍，持續 360 秒。\n攻擊傷害 ×1.35。\n若目標處於水中或雨中，額外 ×1.3（合計 ×1.65）。
+guide.crockpot.effect.well_fed.body=來源：燉兔子，持續 120 秒。\n攻擊附帶 +1 固定傷害。\n受到 ≥2 點傷害時回復 1 點生命。
+guide.crockpot.effect.wither_resistance.body=來源：蘑菇蛋糕，持續 60 秒。\n獲得時立即清除已有凋零；持續期間免疫凋零效果。
+guide.crockpot.effect.ocean_affinity.body=來源：熱帶魚湯，持續 150 秒。\n游泳時按視線方向獲得推進力；不受氣泡柱影響。
+
+guide.crockpot.thanks.title=致謝
+guide.crockpot.thanks.body=本附加包依據原 Java 版《烹飪鍋》的程式碼（MIT 協議）與資產（CC BY-NC-SA 4.0 協議），由 Elaikes 移植製作。\n\n特別鳴謝 Crock Pot Team：\nSi_hen (Owner)\nseraph_jack (Author)\nidyllic_bean (Author)\nMalayP (Artist)\nWhyte_V (Artist)\n\n感謝他們帶來的傑出工作！

@@ -7,6 +7,7 @@ import { CrockPotEntity } from "./entity/CrockPotEntity";
 import { CowMilking } from "./entity/CowMilking";
 import { VoltGoatCharged } from "./entity/VoltGoatCharged";
 
+import { Book } from "./item/Book";
 import { Food } from "./item/Food";
 import { FoodValuesLore } from "./item/FoodValuesLore";
 import { Loot } from "./item/Loot";
@@ -22,6 +23,7 @@ new CrockPotEntity();
 new CowMilking();
 new VoltGoatCharged();
 
+new Book();
 new Food();
 new FoodValuesLore();
 new Loot();

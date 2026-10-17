@@ -15,8 +15,8 @@ import { BlockEntity } from "../lib/BlockWithEntity";
 import { ItemAPI } from "../lib/ItemAPI";
 import { getFuelBurnTime } from "../data/FuelValues";
 import { getReturnItem, getReturnInfo } from "../data/ItemReturn";
-import { matchRecipe } from "../data/RecipeMatcher";
-import { handleHoppers } from "./CrockPotHopper";
+import { matchRecipe } from "../lib/RecipeMatcher";
+import { handleHoppers } from "../lib/Hopper";
 
 function potEntitiesAt(block) {
     const { x, y, z } = block.location;

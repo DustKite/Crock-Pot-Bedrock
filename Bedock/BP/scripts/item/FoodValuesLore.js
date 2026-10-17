@@ -31,6 +31,10 @@ const CUSTOM_TOOLTIPS = {
     "crockpot:candy": { color: "§s", key: "tooltip.crockpot.candy" }
 };
 
+function formatFoodValue(val) {
+    return Number.isInteger(val) ? val.toFixed(1) : String(val);
+}
+
 function formatFoodLore(values) {
     const rawtext = [];
     const entries = Object.entries(values).filter(([_, val]) => val > 0);
@@ -39,42 +43,63 @@ function formatFoodLore(values) {
         const cat = FOOD_CATEGORIES[catName];
         if (!cat) return;
         if (index > 0) rawtext.push({ text: "§f, §r" });
-        rawtext.push({ text: cat.color }, { translate: cat.key }, { text: ` ×${val}§r` });
+        rawtext.push({ text: cat.color }, { translate: cat.key }, { text: ` ×${formatFoodValue(val)}§r` });
     });
     return [{ rawtext }];
 }
 
+function flattenLoreEntry(entry) {
+    try {
+        const obj = typeof entry === "string" ? JSON.parse(entry) : entry;
+        return flattenRaw(obj);
+    } catch {
+        return typeof entry === "string" ? entry : "";
+    }
+}
+
+function flattenRaw(msg) {
+    if (!msg) return "";
+    if (typeof msg === "string") return msg;
+    if (msg.rawtext) return msg.rawtext.map(flattenRaw).join("");
+    if (msg.text !== undefined) return msg.text;
+    if (msg.translate !== undefined) return `#${msg.translate}`;
+    if (msg.with) return msg.with.map(flattenRaw).join("");
+    return "";
+}
+
+function isCrockpotLore(entry) {
+    const s = flattenLoreEntry(entry);
+    return s.includes("item.crockpot:food_category") || s.includes("tooltip.crockpot.");
+}
+
 function processItemLore(item) {
     if (!item) return null;
+
     const customTooltip = CUSTOM_TOOLTIPS[item.typeId];
     const values = getItemFoodValues(item);
     if (!customTooltip && !values) return null;
-    const lore = item.getLore();
-    if (lore && lore.length > 0) {
-        const hasCustom = !customTooltip || lore.some(l => l.includes(customTooltip.key) || l.includes("tooltip.crockpot."));
-        const hasFood = !values || lore.some(l => l.includes("item.crockpot:food_category"));
-        if (hasCustom && hasFood) return null;
-    }
-    const newLore = [];
+
+    const expected = [];
     if (customTooltip) {
-        newLore.push({ rawtext: [{ text: customTooltip.color }, { translate: customTooltip.key }, { text: "§r" }] });
+        expected.push({ rawtext: [{ text: customTooltip.color }, { translate: customTooltip.key }, { text: "§r" }] });
     }
     if (values) {
-        newLore.push(...formatFoodLore(values));
+        expected.push(...formatFoodLore(values));
     }
-    if (newLore.length === 0) return null;
-    item.setLore(newLore);
-    return item;
-}
+    if (expected.length === 0) return null;
 
-function cleanCrockpotLore(item) {
-    if (!item) return null;
-    const lore = item.getLore();
-    if (!lore || lore.length === 0) return null;
-    const hasTarget = lore.some(l => l.includes("crockpot"));
-    if (!hasTarget) return null;
-    const filteredLore = lore.filter(l => !l.includes("crockpot"));
-    item.setLore(filteredLore);
+    const expectedNorm = expected.map(flattenLoreEntry);
+
+    const current = item.getLore() ?? [];
+    const currentManaged = current.filter(isCrockpotLore);
+    const currentNorm = currentManaged.map(flattenLoreEntry);
+
+    if (JSON.stringify(expectedNorm) === JSON.stringify(currentNorm)) {
+        return null;
+    }
+
+    const preserved = current.filter(l => !isCrockpotLore(l));
+    item.setLore([...preserved, ...expected]);
     return item;
 }
 
@@ -97,30 +122,23 @@ function updateContainerBlock(targetBlock) {
 
 export class FoodValuesLore {
     onScriptEvent(event) {
-        if (event.id !== "crockpot:resetlore") return;
-        let clearedCount = 0;
+        if (event.id !== "crockpot:refreshlore") return;
         for (const p of world.getAllPlayers()) {
             const container = p.getComponent(EntityComponentTypes.Inventory)?.container;
             if (container) {
                 for (let slot = 0; slot < container.size; slot++) {
-                    const cleaned = cleanCrockpotLore(container.getItem(slot));
-                    if (cleaned) {
-                        container.setItem(slot, cleaned);
-                        clearedCount++;
-                    }
+                    const updated = processItemLore(container.getItem(slot));
+                    if (updated) container.setItem(slot, updated);
                 }
             }
             const equip = p.getComponent(EntityComponentTypes.Equippable);
             if (equip) {
-                const cleanedOff = cleanCrockpotLore(equip.getEquipment(EquipmentSlot.Offhand));
-                if (cleanedOff) {
-                    equip.setEquipment(EquipmentSlot.Offhand, cleanedOff);
-                    clearedCount++;
-                }
+                const updatedOff = processItemLore(equip.getEquipment(EquipmentSlot.Offhand));
+                if (updatedOff) equip.setEquipment(EquipmentSlot.Offhand, updatedOff);
             }
         }
         if (event.sourceEntity && event.sourceEntity.typeId === "minecraft:player") {
-            event.sourceEntity.sendMessage({ translate: "command.crockpot.resetlore.success", with: [clearedCount.toString()] });
+            event.sourceEntity.sendMessage("§aCrockpot Lore 已刷新");
         }
     }
 

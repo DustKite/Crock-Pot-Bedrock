@@ -20,6 +20,7 @@ export const FoodValues = {
     "minecraft:crimson_fungus": { VEGGIE: 0.5, MONSTER: 1 },
     "minecraft:red_mushroom": { VEGGIE: 0.5 },
     "minecraft:brown_mushroom": { VEGGIE: 0.5 },
+    "minecraft:shelf_mushroom": { VEGGIE: 0.5 },
     "crockpot:eggplant": { VEGGIE: 1 },
     "crockpot:cooked_eggplant": { VEGGIE: 1 },
     "minecraft:egg": { EGG: 1 },
