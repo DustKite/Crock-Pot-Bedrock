@@ -84,11 +84,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:honey_nuggets_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "honey_nuggets_1": {
                             "texture": "crockpot:honey_nuggets_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -217,11 +217,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:honey_nuggets",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "honey_nuggets": {
                     "texture": "crockpot:honey_nuggets",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

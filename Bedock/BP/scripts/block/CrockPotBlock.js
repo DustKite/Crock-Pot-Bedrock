@@ -13,12 +13,29 @@ import { EventAPI } from "../lib/EventAPI";
 import { BlockWithEntity } from "../lib/BlockWithEntity";
 import ObjectUtil from "../lib/ObjectUtil";
 
+const lastPlaceTick = new Map();
+
 function potEntitiesAt(block) {
     const { x, y, z } = block.location;
     const location = { x: x + 0.5, y: y, z: z + 0.5 };
     return block.dimension.getEntities({ location: location, maxDistance: 1 })
         .filter(entity => (entity.typeId === "crockpot:crock_pot" || entity.typeId === "crockpot:portable_crock_pot") &&
             ObjectUtil.isEqual(entity.getDynamicProperty("crockpot:blockEntityDataLocation"), location));
+}
+
+function isNearPot(block) {
+    const dim = block.dimension;
+    const { x, y, z } = block.location;
+    const offsets = [
+        { x: 1, y: 0, z: 0 }, { x: -1, y: 0, z: 0 },
+        { x: 0, y: 1, z: 0 }, { x: 0, y: -1, z: 0 },
+        { x: 0, y: 0, z: 1 }, { x: 0, y: 0, z: -1 }
+    ];
+    for (const off of offsets) {
+        const b = dim.getBlock({ x: x + off.x, y: y + off.y, z: z + off.z });
+        if (b && (b.typeId === "crockpot:crock_pot" || b.typeId === "crockpot:portable_crock_pot")) return true;
+    }
+    return false;
 }
 
 function handleOpen(entity, block, player) {
@@ -38,6 +55,9 @@ function handleOpen(entity, block, player) {
 export class CrockPotBlock extends BlockWithEntity {
     placeBlock(args) {
         const block = args.block;
+        if (isNearPot(block)) {
+            lastPlaceTick.set(args.player.id, system.currentTick);
+        }
         if (block.typeId !== "crockpot:crock_pot" && block.typeId !== "crockpot:portable_crock_pot") return;
         const { x, y, z } = block.location;
         const entity = super.setBlock(block.dimension, { x: x + 0.5, y, z: z + 0.5 }, block.typeId);
@@ -50,9 +70,15 @@ export class CrockPotBlock extends BlockWithEntity {
         if (block.typeId !== "crockpot:crock_pot" && block.typeId !== "crockpot:portable_crock_pot") return;
         if (player.isSneaking) return;
 
-        for (const entity of potEntitiesAt(block)) {
-            handleOpen(entity, block, player);
-        }
+        const playerId = player.id;
+        const interactionTick = system.currentTick;
+        system.run(() => {
+            const pt = lastPlaceTick.get(playerId);
+            if (pt !== undefined && pt >= interactionTick) return;
+            for (const entity of potEntitiesAt(block)) {
+                handleOpen(entity, block, player);
+            }
+        });
     }
 
     interactEntity(args) {
@@ -61,11 +87,17 @@ export class CrockPotBlock extends BlockWithEntity {
         if (target.typeId !== "crockpot:crock_pot" && target.typeId !== "crockpot:portable_crock_pot") return;
         if (player.isSneaking) return;
 
+        const playerId = player.id;
+        const interactionTick = system.currentTick;
         const blockLoc = target.getDynamicProperty("crockpot:blockEntityDataLocation");
         if (blockLoc) {
             const block = target.dimension.getBlock(blockLoc);
             if (block && (block.typeId === "crockpot:crock_pot" || block.typeId === "crockpot:portable_crock_pot")) {
-                handleOpen(target, block, player);
+                system.run(() => {
+                    const pt = lastPlaceTick.get(playerId);
+                    if (pt !== undefined && pt >= interactionTick) return;
+                    handleOpen(target, block, player);
+                });
             }
         }
     }

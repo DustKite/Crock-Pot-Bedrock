@@ -13,10 +13,10 @@ import ObjectUtil from "../lib/ObjectUtil";
 import { EventAPI } from "../lib/EventAPI";
 import { BlockEntity } from "../lib/BlockWithEntity";
 import { ItemAPI } from "../lib/ItemAPI";
-import { getItemFoodValues } from "../data/FoodValues";
-import { CrockPotRecipes } from "../data/CrockPotRecipes";
 import { getFuelBurnTime } from "../data/FuelValues";
 import { getReturnItem, getReturnInfo } from "../data/ItemReturn";
+import { matchRecipe } from "../data/RecipeMatcher";
+import { handleHoppers } from "./CrockPotHopper";
 
 function potEntitiesAt(block) {
     const { x, y, z } = block.location;
@@ -42,70 +42,6 @@ function popOutItem(dim, blockLoc, itemId, count = 1) {
     }
 }
 
-function matchIngredient(item, ingredient) {
-    if (Array.isArray(ingredient)) return ingredient.some(ing => matchIngredient(item, ing));
-    if (ingredient.item && item.typeId === ingredient.item) return true;
-    if (ingredient.tag && typeof item.hasTag === "function" && item.hasTag(ingredient.tag)) return true;
-    return false;
-}
-
-function evaluateRequirement(req, foodValues, items) {
-    switch (req.type) {
-        case "contain":
-            return items.filter(it => matchIngredient(it, req.ingredient)).length >= (req.quantity ?? 1);
-        case "min":
-            return (foodValues[req.category] ?? 0) >= req.value;
-        case "gt":
-            return (foodValues[req.category] ?? 0) > req.value;
-        case "max":
-            return (foodValues[req.category] ?? 0) <= req.value;
-        case "lt":
-            return (foodValues[req.category] ?? 0) < req.value;
-        case "without":
-            return (foodValues[req.category] ?? 0) <= 0;
-        case "and":
-            return evaluateRequirement(req.first, foodValues, items) && evaluateRequirement(req.second, foodValues, items);
-        case "or":
-            return evaluateRequirement(req.first, foodValues, items) || evaluateRequirement(req.second, foodValues, items);
-        default:
-            return false;
-    }
-}
-
-function matchRecipe(items, potLevel) {
-    if (items.length !== 4) return null;
-
-    const mergedValues = {};
-    for (const item of items) {
-        const val = getItemFoodValues(item);
-        if (val) {
-            for (const [cat, num] of Object.entries(val)) {
-                mergedValues[cat] = (mergedValues[cat] ?? 0) + num;
-            }
-        }
-    }
-
-    const matched = CrockPotRecipes.filter(r => {
-        if (potLevel < r.potlevel) return false;
-        return r.requirements.every(req => evaluateRequirement(req, mergedValues, items));
-    });
-
-    if (matched.length === 0) return null;
-
-    const maxPriority = Math.max(...matched.map(r => r.priority));
-    const highest = matched.filter(r => r.priority === maxPriority);
-
-    if (highest.length === 1) return highest[0];
-
-    const totalWeight = highest.reduce((sum, r) => sum + r.weight, 0);
-    let rand = Math.random() * totalWeight;
-    for (const r of highest) {
-        rand -= r.weight;
-        if (rand <= 0) return r;
-    }
-    return highest[0];
-}
-
 function calculateArrow(progress, total) {
     if (total <= 0) return "crockpot:arrow_0";
     const percentage = Math.min(10, Math.floor((progress / total) * 10)) * 10;
@@ -116,87 +52,6 @@ function calculateFlame(burnRemaining, burnTotal) {
     if (burnTotal <= 0 || burnRemaining <= 0) return "crockpot:flame_0";
     const percentage = Math.min(10, Math.floor((burnRemaining / burnTotal) * 10)) * 10;
     return `crockpot:flame_${percentage}`;
-}
-
-function handleHoppers(dim, bx, by, bz, container) {
-    const outputItem = container.getItem(5);
-    if (outputItem) {
-        const bottomBlock = dim.getBlock({ x: bx, y: by - 1, z: bz });
-        if (bottomBlock?.typeId === "minecraft:hopper") {
-            const bottomInv = bottomBlock.getComponent("inventory")?.container;
-            if (bottomInv) {
-                const leftover = bottomInv.addItem(outputItem);
-                container.setItem(5, leftover);
-            }
-        }
-    }
-
-    const topBlock = dim.getBlock({ x: bx, y: by + 1, z: bz });
-    if (topBlock?.typeId === "minecraft:hopper" && topBlock.permutation.getState("facing_direction") === 0) {
-        const topInv = topBlock.getComponent("inventory")?.container;
-        if (topInv) {
-            for (let i = 0; i < topInv.size; i++) {
-                const it = topInv.getItem(i);
-                if (!it) continue;
-                if (getItemFoodValues(it)) {
-                    for (let s = 0; s < 4; s++) {
-                        if (!container.getItem(s)) {
-                            if (it.amount > 1) {
-                                it.amount -= 1;
-                                topInv.setItem(i, it);
-                            } else {
-                                topInv.setItem(i, undefined);
-                            }
-                            container.setItem(s, new ItemStack(it.typeId, 1));
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    const sideOffsets = [
-        { x: 1, y: 0, z: 0, facing: 4 },
-        { x: -1, y: 0, z: 0, facing: 5 },
-        { x: 0, y: 0, z: 1, facing: 2 },
-        { x: 0, y: 0, z: -1, facing: 3 }
-    ];
-    for (const off of sideOffsets) {
-        const sideBlock = dim.getBlock({ x: bx + off.x, y: by + off.y, z: bz + off.z });
-        if (sideBlock?.typeId === "minecraft:hopper" && sideBlock.permutation.getState("facing_direction") === off.facing) {
-            const sideInv = sideBlock.getComponent("inventory")?.container;
-            if (sideInv) {
-                for (let i = 0; i < sideInv.size; i++) {
-                    const it = sideInv.getItem(i);
-                    if (!it) continue;
-                    if (getFuelBurnTime(it) > 0) {
-                        const curFuel = container.getItem(4);
-                        if (!curFuel) {
-                            if (it.amount > 1) {
-                                it.amount -= 1;
-                                sideInv.setItem(i, it);
-                            } else {
-                                sideInv.setItem(i, undefined);
-                            }
-                            container.setItem(4, new ItemStack(it.typeId, 1));
-                            break;
-                        } else if (curFuel.typeId === it.typeId && curFuel.amount < curFuel.maxAmount) {
-                            if (it.amount > 1) {
-                                it.amount -= 1;
-                                sideInv.setItem(i, it);
-                            } else {
-                                sideInv.setItem(i, undefined);
-                            }
-                            curFuel.amount += 1;
-                            container.setItem(4, curFuel);
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 export class CrockPotEntity extends BlockEntity {
@@ -224,6 +79,7 @@ export class CrockPotEntity extends BlockEntity {
         let targetResult = String(entity.getDynamicProperty("crockpot:target_result") ?? "");
         let resultCount = Number(entity.getDynamicProperty("crockpot:result_count") ?? 1);
         let returnItemsJson = String(entity.getDynamicProperty("crockpot:return_items") ?? "[]");
+        let completeDelay = Number(entity.getDynamicProperty("crockpot:complete_delay") ?? 0);
 
         if (system.currentTick % 8 === 0) {
             handleHoppers(dim, bx, by, bz, container);
@@ -266,6 +122,23 @@ export class CrockPotEntity extends BlockEntity {
         if (burningTime > 0) {
             burningTime--;
             entity.setDynamicProperty("crockpot:burning_time", burningTime);
+            if (Math.random() < 0.35) {
+                dim.spawnParticle("minecraft:basic_smoke_particle", {
+                    x: bx + 0.5 + (Math.random() - 0.5) * 0.3,
+                    y: by + 0.35 + Math.random() * 0.2,
+                    z: bz + 0.5 + (Math.random() - 0.5) * 0.3
+                });
+            }
+            if (Math.random() < 0.2) {
+                dim.spawnParticle("minecraft:basic_flame_particle", {
+                    x: bx + 0.5 + (Math.random() - 0.5) * 0.25,
+                    y: by + 0.3,
+                    z: bz + 0.5 + (Math.random() - 0.5) * 0.25
+                });
+            }
+            if (Math.random() < 0.04) {
+                dim.playSound("block.campfire.crackle", { x: bx + 0.5, y: by + 0.5, z: bz + 0.5 });
+            }
         }
 
         const outputSlot = container.getItem(5);
@@ -297,12 +170,14 @@ export class CrockPotEntity extends BlockEntity {
                         resultCount = matched.result.count ?? 1;
                         cookingTime = 0;
                         cookingTotal = Math.max(1, Math.floor(matched.cookingtime * (1.0 - 0.15 * potLevel)));
+                        completeDelay = 0;
 
                         entity.setDynamicProperty("crockpot:target_result", targetResult);
                         entity.setDynamicProperty("crockpot:result_count", resultCount);
                         entity.setDynamicProperty("crockpot:cooking_time", 0);
                         entity.setDynamicProperty("crockpot:cooking_total", cookingTotal);
                         entity.setDynamicProperty("crockpot:return_items", JSON.stringify(returns));
+                        entity.setDynamicProperty("crockpot:complete_delay", 0);
                     }
                 }
             }
@@ -358,35 +233,44 @@ export class CrockPotEntity extends BlockEntity {
                 }
 
                 if (cookingTime >= cookingTotal) {
-                    const curOutput = container.getItem(5);
-                    let canDeliver = false;
-
-                    if (!curOutput) {
-                        canDeliver = true;
-                    } else if (curOutput.typeId === targetResult && curOutput.amount + resultCount <= curOutput.maxAmount) {
-                        canDeliver = true;
+                    if (completeDelay <= 0) {
+                        completeDelay = 3;
                     }
+                    completeDelay--;
+                    entity.setDynamicProperty("crockpot:complete_delay", completeDelay);
 
-                    if (canDeliver) {
+                    if (completeDelay <= 0) {
+                        const curOutput = container.getItem(5);
+                        let canDeliver = false;
+
                         if (!curOutput) {
-                            container.setItem(5, new ItemStack(targetResult, resultCount));
-                        } else {
-                            curOutput.amount += resultCount;
-                            container.setItem(5, curOutput);
+                            canDeliver = true;
+                        } else if (curOutput.typeId === targetResult && curOutput.amount + resultCount <= curOutput.maxAmount) {
+                            canDeliver = true;
                         }
 
-                        container.setItem(6, undefined);
-                        dim.playSound("block.crockpot.crock_pot.finish", entity.location);
+                        if (canDeliver) {
+                            if (!curOutput) {
+                                container.setItem(5, new ItemStack(targetResult, resultCount));
+                            } else {
+                                curOutput.amount += resultCount;
+                                container.setItem(5, curOutput);
+                            }
 
-                        const returns = JSON.parse(returnItemsJson);
-                        for (const retId of returns) {
-                            popOutItem(dim, block.location, retId, 1);
+                            container.setItem(6, undefined);
+                            dim.playSound("block.crockpot.crock_pot.finish", entity.location);
+
+                            const returns = JSON.parse(returnItemsJson);
+                            for (const retId of returns) {
+                                popOutItem(dim, block.location, retId, 1);
+                            }
+
+                            entity.setDynamicProperty("crockpot:target_result", "");
+                            entity.setDynamicProperty("crockpot:cooking_time", 0);
+                            entity.setDynamicProperty("crockpot:cooking_total", 0);
+                            entity.setDynamicProperty("crockpot:return_items", "[]");
+                            entity.setDynamicProperty("crockpot:complete_delay", 0);
                         }
-
-                        entity.setDynamicProperty("crockpot:target_result", "");
-                        entity.setDynamicProperty("crockpot:cooking_time", 0);
-                        entity.setDynamicProperty("crockpot:cooking_total", 0);
-                        entity.setDynamicProperty("crockpot:return_items", "[]");
                     }
                 }
             }

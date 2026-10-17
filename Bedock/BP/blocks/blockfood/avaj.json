@@ -100,11 +100,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:avaj",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "avaj": {
                     "texture": "crockpot:avaj",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

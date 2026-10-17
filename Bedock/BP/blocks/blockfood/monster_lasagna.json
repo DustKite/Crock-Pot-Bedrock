@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:monster_lasagna_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "monster_lasagna_2": {
                             "texture": "crockpot:monster_lasagna_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }

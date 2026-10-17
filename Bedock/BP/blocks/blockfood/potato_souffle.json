@@ -85,11 +85,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:potato_souffle_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "potato_souffle_1": {
                             "texture": "crockpot:potato_souffle_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -125,11 +125,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:potato_souffle_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "potato_souffle_2": {
                             "texture": "crockpot:potato_souffle_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -165,11 +165,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:potato_souffle_3",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "potato_souffle_3": {
                             "texture": "crockpot:potato_souffle_3",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -258,11 +258,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:potato_souffle",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "potato_souffle": {
                     "texture": "crockpot:potato_souffle",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

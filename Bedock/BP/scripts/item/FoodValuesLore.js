@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-import { EntityComponentTypes, EntitySpawnAfterEvent, EquipmentSlot, ScriptEventCommandMessageAfterEvent, StartupEvent, system, world } from "@minecraft/server";
+import { EntityComponentTypes, EntitySpawnAfterEvent, EquipmentSlot, PlayerInteractWithBlockBeforeEvent, PlayerInteractWithEntityBeforeEvent, ScriptEventCommandMessageAfterEvent, StartupEvent, system, world } from "@minecraft/server";
 import { EventAPI } from "../lib/EventAPI";
 import { getItemFoodValues } from "../data/FoodValues";
 
@@ -35,50 +35,33 @@ function formatFoodLore(values) {
     const rawtext = [];
     const entries = Object.entries(values).filter(([_, val]) => val > 0);
     if (entries.length === 0) return [];
-
     entries.forEach(([catName, val], index) => {
         const cat = FOOD_CATEGORIES[catName];
         if (!cat) return;
         if (index > 0) rawtext.push({ text: "§f, §r" });
-        rawtext.push(
-            { text: cat.color },
-            { translate: cat.key },
-            { text: ` ×${val}§r` }
-        );
+        rawtext.push({ text: cat.color }, { translate: cat.key }, { text: ` ×${val}§r` });
     });
-
     return [{ rawtext }];
 }
 
 function processItemLore(item) {
     if (!item) return null;
-
     const customTooltip = CUSTOM_TOOLTIPS[item.typeId];
     const values = getItemFoodValues(item);
     if (!customTooltip && !values) return null;
-
     const lore = item.getLore();
     if (lore && lore.length > 0) {
         const hasCustom = !customTooltip || lore.some(l => l.includes(customTooltip.key) || l.includes("tooltip.crockpot."));
         const hasFood = !values || lore.some(l => l.includes("item.crockpot:food_category"));
         if (hasCustom && hasFood) return null;
     }
-
     const newLore = [];
     if (customTooltip) {
-        newLore.push({
-            rawtext: [
-                { text: customTooltip.color },
-                { translate: customTooltip.key },
-                { text: "§r" }
-            ]
-        });
+        newLore.push({ rawtext: [{ text: customTooltip.color }, { translate: customTooltip.key }, { text: "§r" }] });
     }
-
     if (values) {
         newLore.push(...formatFoodLore(values));
     }
-
     if (newLore.length === 0) return null;
     item.setLore(newLore);
     return item;
@@ -88,19 +71,33 @@ function cleanCrockpotLore(item) {
     if (!item) return null;
     const lore = item.getLore();
     if (!lore || lore.length === 0) return null;
-
     const hasTarget = lore.some(l => l.includes("crockpot"));
     if (!hasTarget) return null;
-
     const filteredLore = lore.filter(l => !l.includes("crockpot"));
     item.setLore(filteredLore);
     return item;
 }
 
+function updateContainerBlock(targetBlock) {
+    if (!targetBlock) return;
+    try {
+        const invComp = targetBlock.getComponent("inventory") ?? targetBlock.getComponent("minecraft:inventory");
+        const container = invComp?.container;
+        if (container) {
+            for (let i = 0; i < container.size; i++) {
+                const item = container.getItem(i);
+                if (item) {
+                    const updated = processItemLore(item);
+                    if (updated) container.setItem(i, updated);
+                }
+            }
+        }
+    } catch (e) { }
+}
+
 export class FoodValuesLore {
     onScriptEvent(event) {
         if (event.id !== "crockpot:resetlore") return;
-
         let clearedCount = 0;
         for (const p of world.getAllPlayers()) {
             const container = p.getComponent(EntityComponentTypes.Inventory)?.container;
@@ -113,7 +110,6 @@ export class FoodValuesLore {
                     }
                 }
             }
-
             const equip = p.getComponent(EntityComponentTypes.Equippable);
             if (equip) {
                 const cleanedOff = cleanCrockpotLore(equip.getEquipment(EquipmentSlot.Offhand));
@@ -123,36 +119,61 @@ export class FoodValuesLore {
                 }
             }
         }
-
         if (event.sourceEntity && event.sourceEntity.typeId === "minecraft:player") {
-            event.sourceEntity.sendMessage({
-                translate: "command.crockpot.resetlore.success",
-                with: [clearedCount.toString()]
-            });
+            event.sourceEntity.sendMessage({ translate: "command.crockpot.resetlore.success", with: [clearedCount.toString()] });
         }
     }
 
     onEntitySpawn(event) {
         const entity = event.entity;
         if (!entity?.isValid || entity.typeId !== "minecraft:item") return;
-
         system.run(() => {
             if (!entity.isValid) return;
             const itemComp = entity.getComponent(EntityComponentTypes.Item);
             if (!itemComp) return;
-
             const updated = processItemLore(itemComp.itemStack);
             if (updated) {
                 const loc = entity.location;
                 const dim = entity.dimension;
                 const vel = entity.getVelocity();
-
                 entity.remove();
                 const newEntity = dim.spawnItem(updated, loc);
-                if (newEntity && vel) {
-                    newEntity.applyImpulse({ x: vel.x, y: 0, z: vel.z });
+                if (newEntity && vel) newEntity.applyImpulse({ x: vel.x, y: 0, z: vel.z });
+            }
+        });
+    }
+
+    onPlayerInteractWithBlock(event) {
+        const block = event.block;
+        if (!block) return;
+        system.run(() => {
+            updateContainerBlock(block);
+            if (block.typeId === "minecraft:chest" || block.typeId === "minecraft:trapped_chest") {
+                const neighbors = [block.north(), block.south(), block.east(), block.west()];
+                for (const n of neighbors) {
+                    if (n && n.typeId === block.typeId) updateContainerBlock(n);
                 }
             }
+        });
+    }
+
+    onPlayerInteractWithEntity(event) {
+        const target = event.target;
+        if (!target) return;
+        system.run(() => {
+            try {
+                const invComp = target.getComponent(EntityComponentTypes.Inventory);
+                const container = invComp?.container;
+                if (container) {
+                    for (let i = 0; i < container.size; i++) {
+                        const item = container.getItem(i);
+                        if (item) {
+                            const updated = processItemLore(item);
+                            if (updated) container.setItem(i, updated);
+                        }
+                    }
+                }
+            } catch (e) { }
         });
     }
 
@@ -166,7 +187,6 @@ export class FoodValuesLore {
                         if (updated) container.setItem(slot, updated);
                     }
                 }
-
                 const equip = player.getComponent(EntityComponentTypes.Equippable);
                 if (equip) {
                     const updatedOff = processItemLore(equip.getEquipment(EquipmentSlot.Offhand));
@@ -190,6 +210,20 @@ __decorate([
     __metadata("design:paramtypes", [EntitySpawnAfterEvent]),
     __metadata("design:returntype", void 0)
 ], FoodValuesLore.prototype, "onEntitySpawn", null);
+
+__decorate([
+    EventAPI.register(world.beforeEvents.playerInteractWithBlock),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [PlayerInteractWithBlockBeforeEvent]),
+    __metadata("design:returntype", void 0)
+], FoodValuesLore.prototype, "onPlayerInteractWithBlock", null);
+
+__decorate([
+    EventAPI.register(world.beforeEvents.playerInteractWithEntity),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [PlayerInteractWithEntityBeforeEvent]),
+    __metadata("design:returntype", void 0)
+], FoodValuesLore.prototype, "onPlayerInteractWithEntity", null);
 
 __decorate([
     EventAPI.register(system.afterEvents.scriptEventReceive),

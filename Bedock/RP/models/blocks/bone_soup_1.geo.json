@@ -32,18 +32,6 @@
 							}
 						},
 						{
-							"origin": [-4, 9, -4],
-							"size": [8, -2, 8],
-							"uv": {
-								"north": { "uv": [0, 28], "uv_size": [8, 2], "material_instance": "bone_soup_1" },
-								"east": { "uv": [28, 0], "uv_size": [8, 2], "material_instance": "bone_soup_1" },
-								"south": { "uv": [28, 2], "uv_size": [8, 2], "material_instance": "bone_soup_1" },
-								"west": { "uv": [28, 4], "uv_size": [8, 2], "material_instance": "bone_soup_1" },
-								"up": { "uv": [20, 16], "uv_size": [8, 8], "material_instance": "bone_soup_1" },
-								"down": { "uv": [10, 32], "uv_size": [8, -8], "material_instance": "bone_soup_1" }
-							}
-						},
-						{
 							"origin": [-4, 0, -4],
 							"size": [8, 1, 8],
 							"uv": {
@@ -97,12 +85,7 @@
 							"pivot": [-0.425, 7.1, -2],
 							"rotation": [0, 0, -22.5],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bone_soup_1" },
-								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bone_soup_1" },
-								"south": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bone_soup_1" },
-								"west": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "bone_soup_1" },
-								"up": { "uv": [0, 30], "uv_size": [3, 3], "material_instance": "bone_soup_1" },
-								"down": { "uv": [3, 33], "uv_size": [3, -3], "material_instance": "bone_soup_1" }
+								"up": { "uv": [0, 30], "uv_size": [3, 3], "material_instance": "bone_soup_1" }
 							}
 						},
 						{

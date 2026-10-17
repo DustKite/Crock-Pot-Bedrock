@@ -84,11 +84,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:kabobs_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "kabobs_1": {
                             "texture": "crockpot:kabobs_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:kabobs_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "kabobs_2": {
                             "texture": "crockpot:kabobs_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -217,11 +217,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:kabobs",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "kabobs": {
                     "texture": "crockpot:kabobs",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

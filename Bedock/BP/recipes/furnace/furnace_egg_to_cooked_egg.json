@@ -1,18 +1,23 @@
 {
-  "format_version": "1.17",
-  "minecraft:recipe_furnace": {
-    "description": {
-      "identifier": "crockpot:cooked_egg_furnace_egg"
-    },
-    "tags": [
-      "furnace",
-      "campfire",
-      "smoker",
-      "soul_campfire"
-    ],
-    "input": {
-      "tag": "minecraft:egg"
-    },
-    "output": "crockpot:cooked_egg"
-  }
+    "format_version": "1.26.0",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "crockpot:cooked_egg_furnace_egg"
+        },
+        "tags": [
+            "furnace",
+            "campfire",
+            "smoker",
+            "soul_campfire"
+        ],
+        "unlock": [
+            {
+                "tag": "minecraft:egg"
+            }
+        ],
+        "input": {
+            "tag": "minecraft:egg"
+        },
+        "output": "crockpot:cooked_egg"
+    }
 }

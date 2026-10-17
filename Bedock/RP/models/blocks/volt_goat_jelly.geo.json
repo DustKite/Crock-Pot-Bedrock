@@ -32,8 +32,8 @@
 							}
 						},
 						{
-							"origin": [-5, 1, -5],
-							"size": [10, 4, 10],
+							"origin": [-5, 0.5, -5],
+							"size": [10, 4.5, 10],
 							"uv": {
 								"north": { "uv": [22, 0], "uv_size": [10, 4], "material_instance": "volt_goat_jelly" },
 								"east": { "uv": [22, 4], "uv_size": [10, 4], "material_instance": "volt_goat_jelly" },
@@ -44,8 +44,8 @@
 							}
 						},
 						{
-							"origin": [-4, 5, -4],
-							"size": [8, 3, 8],
+							"origin": [-4, 4.5, -4],
+							"size": [8, 3.5, 8],
 							"uv": {
 								"north": { "uv": [22, 16], "uv_size": [8, 3], "material_instance": "volt_goat_jelly" },
 								"east": { "uv": [0, 24], "uv_size": [8, 3], "material_instance": "volt_goat_jelly" },

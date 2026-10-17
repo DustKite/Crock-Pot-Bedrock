@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:turkey_dinner_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "turkey_dinner_2": {
                             "texture": "crockpot:turkey_dinner_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }

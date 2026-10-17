@@ -16,6 +16,7 @@ export const FuelValues = {
     "minecraft:short_dry_grass": 100,
     "minecraft:tall_dry_grass": 100,
     "minecraft:bowl": 100,
+    "minecraft:deadbush": 100,
 
     "minecraft:oak_sapling": 100,
     "minecraft:spruce_sapling": 100,

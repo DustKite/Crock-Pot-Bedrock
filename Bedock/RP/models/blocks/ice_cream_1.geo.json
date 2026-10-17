@@ -44,8 +44,8 @@
 							}
 						},
 						{
-							"origin": [-2, 9, -1],
-							"size": [7, -7, 7],
+							"origin": [-1.9, 2.05, -0.9],
+							"size": [6.8, 6.85, 6.8],
 							"uv": {
 								"north": { "uv": [18, 16], "uv_size": [7, 7], "material_instance": "ice_cream_1" },
 								"east": { "uv": [18, 23], "uv_size": [7, 7], "material_instance": "ice_cream_1" },
@@ -82,8 +82,8 @@
 							}
 						},
 						{
-							"origin": [-5, 3, -6],
-							"size": [4, -2, 2],
+							"origin": [-5, 1, -6],
+							"size": [4, 2, 2],
 							"uv": {
 								"north": { "uv": [26, 14], "uv_size": [4, 2], "material_instance": "ice_cream_1" },
 								"east": { "uv": [7, 26], "uv_size": [2, 2], "material_instance": "ice_cream_1" },
@@ -133,24 +133,14 @@
 							"origin": [-2, 8, -1],
 							"size": [7, 0, 7],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "ice_cream_1" },
-								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "ice_cream_1" },
-								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "ice_cream_1" },
-								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "ice_cream_1" },
-								"up": { "uv": [26, 0], "uv_size": [7, 7], "material_instance": "ice_cream_1" },
-								"down": { "uv": [26, 14], "uv_size": [7, -7], "material_instance": "ice_cream_1" }
+								"up": { "uv": [26, 0], "uv_size": [7, 7], "material_instance": "ice_cream_1" }
 							}
 						},
 						{
 							"origin": [-5, 2.5, -6],
 							"size": [4, 0, 2],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "ice_cream_1" },
-								"east": { "uv": [0, 0], "uv_size": [2, 0], "material_instance": "ice_cream_1" },
-								"south": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "ice_cream_1" },
-								"west": { "uv": [0, 0], "uv_size": [2, 0], "material_instance": "ice_cream_1" },
-								"up": { "uv": [37, 6], "uv_size": [4, 2], "material_instance": "ice_cream_1" },
-								"down": { "uv": [37, 10], "uv_size": [4, -2], "material_instance": "ice_cream_1" }
+								"up": { "uv": [37, 6], "uv_size": [4, 2], "material_instance": "ice_cream_1" }
 							}
 						},
 						{

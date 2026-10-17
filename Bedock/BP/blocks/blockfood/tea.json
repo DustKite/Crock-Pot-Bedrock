@@ -84,11 +84,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:tea_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "tea_1": {
                             "texture": "crockpot:tea_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:tea_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "tea_2": {
                             "texture": "crockpot:tea_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -217,11 +217,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:tea",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "tea": {
                     "texture": "crockpot:tea",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

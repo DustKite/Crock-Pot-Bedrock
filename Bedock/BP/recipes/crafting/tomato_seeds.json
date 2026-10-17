@@ -1,20 +1,25 @@
 {
-  "format_version": "1.12",
-  "minecraft:recipe_shapeless": {
-    "description": {
-      "identifier": "crockpot:tomato_seeds"
-    },
-    "tags": [
-      "crafting_table"
-    ],
-    "result": {
-      "item": "crockpot:tomato_seeds",
-      "count": 1
-    },
-    "ingredients": [
-      {
-        "item": "crockpot:tomato"
-      }
-    ]
-  }
+    "format_version": "1.26.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "crockpot:tomato_seeds"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "result": {
+            "item": "crockpot:tomato_seeds",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "crockpot:tomato"
+            }
+        ],
+        "ingredients": [
+            {
+                "item": "crockpot:tomato"
+            }
+        ]
+    }
 }

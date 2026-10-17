@@ -44,14 +44,13 @@
 							}
 						},
 						{
-							"origin": [-4, 5, -1],
-							"size": [5, -1, 5],
+							"origin": [-4, 4, -1],
+							"size": [5, 1, 5],
 							"uv": {
 								"north": { "uv": [24, 17], "uv_size": [5, 1], "material_instance": "ceviche" },
 								"east": { "uv": [24, 18], "uv_size": [5, 1], "material_instance": "ceviche" },
 								"south": { "uv": [24, 19], "uv_size": [5, 1], "material_instance": "ceviche" },
 								"west": { "uv": [24, 20], "uv_size": [5, 1], "material_instance": "ceviche" },
-								"up": { "uv": [19, 8], "uv_size": [5, 5], "material_instance": "ceviche" },
 								"down": { "uv": [19, 18], "uv_size": [5, -5], "material_instance": "ceviche" }
 							}
 						},
@@ -59,50 +58,30 @@
 							"origin": [2, 1.1, -1],
 							"size": [3, 0, 3],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"south": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"west": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"up": { "uv": [24, 11], "uv_size": [3, 3], "material_instance": "ceviche" },
-								"down": { "uv": [24, 17], "uv_size": [3, -3], "material_instance": "ceviche" }
+								"up": { "uv": [24, 11], "uv_size": [3, 3], "material_instance": "ceviche" }
 							}
 						},
 						{
-							"origin": [2, 1.1, -1],
+							"origin": [2, 1.15, -1],
 							"size": [3, 0, 3],
-							"pivot": [2, 1.1, 0.5],
+							"pivot": [2, 1.15, 0.5],
 							"rotation": [0, 0, -22.5],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"south": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"west": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"up": { "uv": [0, 25], "uv_size": [3, 3], "material_instance": "ceviche" },
-								"down": { "uv": [3, 28], "uv_size": [3, -3], "material_instance": "ceviche" }
+								"up": { "uv": [0, 25], "uv_size": [3, 3], "material_instance": "ceviche" }
 							}
 						},
 						{
 							"origin": [-4, 1.1, -5],
 							"size": [6, 0, 3],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "ceviche" },
-								"east": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"south": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "ceviche" },
-								"west": { "uv": [0, 0], "uv_size": [3, 0], "material_instance": "ceviche" },
-								"up": { "uv": [17, 23], "uv_size": [6, 3], "material_instance": "ceviche" },
-								"down": { "uv": [23, 26], "uv_size": [6, -3], "material_instance": "ceviche" }
+								"up": { "uv": [17, 23], "uv_size": [6, 3], "material_instance": "ceviche" }
 							}
 						},
 						{
 							"origin": [-4, 4.5, -1],
 							"size": [5, 0, 5],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [5, 0], "material_instance": "ceviche" },
-								"east": { "uv": [0, 0], "uv_size": [5, 0], "material_instance": "ceviche" },
-								"south": { "uv": [0, 0], "uv_size": [5, 0], "material_instance": "ceviche" },
-								"west": { "uv": [0, 0], "uv_size": [5, 0], "material_instance": "ceviche" },
-								"up": { "uv": [19, 18], "uv_size": [5, 5], "material_instance": "ceviche" },
-								"down": { "uv": [12, 27], "uv_size": [5, -5], "material_instance": "ceviche" }
+								"up": { "uv": [19, 18], "uv_size": [5, 5], "material_instance": "ceviche" }
 							}
 						}
 					]

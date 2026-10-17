@@ -84,11 +84,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:honey_ham_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "honey_ham_1": {
                             "texture": "crockpot:honey_ham_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:honey_ham_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "honey_ham_2": {
                             "texture": "crockpot:honey_ham_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -217,11 +217,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:honey_ham",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "honey_ham": {
                     "texture": "crockpot:honey_ham",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

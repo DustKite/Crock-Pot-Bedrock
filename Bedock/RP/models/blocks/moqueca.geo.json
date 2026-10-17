@@ -51,7 +51,6 @@
 								"east": { "uv": [20, 21], "uv_size": [7, 7], "material_instance": "moqueca" },
 								"south": { "uv": [10, 25], "uv_size": [7, 7], "material_instance": "moqueca" },
 								"west": { "uv": [0, 27], "uv_size": [7, 7], "material_instance": "moqueca" },
-								"up": { "uv": [27, 14], "uv_size": [7, 7], "material_instance": "moqueca" },
 								"down": { "uv": [27, 28], "uv_size": [7, -7], "material_instance": "moqueca" }
 							}
 						},
@@ -83,12 +82,7 @@
 							"origin": [-3.5, 7.25, -3.5],
 							"size": [7, 0, 7],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
-								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
-								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
-								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca" },
-								"up": { "uv": [17, 28], "uv_size": [7, 7], "material_instance": "moqueca" },
-								"down": { "uv": [24, 35], "uv_size": [7, -7], "material_instance": "moqueca" }
+								"up": { "uv": [17, 28], "uv_size": [7, 7], "material_instance": "moqueca" }
 							}
 						}
 					]

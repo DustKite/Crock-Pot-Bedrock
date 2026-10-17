@@ -44,14 +44,13 @@
 							}
 						},
 						{
-							"origin": [1, 8, 1],
-							"size": [6, -2, 6],
+							"origin": [1, 6, 1],
+							"size": [6, 2, 6],
 							"uv": {
 								"north": { "uv": [30, 22], "uv_size": [6, 2], "material_instance": "california_roll_2" },
 								"east": { "uv": [30, 24], "uv_size": [6, 2], "material_instance": "california_roll_2" },
 								"south": { "uv": [31, 12], "uv_size": [6, 2], "material_instance": "california_roll_2" },
 								"west": { "uv": [31, 14], "uv_size": [6, 2], "material_instance": "california_roll_2" },
-								"up": { "uv": [15, 24], "uv_size": [6, 6], "material_instance": "california_roll_2" },
 								"down": { "uv": [24, 26], "uv_size": [6, -6], "material_instance": "california_roll_2" }
 							}
 						},
@@ -71,24 +70,14 @@
 							"origin": [-5, 1.1, -7.5],
 							"size": [10, 0, 6],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [10, 0], "material_instance": "california_roll_2" },
-								"east": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"south": { "uv": [0, 0], "uv_size": [10, 0], "material_instance": "california_roll_2" },
-								"west": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"up": { "uv": [22, 0], "uv_size": [10, 6], "material_instance": "california_roll_2" },
-								"down": { "uv": [24, 12], "uv_size": [10, -6], "material_instance": "california_roll_2" }
+								"up": { "uv": [22, 0], "uv_size": [10, 6], "material_instance": "california_roll_2" }
 							}
 						},
 						{
 							"origin": [1, 6.5, 1],
 							"size": [6, 0, 6],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"east": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"south": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"west": { "uv": [0, 0], "uv_size": [6, 0], "material_instance": "california_roll_2" },
-								"up": { "uv": [21, 26], "uv_size": [6, 6], "material_instance": "california_roll_2" },
-								"down": { "uv": [27, 32], "uv_size": [6, -6], "material_instance": "california_roll_2" }
+								"up": { "uv": [21, 26], "uv_size": [6, 6], "material_instance": "california_roll_2" }
 							}
 						},
 						{
@@ -107,24 +96,14 @@
 							"origin": [-5.25, 1.25, 0.5],
 							"size": [4, 0, 7],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "california_roll_2" },
-								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "california_roll_2" },
-								"south": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "california_roll_2" },
-								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "california_roll_2" },
-								"up": { "uv": [0, 30], "uv_size": [4, 7], "material_instance": "california_roll_2" },
-								"down": { "uv": [4, 37], "uv_size": [4, -7], "material_instance": "california_roll_2" }
+								"up": { "uv": [0, 30], "uv_size": [4, 7], "material_instance": "california_roll_2" }
 							}
 						},
 						{
 							"origin": [-5.25, 1.5, 0.5],
 							"size": [4, 0, 7],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "california_roll_2" },
-								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "california_roll_2" },
-								"south": { "uv": [0, 0], "uv_size": [4, 0], "material_instance": "california_roll_2" },
-								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "california_roll_2" },
-								"up": { "uv": [8, 30], "uv_size": [4, 7], "material_instance": "california_roll_2" },
-								"down": { "uv": [12, 37], "uv_size": [4, -7], "material_instance": "california_roll_2" }
+								"up": { "uv": [8, 30], "uv_size": [4, 7], "material_instance": "california_roll_2" }
 							}
 						}
 					]

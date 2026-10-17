@@ -84,11 +84,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:froggle_bunwich_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "froggle_bunwich_1": {
                             "texture": "crockpot:froggle_bunwich_1",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -124,11 +124,11 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "crockpot:froggle_bunwich_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         },
                         "froggle_bunwich_2": {
                             "texture": "crockpot:froggle_bunwich_2",
-                            "render_method": "alpha_test_single_sided"
+                            "render_method": "alpha_test"
                         }
                     }
                 }
@@ -217,11 +217,11 @@
             "minecraft:material_instances": {
                 "*": {
                     "texture": "crockpot:froggle_bunwich",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 },
                 "froggle_bunwich": {
                     "texture": "crockpot:froggle_bunwich",
-                    "render_method": "alpha_test_single_sided"
+                    "render_method": "alpha_test"
                 }
             },
             "minecraft:connection_rule": {

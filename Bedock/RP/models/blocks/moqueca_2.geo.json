@@ -51,7 +51,6 @@
 								"east": { "uv": [34, 34], "uv_size": [7, 8], "material_instance": "moqueca_2" },
 								"south": { "uv": [10, 37], "uv_size": [7, 8], "material_instance": "moqueca_2" },
 								"west": { "uv": [17, 37], "uv_size": [7, 8], "material_instance": "moqueca_2" },
-								"up": { "uv": [24, 37], "uv_size": [7, 7], "material_instance": "moqueca_2" },
 								"down": { "uv": [0, 47], "uv_size": [7, -7], "material_instance": "moqueca_2" }
 							}
 						},
@@ -131,12 +130,7 @@
 							"origin": [-3.5, 13.25, -3.5],
 							"size": [7, 0, 7],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca_2" },
-								"east": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca_2" },
-								"south": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca_2" },
-								"west": { "uv": [0, 0], "uv_size": [7, 0], "material_instance": "moqueca_2" },
-								"up": { "uv": [41, 26], "uv_size": [7, 7], "material_instance": "moqueca_2" },
-								"down": { "uv": [41, 40], "uv_size": [7, -7], "material_instance": "moqueca_2" }
+								"up": { "uv": [41, 26], "uv_size": [7, 7], "material_instance": "moqueca_2" }
 							}
 						}
 					]

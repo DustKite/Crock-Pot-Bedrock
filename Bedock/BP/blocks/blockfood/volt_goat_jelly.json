@@ -50,6 +50,16 @@
                             14.76745,
                             12
                         ]
+                    },
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "crockpot:volt_goat_jelly",
+                            "render_method": "alpha_test"
+                        },
+                        "volt_goat_jelly": {
+                            "texture": "crockpot:volt_goat_jelly",
+                            "render_method": "alpha_test"
+                        }
                     }
                 }
             },

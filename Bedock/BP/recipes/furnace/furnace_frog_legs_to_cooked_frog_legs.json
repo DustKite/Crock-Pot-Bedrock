@@ -1,16 +1,21 @@
 {
-  "format_version": "1.17",
-  "minecraft:recipe_furnace": {
-    "description": {
-      "identifier": "crockpot:cooked_frog_legs_furnace_frog_legs"
-    },
-    "tags": [
-      "furnace",
-      "campfire",
-      "smoker",
-      "soul_campfire"
-    ],
-    "input": "crockpot:frog_legs",
-    "output": "crockpot:cooked_frog_legs"
-  }
+    "format_version": "1.26.0",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "crockpot:cooked_frog_legs_furnace_frog_legs"
+        },
+        "tags": [
+            "furnace",
+            "campfire",
+            "smoker",
+            "soul_campfire"
+        ],
+        "unlock": [
+            {
+                "item": "crockpot:frog_legs"
+            }
+        ],
+        "input": "crockpot:frog_legs",
+        "output": "crockpot:cooked_frog_legs"
+    }
 }

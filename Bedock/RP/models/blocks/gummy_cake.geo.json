@@ -32,8 +32,8 @@
 							}
 						},
 						{
-							"origin": [-4.5, 1, -4.5],
-							"size": [9, 4, 9],
+							"origin": [-4.5, 0.75, -4.5],
+							"size": [9, 4.25, 9],
 							"uv": {
 								"north": { "uv": [21, 0], "uv_size": [9, 4], "material_instance": "gummy_cake" },
 								"east": { "uv": [21, 4], "uv_size": [9, 4], "material_instance": "gummy_cake" },
@@ -44,8 +44,8 @@
 							}
 						},
 						{
-							"origin": [-3.5, 5, -3.5],
-							"size": [7, 3, 7],
+							"origin": [-3.5, 4.75, -3.5],
+							"size": [7, 3.25, 7],
 							"uv": {
 								"north": { "uv": [0, 24], "uv_size": [7, 3], "material_instance": "gummy_cake" },
 								"east": { "uv": [7, 25], "uv_size": [7, 3], "material_instance": "gummy_cake" },

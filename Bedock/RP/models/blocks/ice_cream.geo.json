@@ -44,8 +44,8 @@
 							}
 						},
 						{
-							"origin": [-3.5, 5, -3.5],
-							"size": [7, -3, 7],
+							"origin": [-3.4, 2.05, -3.4],
+							"size": [6.8, 2.85, 6.8],
 							"uv": {
 								"north": { "uv": [9, 20], "uv_size": [7, 3], "material_instance": "ice_cream" },
 								"east": { "uv": [16, 20], "uv_size": [7, 3], "material_instance": "ice_cream" },

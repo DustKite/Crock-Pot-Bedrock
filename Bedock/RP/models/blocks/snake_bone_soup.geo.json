@@ -63,7 +63,6 @@
 								"east": { "uv": [27, 9], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
 								"south": { "uv": [27, 12], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
 								"west": { "uv": [0, 28], "uv_size": [8, 3], "material_instance": "snake_bone_soup" },
-								"up": { "uv": [10, 18], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
 								"down": { "uv": [18, 26], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
 							}
 						},
@@ -71,24 +70,14 @@
 							"origin": [-4, 5.25, -4],
 							"size": [8, 0, 8],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"east": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"west": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"up": { "uv": [19, 0], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
-								"down": { "uv": [19, 16], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
+								"up": { "uv": [19, 0], "uv_size": [8, 8], "material_instance": "snake_bone_soup" }
 							}
 						},
 						{
 							"origin": [-4, 5.5, -4],
 							"size": [8, 0, 8],
 							"uv": {
-								"north": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"east": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"south": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"west": { "uv": [0, 0], "uv_size": [8, 0], "material_instance": "snake_bone_soup" },
-								"up": { "uv": [0, 20], "uv_size": [8, 8], "material_instance": "snake_bone_soup" },
-								"down": { "uv": [8, 34], "uv_size": [8, -8], "material_instance": "snake_bone_soup" }
+								"up": { "uv": [0, 20], "uv_size": [8, 8], "material_instance": "snake_bone_soup" }
 							}
 						},
 						{
@@ -115,7 +104,6 @@
 								"east": { "uv": [8, 24], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
 								"south": { "uv": [33, 26], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
 								"west": { "uv": [9, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
-								"up": { "uv": [11, 34], "uv_size": [2, 2], "material_instance": "snake_bone_soup" },
 								"down": { "uv": [13, 36], "uv_size": [2, -2], "material_instance": "snake_bone_soup" }
 							}
 						},

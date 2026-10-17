@@ -19,7 +19,7 @@
             13
         ],
         "offset": [
-            76,
+            84,
             52
         ],
         "anchor_from": "top_left",
@@ -45,8 +45,8 @@
             10
         ],
         "offset": [
-            71,
-            36
+            79,
+            31
         ],
         "anchor_from": "top_left",
         "anchor_to": "top_left",
@@ -145,7 +145,7 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        25,
+                                                                        33,
                                                                         20
                                                                     ]
                                                                 }
@@ -164,7 +164,7 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        25,
+                                                                        33,
                                                                         20
                                                                     ]
                                                                 }
@@ -183,7 +183,7 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        -11,
+                                                                        -3,
                                                                         38
                                                                     ]
                                                                 }
@@ -202,7 +202,7 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        -11,
+                                                                        -3,
                                                                         38
                                                                     ]
                                                                 }
@@ -221,7 +221,7 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        2,
+                                                                        10,
                                                                         65
                                                                     ]
                                                                 }
@@ -240,8 +240,8 @@
                                                             {
                                                                 "top_left@chest.chest_grid_item": {
                                                                     "offset": [
-                                                                        21,
-                                                                        28
+                                                                        29,
+                                                                        29
                                                                     ],
                                                                     "$cell_image_size|default": [
                                                                         30,
@@ -267,8 +267,8 @@
                                                             {
                                                                 "top_left@crock_pot.display_slot_item": {
                                                                     "offset": [
-                                                                        -35,
-                                                                        32
+                                                                        -27,
+                                                                        27
                                                                     ],
                                                                     "$item_renderer_size": [
                                                                         24,
@@ -294,7 +294,7 @@
                                                             {
                                                                 "top_left@crock_pot.display_slot_item": {
                                                                     "offset": [
-                                                                        -53,
+                                                                        -45,
                                                                         49
                                                                     ],
                                                                     "$item_renderer_size": [
