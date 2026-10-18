@@ -29,3 +29,7 @@ new FoodValuesLore();
 new Loot();
 new MilkmadeHat();
 new ParrotEgg();
+
+import { RecipeRegister } from "./compatibility/FarmersDelight/RecipeRegister";
+
+new RecipeRegister();

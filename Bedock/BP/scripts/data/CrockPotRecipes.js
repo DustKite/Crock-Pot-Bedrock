@@ -435,7 +435,7 @@ export const CrockPotRecipes = [
         priority: 30,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea_leaves" }], quantity: 2 },
             { type: "gt", category: "SWEETENER", value: 0.0 },
             { type: "gt", category: "FROZEN", value: 0.0 }
         ]
@@ -610,7 +610,7 @@ export const CrockPotRecipes = [
         priority: 25,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "minecraft:fern" }, { tag: "farmersdelight:is_tea_leaves" }], quantity: 2 },
             { type: "gt", category: "SWEETENER", value: 0.0 },
             { type: "without", category: "MEAT" },
             { type: "max", category: "VEGGIE", value: 1.0 },

@@ -200,7 +200,6 @@ tile.crockpot:wet_goop.name=濕黏焦糊
 tile.crockpot:crock_pot=烹飪鍋
 tile.crockpot:portable_crock_pot=便攜烹飪鍋
 
-command.crockpot.resetlore.success=[§o烹飪鍋§r] §a已重設 %s 個物品的舊數值 Lore§r
 container.crockpot.crock_pot=烹飪鍋
 tooltip.crockpot.birdcage.not_owner=這隻鸚鵡似乎不屬於你。
 tooltip.crockpot.smithing_template.pot_upgrade.additions_slot_description=放置銅方塊
@@ -372,14 +371,10 @@ guide.crockpot.entity.milk_bottle.body=獲取：手持玻璃瓶右鍵牛、哞�
 
 guide.crockpot.effects.title=效果
 guide.crockpot.effects.body=本包新增 4 個自訂效果。
-effect.crockpot.charge=充電
-effect.crockpot.well_fed=飽食
-effect.crockpot.wither_resistance=凋零抗性
-effect.crockpot.ocean_affinity=海洋親和
-guide.crockpot.effect.charge.body=來源：伏特羊肉凍，持續 360 秒。\n攻擊傷害 ×1.35。\n若目標處於水中或雨中，額外 ×1.3（合計 ×1.65）。
+guide.crockpot.effect.charge.body=來源：伏特羊肉凍，持續 360 秒。\n基礎攻擊力 +35%。\n當攻擊潮濕目標時，會額外造成 30% 的傷害。
 guide.crockpot.effect.well_fed.body=來源：燉兔子，持續 120 秒。\n攻擊附帶 +1 固定傷害。\n受到 ≥2 點傷害時回復 1 點生命。
 guide.crockpot.effect.wither_resistance.body=來源：蘑菇蛋糕，持續 60 秒。\n獲得時立即清除已有凋零；持續期間免疫凋零效果。
-guide.crockpot.effect.ocean_affinity.body=來源：熱帶魚湯，持續 150 秒。\n游泳時按視線方向獲得推進力；不受氣泡柱影響。
+guide.crockpot.effect.ocean_affinity.body=來源：熱帶魚湯，持續 150 秒。\n使玩家的游泳速度增加 15%。
 
 guide.crockpot.thanks.title=致謝
 guide.crockpot.thanks.body=本附加包依據原 Java 版《烹飪鍋》的程式碼（MIT 協議）與資產（CC BY-NC-SA 4.0 協議），由 Elaikes 移植製作。\n\n特別鳴謝 Crock Pot Team：\nSi_hen (Owner)\nseraph_jack (Author)\nidyllic_bean (Author)\nMalayP (Artist)\nWhyte_V (Artist)\n\n感謝他們帶來的傑出工作！

@@ -200,7 +200,6 @@ tile.crockpot:wet_goop.name=Wet Goop
 tile.crockpot:crock_pot=Crock Pot
 tile.crockpot:portable_crock_pot=Portable Crock Pot
 
-command.crockpot.resetlore.success=[§oCrockPot§r] §aSuccessfully reset outdated lore for %s item(s)§r
 container.crockpot.crock_pot=Crock Pot
 tooltip.crockpot.birdcage.not_owner=This parrot doesn't seem to belong to you.
 tooltip.crockpot.smithing_template.pot_upgrade.additions_slot_description=Add Block of Copper
@@ -377,14 +376,10 @@ guide.crockpot.entity.milk_bottle.body=Obtain: Right-click Cows, Mooshrooms, Vol
 
 guide.crockpot.effects.title=Effects
 guide.crockpot.effects.body=This pack adds 4 custom effects.
-effect.crockpot.charge=Charge
-effect.crockpot.well_fed=Well Fed
-effect.crockpot.wither_resistance=Wither Resistance
-effect.crockpot.ocean_affinity=Ocean Affinity
-guide.crockpot.effect.charge.body=Source: Volt Goat Chaud-Froid, lasts 360s.\nAttack damage ×1.35.\nIf the target is in water or rain, an additional ×1.3 (total ×1.65).
+guide.crockpot.effect.charge.body=Source: Volt Goat Chaud-Froid, lasts 360s.\nBase attack damage +35%.\nWhen attacking wet targets, deals an additional 30% damage.
 guide.crockpot.effect.well_fed.body=Source: Bunny Stew, lasts 120s.\nAttacks deal +1 flat damage.\nHeals 1 HP when taking ≥2 damage.
 guide.crockpot.effect.wither_resistance.body=Source: Mushy Cake, lasts 60s.\nImmediately clears existing Wither; grants immunity to Wither effect while active.
-guide.crockpot.effect.ocean_affinity.body=Source: Tropical Bouillabaisse, lasts 150s.\nGrants propulsion in the direction of sight while swimming; immune to Bubble Columns.
+guide.crockpot.effect.ocean_affinity.body=Source: Tropical Bouillabaisse, lasts 150s.\nIncreases the player's swimming speed by 15%.
 
 guide.crockpot.thanks.title=Credits
 guide.crockpot.thanks.body=This addon is ported by Elaikes based on the original Java Edition mod Crock Pot.\nIt uses the original code (MIT License) and assets (CC BY-NC-SA 4.0).\n\nSpecial thanks to Crock Pot Team:\nSi_hen (Owner)\nseraph_jack (Author)\nidyllic_bean (Author)\nMalayP (Artist)\nWhyte_V (Artist)\n\nThank them for their outstanding work!
