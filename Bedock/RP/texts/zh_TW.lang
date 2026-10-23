@@ -1,5 +1,5 @@
 pack.name=烹飪鍋
-pack.description=適配1.26.0+，本模組根據原Java版模組烹飪鍋在遵循MIT協議的情況下進行移植.
+pack.description=將飢荒（Don't Starve）裡的烹飪鍋帶進了 Minecraft！
 
 itemGroup.crockpot=烹飪鍋
 crockpot:itemGroup.name.materials=烹飪鍋-材料
@@ -331,6 +331,12 @@ guide.crockpot.devices.body=烹飪鍋系列與鳥籠。
 guide.crockpot.device.crock_pot.body=放入四格食材和燃料，自動匹配配方並烹飪。\n介面：4 個輸入槽、1 個燃料槽、1 個輸出槽。\n速度：實際時間 = 配方時間 × (1 − 0.15 × 鍋等級)，烹飪鍋等級為 0。\n自動化：上方漏斗輸入食材，下方漏斗抽取產物，側面漏斗輸入燃料。\n破壞時掉落鍋內所有物品；若正在烹飪，額外掉落濕黏焦糊。\n沒有匹配到任何配方時，產物為濕黏焦糊。
 guide.crockpot.device.portable_crock_pot.body=與烹飪鍋相同，但等級為 1，比烹飪鍋快 15%。\n升級：在鍛造檯中使用 烹飪鍋 + 便攜烹飪鍋升級 + 銅方塊。\n便攜烹飪鍋升級模板僅可在地獄要塞的箱子中找到。
 guide.crockpot.device.birdcage.body=兩格高，可懸掛在天花板下，也可落地放置。\n放入鸚鵡：空手且肩膀上坐著鸚鵡時，右鍵鳥籠即可放入。\n取出鸚鵡：潛行 + 空手右鍵，僅主人可以取出。\n餵食：手持肉類時鸚鵡產下對應變種的鸚鵡蛋；手持種子或作物時鸚鵡吃掉並產出對應種子。\n破壞鳥籠會掉落鳥籠本身。
+guide.crockpot.device.birdcage.recipes=鸚鵡種子配方
+guide.crockpot.device.birdcage.recipes.intro=將鸚鵡關在鳥籠中，手持以下作物餵食，鸚鵡會吃掉並產出對應的種子。
+guide.crockpot.device.birdcage.recipes.vanilla=支援的原版作物
+guide.crockpot.device.birdcage.recipes.crockpot=支援的烹飪鍋作物
+guide.crockpot.device.birdcage.recipes.fd=支援的農夫樂事作物
+guide.crockpot.device.birdcage.recipes.note=注意：如果手持肉類餵食，則會產出對應變種的鸚鵡蛋。
 
 guide.crockpot.recipes.title=烹飪
 guide.crockpot.recipes.intro=向烹飪鍋放入四格食材，它們的食物值會合併，再與配方進行匹配。\n十個類別：

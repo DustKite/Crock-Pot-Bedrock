@@ -14,7 +14,7 @@ import { getEquipment, hasLimitedMaterials } from "../lib/EntityUtil";
 import { takeEquippedItem, takeItem } from "../lib/ItemUtil";
 import { offsetByDirection } from "../lib/DirectionUtil";
 import { getItemFoodValues } from "../data/FoodValues";
-import { seedRecipes } from "../data/SeedRecipes";
+import { SEED_RECIPES } from "../data/SeedRecipes";
 
 const breakingLocks = new Set();
 const fedCooldowns = new Map();
@@ -219,7 +219,7 @@ export class Birdcage {
                 else if (/beef|porkchop|mutton|chicken|rabbit|cod|salmon|tropical_fish|frog_legs|hoglin_nose/.test(heldId)) meatValues = { MEAT: 1.0, MONSTER: 0.0 };
             }
 
-            const seedRecipe = seedRecipes[heldId];
+            const seedRecipe = SEED_RECIPES[heldId];
 
             if (meatValues && meatValues.MEAT > 0) {
                 event.cancel = true;

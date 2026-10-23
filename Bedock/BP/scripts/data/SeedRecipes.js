@@ -1,4 +1,4 @@
-export const seedRecipes = {
+export const SEED_RECIPES = {
     // Minecraft
     "minecraft:wheat": { seed: "minecraft:wheat_seeds", min: 1, max: 3 },
     "minecraft:beetroot": { seed: "minecraft:beetroot_seeds", min: 1, max: 3 },

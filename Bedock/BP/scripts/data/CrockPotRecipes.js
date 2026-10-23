@@ -142,7 +142,7 @@ export const CrockPotRecipes = [
         priority: 10,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 1 },
+            { type: "contain", ingredient: [{ item: "crockpot:asparagus" }, { tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 1 },
             { type: "min", category: "VEGGIE", value: 2.5 },
             { type: "without", category: "MEAT" },
             { type: "without", category: "INEDIBLE" }
@@ -337,7 +337,7 @@ export const CrockPotRecipes = [
         priority: 30,
         weight: 1,
         requirements: [
-            { type: "contain", ingredient: [{ tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 2 },
+            { type: "contain", ingredient: [{ item: "crockpot:asparagus" }, { tag: "crockpot:is_asparagus" }, { tag: "farmersdelight:is_asparagus" }], quantity: 2 },
             { type: "min", category: "FROZEN", value: 2.0 }
         ]
     },

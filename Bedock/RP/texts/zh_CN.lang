@@ -1,5 +1,5 @@
 pack.name=烹饪锅
-pack.description=适配1.26.0+，本模组根据原Java版模组烹饪锅在遵循MIT协议的情况下进行移植.
+pack.description=将饥荒（Don't Starve）里的烹饪锅带进了 Minecraft！
 
 itemGroup.crockpot=烹饪锅
 crockpot:itemGroup.name.materials=烹饪锅-材料
@@ -336,6 +336,12 @@ guide.crockpot.devices.body=烹饪锅系列与鸟笼。
 guide.crockpot.device.crock_pot.body=放入四格食材和燃料，自动匹配配方并烹饪。\n界面：4 个输入槽、1 个燃料槽、1 个输出槽。\n速度：实际时间 = 配方时间 × (1 − 0.15 × 锅等级)，烹饪锅等级为 0。\n自动化：上方漏斗输入食材，下方漏斗抽取产物，侧面漏斗输入燃料。\n破坏时掉落锅内所有物品；若正在烹饪，额外掉落潮湿黏糊。\n没有匹配到任何配方时，产物为潮湿黏糊。
 guide.crockpot.device.portable_crock_pot.body=与烹饪锅相同，但等级为 1，比烹饪锅快 15%。\n升级：在锻造台中使用 烹饪锅 + 便携烹饪锅升级 + 铜块。\n便携烹饪锅升级模板仅可在下界要塞的箱子中找到。
 guide.crockpot.device.birdcage.body=两格高，可悬挂在天花板下，也可落地放置。\n放入鹦鹉：空手且肩膀上坐着鹦鹉时，右键鸟笼即可放入。\n取出鹦鹉：潜行 + 空手右键，仅主人可以取出。\n喂食：手持肉类时鹦鹉产下对应变种的鹦鹉蛋；手持种子或作物时鹦鹉吃掉并产出对应种子。\n破坏鸟笼会掉落鸟笼本身。
+guide.crockpot.device.birdcage.recipes=鹦鹉种子配方
+guide.crockpot.device.birdcage.recipes.intro=将鹦鹉关在鸟笼中，手持以下作物喂食，鹦鹉会吃掉并产出对应的种子。
+guide.crockpot.device.birdcage.recipes.vanilla=支持的原版作物
+guide.crockpot.device.birdcage.recipes.crockpot=支持的烹饪锅作物
+guide.crockpot.device.birdcage.recipes.fd=支持的农夫乐事作物
+guide.crockpot.device.birdcage.recipes.note=注意：如果手持肉类喂食，则会产出对应变种的鹦鹉蛋。
 
 guide.crockpot.recipes.title=烹饪
 guide.crockpot.recipes.intro=向烹饪锅放入四格食材，它们的食物值会合并，再与配方进行匹配。\n十个类别：

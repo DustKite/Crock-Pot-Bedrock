@@ -7,11 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { WorldLoadAfterEvent, system, world } from "@minecraft/server";
+import { ItemTypes, WorldLoadAfterEvent, system, world } from "@minecraft/server";
 import { EventAPI } from "../../lib/EventAPI";
 import { CookRecipes } from "./CookRecipes";
+let _hasFD = null;
+function hasFarmersDelight() {
+    if (_hasFD === null) {
+        _hasFD = ItemTypes.get("farmersdelight:book_farmersdelight") !== undefined;
+    }
+    return _hasFD;
+}
 export class RecipeRegister {
     register(args) {
+        if (!hasFarmersDelight()) return;
+
         system.runTimeout(() => {
             for (let i = 0; i < CookRecipes.length; i++) {
                 world.getDimension("overworld").runCommand(`scriptevent farmersdelight:cook ${JSON.stringify(CookRecipes[i])}`);

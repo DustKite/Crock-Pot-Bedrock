@@ -8,7 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-import { EntityComponentTypes, EntitySpawnAfterEvent, EquipmentSlot, PlayerInteractWithBlockBeforeEvent, PlayerInteractWithEntityBeforeEvent, ScriptEventCommandMessageAfterEvent, StartupEvent, system, world } from "@minecraft/server";
+import { EntityComponentTypes, EntitySpawnAfterEvent, EquipmentSlot, PlayerInteractWithBlockBeforeEvent, PlayerInteractWithEntityBeforeEvent, PlayerInventoryItemChangeAfterEvent, PlayerSpawnAfterEvent, StartupEvent, system, world } from "@minecraft/server";
 import { EventAPI } from "../lib/EventAPI";
 import { getItemFoodValues } from "../data/FoodValues";
 
@@ -31,6 +31,9 @@ const CUSTOM_TOOLTIPS = {
     "crockpot:candy": { color: "§s", key: "tooltip.crockpot.candy" }
 };
 
+const TYPE_CACHE = new Map();
+const PENDING_SLOTS = new Set();
+
 function formatFoodValue(val) {
     return Number.isInteger(val) ? val.toFixed(1) : String(val);
 }
@@ -48,15 +51,6 @@ function formatFoodLore(values) {
     return [{ rawtext }];
 }
 
-function flattenLoreEntry(entry) {
-    try {
-        const obj = typeof entry === "string" ? JSON.parse(entry) : entry;
-        return flattenRaw(obj);
-    } catch {
-        return typeof entry === "string" ? entry : "";
-    }
-}
-
 function flattenRaw(msg) {
     if (!msg) return "";
     if (typeof msg === "string") return msg;
@@ -67,17 +61,37 @@ function flattenRaw(msg) {
     return "";
 }
 
+function flattenLoreEntry(entry) {
+    if (typeof entry === "string") {
+        if (!entry.startsWith("{")) return entry;
+        try {
+            return flattenRaw(JSON.parse(entry));
+        } catch {
+            return entry;
+        }
+    }
+    return typeof entry === "object" && entry ? flattenRaw(entry) : "";
+}
+
 function isCrockpotLore(entry) {
+    if (typeof entry === "string") {
+        return entry.includes("item.crockpot:food_category") || entry.includes("tooltip.crockpot.");
+    }
     const s = flattenLoreEntry(entry);
     return s.includes("item.crockpot:food_category") || s.includes("tooltip.crockpot.");
 }
 
-function processItemLore(item) {
-    if (!item) return null;
+function getOrComputeTypeInfo(item) {
+    const typeId = item.typeId;
+    let info = TYPE_CACHE.get(typeId);
+    if (info !== undefined) return info;
 
-    const customTooltip = CUSTOM_TOOLTIPS[item.typeId];
+    const customTooltip = CUSTOM_TOOLTIPS[typeId];
     const values = getItemFoodValues(item);
-    if (!customTooltip && !values) return null;
+    if (!customTooltip && !values) {
+        TYPE_CACHE.set(typeId, null);
+        return null;
+    }
 
     const expected = [];
     if (customTooltip) {
@@ -86,60 +100,122 @@ function processItemLore(item) {
     if (values) {
         expected.push(...formatFoodLore(values));
     }
-    if (expected.length === 0) return null;
 
     const expectedNorm = expected.map(flattenLoreEntry);
+    info = { expected, expectedNorm };
+    TYPE_CACHE.set(typeId, info);
+    return info;
+}
+
+function processItemLore(item) {
+    if (!item) return null;
+
+    const info = getOrComputeTypeInfo(item);
+    if (!info) return null;
 
     const current = item.getLore() ?? [];
-    const currentManaged = current.filter(isCrockpotLore);
-    const currentNorm = currentManaged.map(flattenLoreEntry);
+    if (current.length === 0) {
+        item.setLore(info.expected);
+        return item;
+    }
 
-    if (JSON.stringify(expectedNorm) === JSON.stringify(currentNorm)) {
-        return null;
+    const currentManaged = current.filter(isCrockpotLore);
+    if (currentManaged.length === info.expectedNorm.length) {
+        let match = true;
+        for (let i = 0; i < currentManaged.length; i++) {
+            if (flattenLoreEntry(currentManaged[i]) !== info.expectedNorm[i]) {
+                match = false;
+                break;
+            }
+        }
+        if (match) return null;
     }
 
     const preserved = current.filter(l => !isCrockpotLore(l));
-    item.setLore([...preserved, ...expected]);
+    item.setLore([...preserved, ...info.expected]);
     return item;
 }
 
 function updateContainerBlock(targetBlock) {
     if (!targetBlock) return;
     try {
-        const invComp = targetBlock.getComponent("inventory") ?? targetBlock.getComponent("minecraft:inventory");
-        const container = invComp?.container;
-        if (container) {
-            for (let i = 0; i < container.size; i++) {
-                const item = container.getItem(i);
-                if (item) {
-                    const updated = processItemLore(item);
-                    if (updated) container.setItem(i, updated);
-                }
+        const container = targetBlock.getComponent("minecraft:inventory")?.container;
+        if (!container) return;
+        for (let i = 0; i < container.size; i++) {
+            const item = container.getItem(i);
+            if (item) {
+                const updated = processItemLore(item);
+                if (updated) container.setItem(i, updated);
             }
         }
     } catch (e) { }
 }
 
 export class FoodValuesLore {
-    onScriptEvent(event) {
-        if (event.id !== "crockpot:refreshlore") return;
-        for (const p of world.getAllPlayers()) {
-            const container = p.getComponent(EntityComponentTypes.Inventory)?.container;
-            if (container) {
-                for (let slot = 0; slot < container.size; slot++) {
-                    const updated = processItemLore(container.getItem(slot));
-                    if (updated) container.setItem(slot, updated);
+    register() {
+        system.runInterval(() => {
+            for (const player of world.getAllPlayers()) {
+                const container = player.getComponent(EntityComponentTypes.Inventory)?.container;
+                if (container) {
+                    for (let slot = 0; slot < container.size; slot++) {
+                        const updated = processItemLore(container.getItem(slot));
+                        if (updated) container.setItem(slot, updated);
+                    }
+                }
+                const equip = player.getComponent(EntityComponentTypes.Equippable);
+                if (equip) {
+                    const off = equip.getEquipment(EquipmentSlot.Offhand);
+                    if (off) {
+                        const updatedOff = processItemLore(off);
+                        if (updatedOff) equip.setEquipment(EquipmentSlot.Offhand, updatedOff);
+                    }
                 }
             }
-            const equip = p.getComponent(EntityComponentTypes.Equippable);
-            if (equip) {
-                const updatedOff = processItemLore(equip.getEquipment(EquipmentSlot.Offhand));
-                if (updatedOff) equip.setEquipment(EquipmentSlot.Offhand, updatedOff);
+        }, 200);
+    }
+
+    onInventoryItemChange(event) {
+        const { player, slot, itemStack } = event;
+        if (!player || !itemStack) return;
+        if (typeof slot !== "number") return;
+
+        const key = `${player.id}:${slot}`;
+        if (PENDING_SLOTS.has(key)) return;
+
+        const updated = processItemLore(itemStack);
+        if (updated) {
+            const container = player.getComponent(EntityComponentTypes.Inventory)?.container;
+            if (container) {
+                PENDING_SLOTS.add(key);
+                container.setItem(slot, updated);
+                system.runTimeout(() => PENDING_SLOTS.delete(key), 1);
             }
         }
-        if (event.sourceEntity && event.sourceEntity.typeId === "minecraft:player") {
-            event.sourceEntity.sendMessage("§aCrockpot Lore 已刷新");
-        }
+    }
+
+    onPlayerSpawn(event) {
+        const player = event.player;
+        if (!player || !event.initialSpawn) return;
+        system.run(() => {
+            const container = player.getComponent(EntityComponentTypes.Inventory)?.container;
+            if (container) {
+                for (let slot = 0; slot < container.size; slot++) {
+                    const item = container.getItem(slot);
+                    if (item) {
+                        const updated = processItemLore(item);
+                        if (updated) container.setItem(slot, updated);
+                    }
+                }
+            }
+            const equip = player.getComponent(EntityComponentTypes.Equippable);
+            if (equip) {
+                const offhand = equip.getEquipment(EquipmentSlot.Offhand);
+                if (offhand) {
+                    const updatedOff = processItemLore(offhand);
+                    if (updatedOff) equip.setEquipment(EquipmentSlot.Offhand, updatedOff);
+                }
+            }
+        });
     }
 
     onEntitySpawn(event) {
@@ -194,25 +270,6 @@ export class FoodValuesLore {
             } catch (e) { }
         });
     }
-
-    register() {
-        system.runInterval(() => {
-            for (const player of world.getAllPlayers()) {
-                const container = player.getComponent(EntityComponentTypes.Inventory)?.container;
-                if (container) {
-                    for (let slot = 0; slot < container.size; slot++) {
-                        const updated = processItemLore(container.getItem(slot));
-                        if (updated) container.setItem(slot, updated);
-                    }
-                }
-                const equip = player.getComponent(EntityComponentTypes.Equippable);
-                if (equip) {
-                    const updatedOff = processItemLore(equip.getEquipment(EquipmentSlot.Offhand));
-                    if (updatedOff) equip.setEquipment(EquipmentSlot.Offhand, updatedOff);
-                }
-            }
-        }, 10);
-    }
 }
 
 __decorate([
@@ -221,6 +278,20 @@ __decorate([
     __metadata("design:paramtypes", [StartupEvent]),
     __metadata("design:returntype", void 0)
 ], FoodValuesLore.prototype, "register", null);
+
+__decorate([
+    EventAPI.register(world.afterEvents.playerInventoryItemChange),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [PlayerInventoryItemChangeAfterEvent]),
+    __metadata("design:returntype", void 0)
+], FoodValuesLore.prototype, "onInventoryItemChange", null);
+
+__decorate([
+    EventAPI.register(world.afterEvents.playerSpawn),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [PlayerSpawnAfterEvent]),
+    __metadata("design:returntype", void 0)
+], FoodValuesLore.prototype, "onPlayerSpawn", null);
 
 __decorate([
     EventAPI.register(world.afterEvents.entitySpawn),
@@ -242,10 +313,3 @@ __decorate([
     __metadata("design:paramtypes", [PlayerInteractWithEntityBeforeEvent]),
     __metadata("design:returntype", void 0)
 ], FoodValuesLore.prototype, "onPlayerInteractWithEntity", null);
-
-__decorate([
-    EventAPI.register(system.afterEvents.scriptEventReceive),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [ScriptEventCommandMessageAfterEvent]),
-    __metadata("design:returntype", void 0)
-], FoodValuesLore.prototype, "onScriptEvent", null);

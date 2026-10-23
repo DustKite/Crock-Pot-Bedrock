@@ -1,5 +1,5 @@
 pack.name=Crock Pot
-pack.description=For 1.26.0+, This addon is ported based on the original Java Edition mod Crock Pot and this work is licensed under the MIT License.
+pack.description=Bring Crock Pot from Don't Starve to Minecraft!
 
 itemGroup.crockpot=Crock Pot
 crockpot:itemGroup.name.materials=Crock Pot - Materials
@@ -336,6 +336,12 @@ guide.crockpot.devices.body=Crock Pot series and Birdcage.
 guide.crockpot.device.crock_pot.body=Place 4 ingredients and fuel to automatically match a recipe and cook.\nInterface: 4 input slots, 1 fuel slot, 1 output slot.\nSpeed: Actual time = Cooking time × (1 − 0.15 × Pot Level), Crock Pot level is 0.\nAutomation: Top hopper for ingredients, bottom hopper for output, side hopper for fuel.\nDrops all items inside when broken; if cooking, it additionally drops Wet Goop.\nIf no recipe is matched, the result is Wet Goop.
 guide.crockpot.device.portable_crock_pot.body=Same as Crock Pot, but level 1 and 15% faster.\nUpgrade: Use Crock Pot + Portable Crock Pot Upgrade + Block of Copper in a Smithing Table.\nThe Portable Crock Pot Upgrade template can only be found in Nether Fortress chests.
 guide.crockpot.device.birdcage.body=Two blocks high, can be hung from the ceiling or placed on the ground.\nPut Parrot: Right-click with an empty hand while a parrot is on your shoulder.\nTake Parrot: Sneak + right-click with an empty hand, only the owner can take it out.\nFeeding: Meat makes the parrot lay variant eggs; Seeds or crops are eaten to produce seeds.\nBreaking the birdcage drops the birdcage itself.
+guide.crockpot.device.birdcage.recipes=Parrot Seed Recipes
+guide.crockpot.device.birdcage.recipes.intro=Feed the parrot in the birdcage with the following crops to produce seeds.
+guide.crockpot.device.birdcage.recipes.vanilla=Supported Vanilla Crops
+guide.crockpot.device.birdcage.recipes.crockpot=Supported Crock Pot Crops
+guide.crockpot.device.birdcage.recipes.fd=Supported Farmer's Delight Crops
+guide.crockpot.device.birdcage.recipes.note=Note: Feeding Meat will produce parrot eggs of the corresponding variant.
 
 guide.crockpot.recipes.title=Cooking
 guide.crockpot.recipes.intro=Place 4 ingredients into the Crock Pot. Their food values will merge and match against recipes.\nTen categories: 
