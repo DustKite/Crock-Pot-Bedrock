@@ -32,14 +32,13 @@
 							}
 						},
 						{
-							"origin": [-4, 4, -4],
-							"size": [8, -3, 8],
+							"origin": [-4, 1, -4],
+							"size": [8, 3, 8],
 							"uv": {
 								"north": { "uv": [34, 12], "uv_size": [8, 3], "material_instance": "flower_salad" },
 								"east": { "uv": [34, 15], "uv_size": [8, 3], "material_instance": "flower_salad" },
 								"south": { "uv": [34, 18], "uv_size": [8, 3], "material_instance": "flower_salad" },
 								"west": { "uv": [34, 29], "uv_size": [8, 3], "material_instance": "flower_salad" },
-								"up": { "uv": [24, 21], "uv_size": [8, 8], "material_instance": "flower_salad" },
 								"down": { "uv": [0, 36], "uv_size": [8, -8], "material_instance": "flower_salad" }
 							}
 						},

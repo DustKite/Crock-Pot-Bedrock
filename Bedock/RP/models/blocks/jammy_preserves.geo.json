@@ -39,7 +39,6 @@
 								"east": { "uv": [23, 5], "uv_size": [6, 5], "material_instance": "jammy_preserves" },
 								"south": { "uv": [14, 24], "uv_size": [6, 5], "material_instance": "jammy_preserves" },
 								"west": { "uv": [20, 24], "uv_size": [6, 5], "material_instance": "jammy_preserves" },
-								"up": { "uv": [16, 12], "uv_size": [6, 6], "material_instance": "jammy_preserves" },
 								"down": { "uv": [16, 24], "uv_size": [6, -6], "material_instance": "jammy_preserves" }
 							}
 						},
@@ -51,7 +50,6 @@
 								"east": { "uv": [29, 2], "uv_size": [6, 1], "material_instance": "jammy_preserves" },
 								"south": { "uv": [29, 3], "uv_size": [6, 1], "material_instance": "jammy_preserves" },
 								"west": { "uv": [29, 4], "uv_size": [6, 1], "material_instance": "jammy_preserves" },
-								"up": { "uv": [8, 20], "uv_size": [6, 6], "material_instance": "jammy_preserves" },
 								"down": { "uv": [0, 28], "uv_size": [6, -6], "material_instance": "jammy_preserves" }
 							}
 						},
@@ -63,7 +61,6 @@
 								"east": { "uv": [23, 11], "uv_size": [4, 1], "material_instance": "jammy_preserves" },
 								"south": { "uv": [29, 5], "uv_size": [4, 1], "material_instance": "jammy_preserves" },
 								"west": { "uv": [29, 6], "uv_size": [4, 1], "material_instance": "jammy_preserves" },
-								"up": { "uv": [28, 14], "uv_size": [4, 4], "material_instance": "jammy_preserves" },
 								"down": { "uv": [28, 22], "uv_size": [4, -4], "material_instance": "jammy_preserves" }
 							}
 						},
@@ -80,8 +77,8 @@
 							}
 						},
 						{
-							"origin": [-3, 1, -3],
-							"size": [6, 4, 6],
+							"origin": [-2.5, 1.2, -2.5],
+							"size": [5, 3.6, 5],
 							"uv": {
 								"north": { "uv": [6, 26], "uv_size": [6, 4], "material_instance": "jammy_preserves" },
 								"east": { "uv": [26, 24], "uv_size": [6, 4], "material_instance": "jammy_preserves" },
